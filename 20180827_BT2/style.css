@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.c1 {
+	text-align: center;
+	padding: 10px;
+}
+
+#dear {
+	text-indent: 30px;
+	padding: 15px;
+}
+
+.intro, .cont {
+	text-indent: 45px;
+	text-align: justify;
+}
+
