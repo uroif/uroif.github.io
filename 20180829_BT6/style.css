@@ -1,0 +1,62 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*Style for homepage*/
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+body > img {
+	max-width: 100%;
+	margin: 5px auto;
+}
+
+nav {
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	color: #2c3e50;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+nav a:hover {
+	color: #ffffff;
+	background-color: #2980b9;
+	text-align: center;
+}
+
+.image {
+	margin: 15px;
+	border: 1px solid #bdc3c7;
+	float: left;
+	width: 300px;
+}
+
+.image:hover {
+	border: 1px solid #2c3e50;
+}
+
+.image img {
+	width: 100%;
+}
+
+.desc {
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	font-size: 14px;
+	padding: 5px;
+}
+
+/*Style for about page*/
+.about {
+	font-family: Arial, sans-serif;
+}
+
