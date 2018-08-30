@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+header {
+	position: relative;
+}
+
+header img:first-child {
+	max-width: 100%;
+	margin: 5px auto;
+}
+
+header img:last-child {
+    width: 160px;
+    position: absolute;
+    top: 145px;
+    left: 80px;
+    padding: 3px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.images {
+	max-width: 30%;
+}
