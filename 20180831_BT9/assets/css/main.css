@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #B71C1C;
+}
+
+#container {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1000px;
+	height: 1000px;
+	background-color: #D32F2F;
+	background-image: linear-gradient(to right, #B71C1C, #EF5350, #B71C1C);
+}
+
+@keyframes fly_deer {
+	0% {opacity: 0; left: 0; top: 50px;}
+	50% {opacity: 1; left: 100px; top: 0;}
+	100% {opacity: 0; left: 300px; top: 50px;}
+}
+
+#fly_deer img {
+	float: left;
+	width: 30%;
+	animation: fly_deer 3s ease;
+	opacity: 0;
+}
+
+#tree img {
+	width: 50%;
+}
+
+#santa img {
+	width: 30%;
+}
