@@ -5,12 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Merry X'mas</title>
 	<link rel="stylesheet" href="assets/css/main.css" text="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amita">
+
 </head>
 <body>
 	
+	<audio autoplay id="audiobg">
+		<source src="assets/audio/christmas_time.mp3" type="audio/mpeg">
+	</audio>
+
 	<div id="container">
 		<div id="wrap">
-
+			
 			<div id="bg">
 				<div class="bg">
 					<img src="images/snowy_background.png" alt="">
@@ -25,12 +32,8 @@
 				<img src="images/flying_deer.png" alt="">
 			</div>
 
-<!-- 			<div id="tree">
-				<img src="images/xmas_tree.png" alt="">
-			</div> -->
-
 			<div id="santa">
-				<a href="present.html"><img src="images/santa.png" alt=""></a>
+				<img src="images/santa.png" alt="">
 			</div>
 
 			<div id="gift1">
@@ -58,15 +61,33 @@
 			</div>
 
 			<div id="text2">
-				<p>Wishing you and your family a lifetime of joy, peace and happiness.</p>
+				<p>Wishing you and your family a lifetime of</p>
 			</div>
 
 			<div id="text3">
-				<p>Click me!</p>
+				<p>joy, peace and happiness.</p>
 			</div>
 
+			<div class="snowflakes" aria-hidden="true">
+				<div class="snowflake">❅</div>
+				<div class="snowflake">❅</div>
+				<div class="snowflake">❅</div>
+				<div class="snowflake">❅</div>
+				<div class="snowflake">❅</div>
+				<div class="snowflake">❅</div>
+				<div class="snowflake">❅</div>
+				<div class="snowflake">❅</div>
+				<div class="snowflake">❅</div>
+			</div>
 		</div>
 	</div>
-
+	
+	<script>
+		document.addEventListener('click', musicPlay);
+		function musicPlay() {
+		    document.getElementById('audiobg').play();
+		    document.removeEventListener('click', musicPlay);
+		}
+	</script>
 </body>
 </html>
