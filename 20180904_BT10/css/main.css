@@ -6,6 +6,11 @@
 
 img {
 	width: 100%;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
 }
 
 .clear {
@@ -234,58 +239,82 @@ nav a {
 .title {
 	position: absolute;
 	width: 100%;
-	top: -6%;
+	top: -7.1%;
 }
 
 .title h1 {
 	font-family: 'Exo', sans-serif;
-	font-size: 2.5em;
+	font-size: 2em;
 	text-align: center;
 	background-color: #E0E0E0;
 	width: 55%;
 	margin: auto;
-	padding: 0.5%;
+	padding: 1%;
 	border: 2px solid #BDBDBD;
 	border-radius: 20px;
 }
 
-.f_item, .n_item {
+.item_lv1 {
 	float: left;
-	width: 33.3%;
-	padding-top: 2%;
+	width: 33%;
+	margin-bottom: 2%;
 }
 
-.item {
+.item_lv2 {
 	width: 90%;
 	margin: auto;
+	padding: 1%;
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
 }
 
-#fav_foods p, #new_foods p {
+.item_lv3 {
+	width: 99%;
+	margin: auto;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.item_lv1 img {
+	transform: scale(1.01);
+	transition: all 0.3s ease;
+}
+
+.item_lv1 p {
 	font-family: Quicksand, sans-serif;
 	text-align: center;
 	font-size: 1em;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.item_lv1 a:hover img {
+	transform: scale(1.2);
 }
 
 /* List of favourite foods */
 #fav_foods {
 	position: relative;
 	margin: auto;
-	margin-top: 5%;
+	margin-top: 7%;
 	max-width: 1000px;
 	border: 2px solid #BDBDBD;
+	border-radius: 5px;
 }
 
 .favourite {
 	margin-top: 6%;
+	margin-bottom: 3%;
 }
 
 /* List of new foods */
 #new_foods {
 	position: relative;
 	margin: auto;
-	margin-top: 5%;
+	margin-top: 7%;
 	max-width: 1000px;
 	border: 2px solid #BDBDBD;
+	border-radius: 5px;
 }
 
 .new {
@@ -296,6 +325,21 @@ nav a {
 footer {
 	margin: auto;
 	max-width: 1000px;
+}
+
+#list {
+	float: left;
+	width: 20%;
+}
+
+#address {
+	float: left;
+	width: 70%;
+}
+
+#social {
+	float: left;
+	width: 10%;
 }
 
 /* Jump to top arrow */
