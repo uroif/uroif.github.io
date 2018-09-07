@@ -1,0 +1,667 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	background-color: #E0E0E0;
+	max-width: 1000px;
+	margin: auto;
+}
+
+/* Set responsive font-size to width */
+@media all and (min-width: 1000px) {
+    body{font-size: 20px;}
+}
+
+@media all and (max-width: 999px) and (min-width: 800px) {
+    body{font-size: 18px;}
+}
+
+@media all and (max-width: 799px) and (min-width: 600px) {
+    body{font-size: 15px;}
+}
+
+@media all and (max-width: 599px) and (min-width: 500px) {
+    body{font-size: 12px;}
+}
+
+@media all and (max-width: 499px) and (min-width: 320px) {
+    body{font-size: 10px;}
+}
+
+/* Header area */
+
+@keyframes anim_header {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+header {
+	margin-top: 1%;
+	border: 3px dashed #616161;
+	border-radius: 10px;
+	animation: anim_header 0.8s ease;
+}
+
+h2 {
+	font-size: 1.25em;
+}
+
+h4 {
+	padding-top: 1%;
+	font-size: 0.9em;
+	font-family: Exo, sans-serif;
+	color: #4E342E;
+}
+
+.right_header h4 {
+	color: #1B5E20;
+}
+
+.hdr {
+	float: left;
+	padding: 1%;
+}
+
+.left_header {
+	width: 60%;
+	font-family: Chango, sans-serif;
+	color: #E65100;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.right_header {
+	width: 40%;
+	font-family: 'Nanum Gothic', sans-serif;
+	text-align: right;
+	color: #3F51B5;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu area */
+nav {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	position: relative;
+}
+
+ul {
+	list-style: none;
+}
+
+@keyframes anim_nav_li {
+	0% {opacity: 0; padding: 0.5% 2.5%;}
+	100% {opacity: 1; padding: 0.5% 2%;}
+}
+
+nav > ul > li {
+	display: inline-block;
+	border: 1px solid rgba(0, 0, 0, 0);
+	padding: 0.5% 2%;
+	animation: anim_nav_li 0.8s ease;
+	transition: all 0.3s ease;
+}
+
+.main_menu {
+	text-align: center;
+}
+
+.main_menu > li:hover {
+	background-color: #EEEEEE;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+}
+
+.sub_menu li:hover {
+	background-color: #212121;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+}
+
+.sub_menu li:hover a {
+	color: #FAFAFA;
+	font-weight: normal;
+}
+
+nav a {
+	font-family: Quicksand, sans-serif;
+	font-weight: bold;
+	color: #212121;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+}
+
+.main_menu li:nth-child(2) {
+	position: relative;
+}
+
+.sub_menu {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 106%;
+	left: -1px;
+	text-indent: 12%;
+	width: 130%;
+	background-color: #EEEEEE;
+	text-align: left;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	transition: all 0.3s ease;
+}
+
+.sub_menu li {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	transition: all 0.3s ease;
+}
+
+.main_menu li:nth-child(2):hover .sub_menu {
+	display: block;
+}
+
+/* Promotion area - Images slideshow */
+#promotion {
+	position: relative;
+	height: 0;
+	padding-bottom: 40%;
+	overflow: hidden;
+	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+}
+
+@keyframes slider {
+	0% { left: 0%; opacity: 0.1;}
+	5% { left: 0%; opacity: 1;}
+	15% { left: 0%; }
+	20% { left: -100%; }
+	35% { left: -100%; }
+	40% { left: -200%; }
+	55% { left: -200%; }
+	60% { left: -300%; }
+	75% { left: -300%; }
+	80% { left: -400%; }
+	95% { left: -400%; opacity: 1;}
+	100% { left: -400%; opacity: 0;}
+}
+
+.promo {
+	margin: 0;
+	position: relative;
+	width: 500%;
+	animation: slider 30s infinite;
+	font-size: 0;
+}
+
+.promo div {
+	margin: 0;
+	position: inherit;
+	width: 20%;
+	height: auto;
+	display: inline-block;
+}
+
+.promo img {
+	transform: translateY(-20%);
+}
+
+/* Code for favourite and new foods list */
+.title {
+	position: absolute;
+	width: 100%;
+	top: -7.1%;
+}
+
+.title h1 {
+	font-family: 'Exo', sans-serif;
+	font-size: 2em;
+	text-align: center;
+	background-color: #ffffff;
+	width: 55%;
+	margin: auto;
+	padding: 1%;
+	border: 2px solid #BDBDBD;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+}
+
+.title h1:hover {
+	color: #757575;
+}
+
+.item_lv1 {
+	float: left;
+	width: 33.33%;
+	margin-bottom: 2%;
+}
+
+.item_lv2 {
+	width: 90%;
+	margin: auto;
+	margin-top: 3%;
+	padding: 1%;
+	border: 1px solid #BDBDBD;
+	border-radius: 8px;
+}
+
+.item_lv3 {
+	margin: auto;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.item_lv1 img {
+	transform: scale(1.01);
+	transition: all 0.3s ease;
+}
+
+.item_lv1 p {
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	text-transform: lowercase;
+	text-align: center;
+	font-size: 1em;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	transition: all 0.3s ease;
+}
+
+.item_lv1 p:hover {
+	letter-spacing: 2px;
+}
+
+.item_lv1 p:visited {
+	color: #000000;
+}
+
+.item_lv1 a:hover img {
+	opacity: 0.8;
+	transform: scale(1.2);
+}
+
+@keyframes anim_foods {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/* List of favourite foods */
+#fav_foods {
+	position: relative;
+	margin-top: 7%;
+	border: 2px solid #BDBDBD;
+	border-radius: 10px;
+	animation: anim_foods 0.8s ease;
+}
+
+.favourite {
+	margin-top: 6%;
+	margin-bottom: 3%;
+}
+
+/* List of new foods */
+#new_foods {
+	position: relative;
+	margin-top: 7%;
+	border: 2px solid #BDBDBD;
+	border-radius: 10px;
+	animation: anim_foods 0.8s ease;
+}
+
+.new {
+	margin-top: 6%;
+}
+
+/* Footer area */
+footer {
+	width: 100%;
+	margin-top: 3%;
+	padding-bottom: 14%;
+	background-color: #212121;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+footer li, footer p {
+	color: #ffffff;
+	font-family: Quicksand, sans-serif;
+	font-size: 0.8em;
+}
+
+footer a {
+	color: #ffffff;
+}
+
+footer a:visited {
+	color: #ffffff;
+}
+
+#list {
+	float: left;
+	width: 20%;
+}
+
+#list ul {
+    padding-top: 5%;
+    padding-left: 20%;
+}
+
+#list a:hover {
+	color: #29B6F6;
+}
+
+#address {
+	float: left;
+	width: 60%;
+}
+
+#address ul {
+    padding-top: 1.5%;
+    padding-left: 2%;
+}
+
+#address ul li {
+    color: #9E9E9E;
+}
+
+#address p {
+	padding-top: 3.6%;
+	padding-left: 2%;
+	font-weight: bold;
+	/*color: #BDBDBD;*/
+}
+
+#social {
+	float: left;
+	width: 20%;
+	font-size: 2em;
+	padding-top: 1%;
+	padding-left: 2%;
+}
+
+.fa-facebook-square:hover {
+	color: #2D4284;
+}
+
+.fa-twitter:hover {
+	color: #1B8BEC;
+}
+
+.fa-instagram:hover {
+	color: #931053;
+}
+
+#social a:visited {
+	color: #ffffff;
+}
+
+/* Back to top arrow */
+#to_top {
+	position: fixed;
+	right: 3%;
+	bottom: 3%;
+	font-size: 4vmin;
+	text-decoration: none;
+	opacity: 0.6;
+}
+
+#to_top a {
+	color: #E0E0E0;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#to_top a:visited {
+	color: #E0E0E0;
+}
+
+/*CSS FOR ORDER PAGE*/
+#p_order {
+	margin: 3%;
+}
+
+#p_order h1, p {
+	font-family: Quicksand, sans-serif;
+}
+
+/*CSS FOR PROMO PAGE*/
+#p_promo {
+	margin: 3%;
+}
+
+#p_promo ul {
+	list-style: circle;
+	padding-left: 3%;
+}
+
+#p_promo h1, p, li {
+	font-family: Quicksand, sans-serif;
+}
+
+/*CSS FOR CONTACT PAGE*/
+#p_contact {
+	margin: 3%;
+}
+
+#p_contact ul {
+	list-style: circle;
+	padding-left: 3%;
+}
+
+#p_contact h1, p {
+	font-family: Quicksand, sans-serif;
+}
+
+/*CSS FOR ABOUT US PAGE*/
+#p_about {
+	margin: 3%;
+}
+
+#p_about h1, p {
+	font-family: Quicksand, sans-serif;
+}
+
+/*CSS FOR CONDITIONS PAGE*/
+#p_cond {
+	margin: 3%;
+}
+
+#p_cond h1, p {
+	font-family: Quicksand, sans-serif;
+}
+
+/*CSS FOR APPETIZERS PAGE*/
+@keyframes anim_appe {
+	0% {opacity: 0; margin-top: 10%;}
+	100% {opacity: 1; margin-top: 7%;}
+}
+
+#p_appe {
+	position: relative;
+	margin-top: 7%;
+	border: 2px solid #BDBDBD;
+	border-radius: 10px;
+	animation: anim_appe 1s ease;
+}
+
+/*CSS FOR MAIN FOODS PAGE*/
+@keyframes anim_main {
+	0% {opacity: 0; margin-top: 10%;}
+	100% {opacity: 1; margin-top: 7%;}
+}
+
+#p_main {
+	position: relative;
+	margin-top: 7%;
+	border: 2px solid #BDBDBD;
+	border-radius: 10px;
+	animation: anim_main 1s ease;
+}
+
+#p_main .title {
+	top: -5.1%;
+}
+
+/*CSS FOR SALADS PAGE*/
+@keyframes anim_salads {
+	0% {opacity: 0; margin-top: 10%;}
+	100% {opacity: 1; margin-top: 7%;}
+}
+
+#p_salads {
+	position: relative;
+	margin-top: 7%;
+	border: 2px solid #BDBDBD;
+	border-radius: 10px;
+	animation: anim_salads 1s ease;
+}
+
+/*CSS FOR BURGERS PAGE*/
+@keyframes anim_burg {
+	0% {opacity: 0; margin-top: 10%;}
+	100% {opacity: 1; margin-top: 7%;}
+}
+
+#p_burg {
+	position: relative;
+	margin-top: 7%;
+	border: 2px solid #BDBDBD;
+	border-radius: 10px;
+	animation: anim_burg 1s ease;
+}
+
+/*CSS FOR DESSERTS PAGE*/
+@keyframes anim_dess {
+	0% {opacity: 0; margin-top: 10%;}
+	100% {opacity: 1; margin-top: 7%;}
+}
+
+#p_dess {
+	position: relative;
+	margin-top: 7%;
+	margin-bottom: 1%;
+	border: 2px solid #BDBDBD;
+	border-radius: 10px;
+	animation: anim_dess 1s ease;
+}
+
+/*CSS FOR DRINKS PAGE*/
+@keyframes anim_drinks {
+	0% {opacity: 0; margin-top: 10%;}
+	100% {opacity: 1; margin-top: 7%;}
+}
+
+#p_drinks {
+	position: relative;
+	margin-top: 7%;
+	margin-bottom: 1%;
+	border: 2px solid #BDBDBD;
+	border-radius: 10px;
+	animation: anim_drinks 1s ease;
+}
+
+/*CSS FOR EACH ITEM PAGE*/
+@keyframes anim_p_item {
+	0% {opacity: 0; margin-top: 5%;}
+	100% {opacity: 1; margin-top: 3%;}
+}
+
+#p_wrap {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	width: 100%;
+	animation: anim_p_item 1s ease;
+}
+
+.p_item {
+	margin: auto;
+}
+
+@keyframes anim_h_item {
+	0% {letter-spacing: 0.1em; opacity: 0.5;}
+	100% {letter-spacing: 0; opacity: 1;}
+}
+
+.h_item {
+	margin: -0.8% auto 2%;
+	font-family: Quicksand, sans-serif;
+	text-align: center;
+	border: 3px solid #212121;
+	border-radius: 3px;
+	animation: anim_h_item 0.8s ease;
+	transition: all 0.5s ease;
+}
+
+.h_item:hover {
+	border: 3px solid #616161;
+	color: #ffffff;
+	background-color: #616161;
+}
+
+.para_item {
+	padding: 2%;
+	text-align: justify;
+}
+
+.img_item {
+	position: relative;
+	width: 95.5%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.img_item {
+	border: 3px solid #ffffff;
+	border-radius: 3px;
+	transition: all 0.5s ease;
+}
+
+.img_item img {
+	border-radius: 3px;
+}
+
+.img_item div:nth-child(2) {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 8%;
+	bottom: 0;
+	left: 0;
+	transition: all 0.3s ease;
+}
+
+.img_item div:nth-child(2) p {
+	position: absolute;
+	margin: 2%;
+	bottom: -7%;
+	color: #EEEEEE;
+	transition: all 0.3s ease;
+}
+
+.img_item:hover {
+	border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.img_item:hover div:nth-child(2) {
+	height: 14%;
+}
+
+.img_item:hover div:nth-child(2) p {
+	font-size: 1.6em;
+	color: #ffffff;
+	bottom: 10%;
+}
