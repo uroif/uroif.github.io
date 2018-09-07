@@ -237,6 +237,7 @@ nav a {
 	padding: 1%;
 	border: 2px solid #BDBDBD;
 	border-radius: 20px;
+	transition: all 0.3s ease;
 }
 
 .title h1:hover {
@@ -640,7 +641,7 @@ footer a:visited {
 	height: 8%;
 	bottom: 0;
 	left: 0;
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 }
 
 .img_item div:nth-child(2) p {
@@ -648,7 +649,7 @@ footer a:visited {
 	margin: 2%;
 	bottom: -7%;
 	color: #EEEEEE;
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 }
 
 .img_item:hover {
