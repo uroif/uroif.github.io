@@ -153,6 +153,12 @@ footer div {
 	margin-bottom: 1%;
 }
 
+
+/*STYLE FOR HAND*/
+footer .fas {
+	padding-right: 1%;
+}
+
 /*---STYLE FOR ADDRESS---*/
 footer address {
 	flex: 3;
