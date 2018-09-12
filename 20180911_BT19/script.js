@@ -1,13 +1,13 @@
-flag = 0;
+x = 0;
 
-function openpara(val) {
-    calc.display.value += val;
-    flag += 1;
+function openP(p) {
+    calc.display.value += p;
+    x += 1;
 }
 
-function closepara(valval) {
-    calc.display.value += valval;
-    flag -= 1;
+function closeP(p) {
+    calc.display.value += p;
+    x += 1;
 }
 
 function backspace(calc) {
@@ -15,46 +15,46 @@ function backspace(calc) {
     calc.display.value = calc.display.value.substring(0, size - 1);
 }
 
-function resetfunction(calc) {
+function clean(calc) {
     calc.display.value = "";
-
-    flag = 0;
+    x = 0;
 }
 
-function sqrt_function() {
-    flag += 1;
-    calc.display.value = Math.sqrt(calc.display.value);
+function pct() {
+    x += 1;
+    calc.display.value = Math.round(eval(calc.display.value) * 100) + '%';
 }
 
-function sqr_function() {
-    flag += 1;
+function sqr() {
+    x += 1;
     calc.display.value = Math.pow(calc.display.value, 2);
 }
 
-function fact_function(x) {
-    flag += 1;
-    function facto(x) {
+function sqrt() {
+    x += 1;
+    calc.display.value = Math.sqrt(calc.display.value);
+}
+
+function fact(x) {
+    x += 1;
+    function factorial(x) {
     	if (x < 0) {
     		return -1;
 	    } else if (x == 0) {
 	    	return 1;
 	    } else {
-	    	return (x * facto(x-1));
+	    	return (x * factorial(x-1));
 	    };
     };
-    calc.display.value = facto(calc.display.value);
+    calc.display.value = factorial(calc.display.value);
 }
 
 function evaluation(calc) {
     n = calc.display.value;
-    var size = calc.display.value.length;
-    var lastchar = calc.display.value.charAt(size)
-    if (isNaN(lastchar) && lastchar != ")" && lastchar != "!") {
-        calc.display.value = "syntax error";
-    } else if (flag != 0) {
+    if (x != 0) {
         calc.display.value = "error";
     } else {
         result = eval(n);
-        calc.display.value = result;
-    }
+    };
+    calc.display.value = result;
 }
