@@ -2,49 +2,48 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Calculator</title>
+	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="wrap">
-		<div id="display">
-			<div id="info">
-				<p>CALCULATOR</p>
-			</div>
+<div class="wrap">
+     <form id="form" name="calc">
+          <div id="title">CALCULATOR</div>
+          <input id="display" type="text" name="display" placeholder="0">
+          <div id="btns">
+               <input class="button" type="button" value="(" onClick="openpara(this.value)">
+               <input class="button" type="button" value=")" onClick="closepara(this.value)">
+               <input class="button" type="button" value="<<" onClick="backspace(this.form)">
+               <input class="button" type="button" value="C" onClick="Resetfunction(this.form)">
 
-			<div id="screen">
-				<p id="view">0</p>
-			</div>
-		</div>
+               <input class="button" type="button" value="x^2" onClick="sqr_function()">
+               <input class="button" type="button" value="\/-" onClick="sqrt_function()">
+               <input class="button" type="button" value="n!" onClick="fact_function()">
+               <input class="button" type="button" value="%" onClick="calc.display.value+='%'">
 
-		<div id="buttons">
-			<button id="ac"><p>AC</p></button>				
-			<button id="pos_neg"><p>+/-</p></button>
-			<button id="pct"><p>%</p></button>
-			<button id="del"><p>&#8678;</p></button>
-			<button id="sqr"><p>x<sup>2</sup></p></button>
-			<button id="sqr_r"><p>&#8730;</p></button>
-			<button id="fact"><p>x!</p></button>
-			<button class="oper" data-oper="divid"><p>/</p></button>
+               <input class="button" type="button" value="7" onClick="calc.display.value+=7">
+               <input class="button" type="button" value="8" onClick="calc.display.value+=8">
+               <input class="button" type="button" value="9" onClick="calc.display.value+=9">
+               <input class="button" type="button" value="/" onClick="calc.display.value+='/'">
+      
+               <input class="button" type="button" value="4" onClick="calc.display.value+=4">
+               <input class="button" type="button" value="5" onClick="calc.display.value+=5">
+               <input class="button" type="button" value="6" onClick="calc.display.value+=6">
+               <input class="button" type="button" value="*" onClick="calc.display.value+='*'">
 
-			<button class="num" data-num="7"><p>7</p></button>
-			<button class="num" data-num="8"><p>8</p></button>
-			<button class="num" data-num="9"><p>9</p></button>
-			<button class="oper" data-oper="multi"><p>*</p></button>
-			<button class="num" data-num="4"><p>4</p></button>
-			<button class="num" data-num="5"><p>5</p></button>
-			<button class="num" data-num="6"><p>6</p></button>
-			<button class="oper" data-oper="minus"><p>-</p></button>
-			<button class="num" data-num="1"><p>1</p></button>
-			<button class="num" data-num="2"><p>2</p></button>
-			<button class="num" data-num="3"><p>3</p></button>
-			<button class="oper" data-oper="plus"><p>+</p></button>
-			<button class="num" data-num="0"><p>0</p></button>
-			<button class="num" data-num="00"><p>00</p></button>
-			<button class="num" data-num="."><p>.</p></button>
-			<button class="eq" id="eq" data-res=""><p>=</p></button>
-		</div>
-	</div>
-	<script src="script.js" type="text/script"></script>
+               <input class="button" type="button" value="1" onClick="calc.display.value+=1">
+               <input class="button" type="button" value="2" onClick="calc.display.value+=2">
+               <input class="button" type="button" value="3" onClick="calc.display.value+=3">
+               <input class="button" type="button" value="-" onClick="calc.display.value+='-'">
+
+               <input class="button" type="button" value="0" onClick="calc.display.value+=0">
+               <input class="button" type="button" value="." onClick="calc.display.value+='.'">
+               <input class="button" type="button" value="=" onClick="evaluation(this.form)">
+               <input class="button" type="button" value="+" onClick="calc.display.value+='+'">
+          </div>
+     </form>
+</div>
+<script src="script.js"></script>
+
 </body>
 </html>

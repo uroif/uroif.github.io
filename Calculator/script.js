@@ -15,10 +15,30 @@ function backspace(calc) {
     calc.display.value = calc.display.value.substring(0, size - 1);
 }
 
-function resetfunction(calc) {
+function Resetfunction(calc) {
     calc.display.value = "";
 
     flag = 0;
+}
+
+function cos_function() {
+    flag += 1;
+    calc.display.value += Math.cos();
+}
+
+function sin_function() {
+    flag += 1;
+    calc.display.value += Math.sin();
+}
+
+function tan_function() {
+    flag += 1;
+    calc.display.value += Math.tan();
+}
+
+function log_function() {
+    flag += 1;
+    calc.display.value += Math.log();
 }
 
 function sqrt_function() {
@@ -26,9 +46,22 @@ function sqrt_function() {
     calc.display.value = Math.sqrt(calc.display.value);
 }
 
+function factorial() {
+    flag += 1;
+    calc.display.value = Math.factorial(calc.display.value);
+}
+
 function sqr_function() {
     flag += 1;
     calc.display.value = Math.pow(calc.display.value, 2);
+}
+
+function fact(x) {
+    factvar = 1;
+    for (i = 1; i <= x; i++) {
+        factvar = factvar * i;
+    }
+    return factvar;
 }
 
 function fact_function(x) {
@@ -45,6 +78,11 @@ function fact_function(x) {
     calc.display.value = facto(calc.display.value);
 }
 
+function power_function(x) {
+    flag += 1;
+    calc.display.value += Math.pow(x,y);
+}
+
 function evaluation(calc) {
     n = calc.display.value;
     var size = calc.display.value.length;
@@ -52,7 +90,7 @@ function evaluation(calc) {
     if (isNaN(lastchar) && lastchar != ")" && lastchar != "!") {
         calc.display.value = "syntax error";
     } else if (flag != 0) {
-        calc.display.value = "error";
+        calc.display.value = "error:paranthesis";
     } else {
         result = eval(n);
         calc.display.value = result;
