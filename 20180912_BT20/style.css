@@ -11,6 +11,7 @@ body {
 	background-color: #E0E0E0;
 }
 
+/*-----STYLE FOR HOMEPAGE-----*/
 #wrap {
 	margin-top: 1%;
 }
@@ -29,7 +30,6 @@ header {
 	color: #2196F3;
 	width: 50%;
 	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-	/*transition: all 0.5s ease;*/
 	animation: anim_title 0.5s ease;
 }
 
@@ -65,7 +65,7 @@ section {
 	width: 100%;
 	margin: auto;
 	margin-top: 12%;
-	padding-bottom: 33%;
+	padding-bottom: 40%;
 	border: 3px solid #212121;
 	overflow: hidden;
 	animation: anim_section 1s ease;
@@ -76,7 +76,7 @@ section {
 @keyframes anim_section {
 	0% {left: -100%; padding-bottom: 0%; opacity: 0;}
 	50% {left: 0%; padding-bottom: 0%; opacity: 0.5;}
-	100% {padding-bottom: 33%; opacity: 1;}
+	100% {padding-bottom: 40%; opacity: 1;}
 }
 
 .txt {
@@ -97,23 +97,130 @@ section {
 	100% {margin-top: 3%;}
 }
 
+.txt2 {
+	position: absolute;
+	margin-top: 15%;
+	font-size: 6vmin;
+	color: #212121;
+	text-align: center;
+	font-family: 'Architects Daughter', Arial, sans-serif;
+	width: 100%;
+	animation: anim_txt2 1s ease;
+	animation-delay: 3.5s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes anim_txt2 {
+	0% {opacity: 0; font-size: 1vmin; margin-top: 23%;}
+	100% {opacity: 1; font-size: 6vmin; margin-top: 15%;}
+}
+
 .play {
 	position: absolute;
 	width: 100%;
-	margin-top: 18%;
+	margin-top: 22%;
     text-align: center;
-	animation: anim_play 1s ease-in-out;
+	animation: anim_play 1.2s ease;
 	animation-delay: 2s;
 	animation-fill-mode: backwards;
 }
 
 @keyframes anim_play {
-	0% {left: -70%;}
-	100% {left: 0%;}
+	0% {left: -70%; transform: rotate(-45deg);}
+	100% {left: 0%; transform: rotate(0deg);}
 }
 
 .fa-car-side {
 	font-size: 15vmin;
 	color: #F44336;
 	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*-----STYLE FOR QUIZ PAGES-----*/
+.p_txt {
+	position: absolute;
+	margin-top: 3%;
+	font-size: 6vmin;
+	color: #212121;
+	text-align: center;
+	font-family: 'Architects Daughter', Arial, sans-serif;
+	width: 100%;
+	animation: anim_txt 1s ease;
+	animation-fill-mode: backwards;
+}
+
+@keyframes anim_txt {
+	0% {margin-top: -15%;}
+	100% {margin-top: 3%;}
+}
+
+.p_title {
+	position: absolute;
+	bottom: 0;
+	font-family: 'Caesar Dressing', Arial, sans-serif;
+	font-size: 10vmin;
+	color: #2196F3;
+	width: 50%;
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.p_top_car {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	text-align: right;
+}
+
+.p_top_car img {
+	width: 50%;
+	margin-top: 6%;
+	filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.p_wrap {
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	margin-top: 12%;
+	padding-bottom: 40%;
+	border: 3px solid #212121;
+	overflow: hidden;
+}
+
+
+.ans {
+	position: absolute;
+	width: 100%;
+	padding-bottom: 20%;
+	margin: auto;
+	margin-top: 17%;
+	background-color: blue;
+}
+
+.select {
+	position: absolute;
+	width: 50%;
+	padding-bottom: 6%;
+	background-color: green;
+}
+
+.ansA {
+	top: 0;
+	left: 0;
+}
+
+.ansB {
+	top: 0;
+	right: 0;
+}
+
+.ansC {
+	left: 0;
+	bottom: 0;
+}
+
+.ansD {
+	right: 0;
+	bottom: 0;
 }
