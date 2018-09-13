@@ -1,0 +1,196 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 5%;
+	position: relative;
+}
+
+#container {
+	position: absolute;
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+/*-----STYLE FOR MUMMY CLOCK-----*/
+.main {
+	position: absolute;
+	width: 100%;
+	padding-top: 100%;
+	background-color: #FF5722;
+    border: 1px solid #454545;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.8);
+}
+
+.main .num {
+    font-size: 8vmin;
+}
+
+.num {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 10%;
+}
+
+.n12 {
+    top: 0%;
+    left: 45%;
+}
+
+.n3 {
+	top: 45%;
+    right: 0;
+}
+
+.n6 {
+    left: 45%;
+	bottom: 0;	
+}
+
+.n9 {
+	left: 0;
+	top: 45%;
+}
+
+.main_inside {
+	position: absolute;
+	width: 80%;
+	padding-top: 80%;
+	background-color: #4FC3F7;
+	border: 1px solid #454545;
+	border-radius: 50%;
+	top: 10%;
+    left: 10%;
+}
+
+.main_txt {
+	position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 35%;
+    text-align: center;
+    font-size: 5vmin;
+}
+
+.dot {
+	position: absolute;
+	width: 2%;
+	padding-top: 2%;
+	background-color: red;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	left: 49%;
+    top: 49%;
+    z-index: 2
+}
+
+/*-----STYLE FOR INSIDE CLOCKS-----*/
+.clk {
+	position: absolute;
+	width: 26%;
+	padding-top: 26%;
+	background-color: #90A4AE;	
+	border: 1px solid #454545;
+	border-radius: 50%;
+}
+
+.clk .num {
+	font-size: 3vmin;
+	font-weight: bold;
+}
+
+.clk .n12 {
+    top: 0%;
+    left: 45%;
+}
+
+.clk .n3 {
+	top: 45%;
+    right: 3%;
+}
+
+.clk .n6 {
+    left: 45%;
+	bottom: 0;	
+}
+
+.clk .n9 {
+	left: 3%;
+	top: 45%;
+}
+
+.clk_inside {
+	position: absolute;
+	width: 70%;
+	padding-top: 70%;
+	background-color: #ECEFF1;	
+	border: 1px solid #454545;
+	border-radius: 50%;
+    top: 15%;
+    left: 15%;
+}
+
+.clk_dot {
+	position: absolute;
+	width: 10%;
+	padding-top: 10%;
+	background-color: red;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	left: 45%;
+    top: 45%;
+}
+
+.txt {
+	position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+    font-size: 1.5vmin;
+}
+
+.clk1 {
+	left: 17%;
+    bottom: 37%;
+}
+
+.clk2 {
+	right: 17%;
+    bottom: 37%;}
+
+.clk3 {
+	left: 37%;
+	bottom: 17%;
+}
+
+.clock-face {
+	position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#h_hand, #m_hand, #s_hand, #s_tail {
+	position: absolute;
+    stroke: black;
+}
+
+#h_hand {
+    stroke-width: 5px;
+}
+
+#m_hand {
+    stroke-width: 3px;
+}
+
+#s_hand, #s_tail {
+    stroke: #D50000;
+    stroke-width: 1px;
+}

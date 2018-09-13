@@ -22,7 +22,7 @@ function clean(calc) {
 
 function pct() {
     x += 1;
-    calc.display.value = Math.round(eval(calc.display.value) * 100) + '%';
+    calc.display.value = eval(calc.display.value)/100;
 }
 
 function sqr() {
