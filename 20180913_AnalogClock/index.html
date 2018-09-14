@@ -4,17 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Analog Clock</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<script src="script.js"></script>
 </head>
 <body>
 	<div id="container">
 
 		<div class="main">
 			<svg class="clock-face" width="100%" height="100%">
-				<line id="h_hand" x1="50%" y1="50%" x2="50%" y2="20%" />
-				<line id="m_hand" x1="50%" y1="50%" x2="50%" y2="11%" />
-				<line id="s_hand" x1="50%" y1="50%" x2="50%" y2="6%" />
-				<line id="s_tail" x1="50%" y1="50%" x2="50%" y2="40%" />
+				<line class="hour" x1="50%" y1="50%" x2="50%" y2="20%" />
+				<line class="min" x1="50%" y1="50%" x2="50%" y2="11%" />
+				<line class="second" x1="50%" y1="50%" x2="50%" y2="6%" />
 			</svg>
 			<p class="num n12">12</p>
 			<p class="num n3">3</p>
@@ -27,10 +25,9 @@
 
 		<div class="clk clk1">
 			<svg class="clock-face" width="100%" height="100%">
-				<line id="h_hand" x1="50%" y1="50%" x2="50%" y2="20%" />
-				<line id="m_hand" x1="50%" y1="50%" x2="50%" y2="11%" />
-				<line id="s_hand" x1="50%" y1="50%" x2="50%" y2="6%" />
-				<line id="s_tail" x1="50%" y1="50%" x2="50%" y2="40%" />
+<!-- 				<line class="hour" x1="50%" y1="50%" x2="50%" y2="20%" />
+				<line class="min" x1="50%" y1="50%" x2="50%" y2="11%" />
+				<line class="second" x1="50%" y1="50%" x2="50%" y2="6%" /> -->
 			</svg>
 			<p class="num n12">12</p>
 			<p class="num n3">3</p>
@@ -64,6 +61,8 @@
 			</div>			
 		</div>
 	</div>
+
+	<script src="script.js"></script>
 
 </body>
 </html>

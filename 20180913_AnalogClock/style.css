@@ -7,7 +7,7 @@
 body {
 	max-width: 600px;
 	margin: auto;
-	margin-top: 5%;
+	margin-top: 1%;
 	position: relative;
 }
 
@@ -22,7 +22,7 @@ body {
 	position: absolute;
 	width: 100%;
 	padding-top: 100%;
-	background-color: #FF5722;
+	background-color: #f1c40f;
     border: 1px solid #454545;
     border-radius: 50%;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.8);
@@ -63,7 +63,7 @@ body {
 	position: absolute;
 	width: 80%;
 	padding-top: 80%;
-	background-color: #4FC3F7;
+	background-color: #dddddd;
 	border: 1px solid #454545;
 	border-radius: 50%;
 	top: 10%;
@@ -177,20 +177,20 @@ body {
     z-index: 1;
 }
 
-#h_hand, #m_hand, #s_hand, #s_tail {
+.hour, .min, .second, .s_sec {
 	position: absolute;
     stroke: black;
 }
 
-#h_hand {
+.hour {
     stroke-width: 5px;
 }
 
-#m_hand {
+.min {
     stroke-width: 3px;
 }
 
-#s_hand, #s_tail {
+.second, .s_sec {
     stroke: #D50000;
     stroke-width: 1px;
 }
