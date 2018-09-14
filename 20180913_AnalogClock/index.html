@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Analog Clock</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="script.js"></script>
+
 </head>
 <body>
 	<div id="container">
@@ -35,6 +37,32 @@
 
 		</div>
 
+		<div class="clk clk2">
+			<svg class="clock_face" width="100%" height="100%">
+				<line id="hour2" x1="50%" y1="50%" x2="50%" y2="32%" />
+				<line id="min2" x1="50%" y1="50%" x2="50%" y2="24%" />
+				<line id="second2" x1="50%" y1="50%" x2="50%" y2="6%" />
+			</svg>
+      		<p class="num n12">12</p>
+			<p class="num n3">3</p>
+			<p class="num n6">6</p>
+			<p class="num n9">9</p>
+
+			<div class="dash dash1"></div>
+			<div class="dash dash2"></div>
+			<div class="dash dash3"></div>
+			<div class="dash dash4"></div>
+			<div class="dash dash5"></div>
+			<div class="dash dash6"></div>
+			<div class="dash dash7"></div>
+			<div class="dash dash8"></div>
+
+			<div class="clk_inside clk1_inside">
+			<div class="txt">ENG</div>				
+			<div class="clk_dot"></div>
+			</div>			
+		</div>
+
 		<div class="clk clk1">
 			<svg class="clock_face" width="100%" height="100%">
 				<line id="hour1" x1="50%" y1="50%" x2="50%" y2="32%" />
@@ -60,32 +88,6 @@
 			<div class="txt">USA</div>
 			<div class="clk_dot"></div>
 			</div>
-		</div>
-
-		<div class="clk clk2">
-			<svg class="clock_face" width="100%" height="100%">
-				<line id="hour2" x1="50%" y1="50%" x2="50%" y2="32%" />
-				<line id="min2" x1="50%" y1="50%" x2="50%" y2="24%" />
-				<line id="second2" x1="50%" y1="50%" x2="50%" y2="6%" />
-			</svg>
-      		<p class="num n12">12</p>
-			<p class="num n3">3</p>
-			<p class="num n6">6</p>
-			<p class="num n9">9</p>
-
-			<div class="dash dash1"></div>
-			<div class="dash dash2"></div>
-			<div class="dash dash3"></div>
-			<div class="dash dash4"></div>
-			<div class="dash dash5"></div>
-			<div class="dash dash6"></div>
-			<div class="dash dash7"></div>
-			<div class="dash dash8"></div>
-
-			<div class="clk_inside clk1_inside">
-			<div class="txt">ENG</div>				
-			<div class="clk_dot"></div>
-			</div>			
 		</div>
 
 		<div class="clk clk3">
@@ -115,7 +117,6 @@
 		</div>
 	</div>
 
-	<script src="script.js"></script>
 
 </body>
 </html>
