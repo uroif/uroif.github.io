@@ -23,9 +23,15 @@ body {
 	width: 100%;
 	padding-top: 100%;
 	background-color: #424242;
-    border: 1px solid #454545;
-    border-radius: 50%;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.8);
+  border: 1px solid #454545;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.8);
+  animation: anim_main 1s ease;
+}
+
+@keyframes anim_main {
+  0% {opacity: 0; top: 5%;}
+  100% {opacity: 1; top: 0;}
 }
 
 .main .num {
@@ -66,10 +72,10 @@ body {
 	padding-top: 74%;
 	background-color: #dddddd;
 	border: 1px solid #454545;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.8);
 	border-radius: 50%;
 	top: 13%;
-    left: 13%;
+  left: 13%;
 }
 
 .main_txt {
@@ -161,7 +167,6 @@ img {
 	background-color: #757575;	
 	border-radius: 50%;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
-
 }
 
 .clk .num {
@@ -223,15 +228,40 @@ img {
 .clk1 {
 	left: 17%;
     bottom: 37%;
+  animation: anim_clk1 1s ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anim_clk1 {
+  0% {opacity: 0; bottom: 42%;}
+  100% {opacity: 1; bottom: 37%;}
 }
 
 .clk2 {
 	right: 17%;
-    bottom: 37%;}
+    bottom: 37%;
+  animation: anim_clk2 1s ease;
+  animation-delay: 0.6s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anim_clk2 {
+  0% {opacity: 0; bottom: 42%;}
+  100% {opacity: 1; bottom: 37%;}
+}
 
 .clk3 {
 	left: 37%;
 	bottom: 17%;
+  animation: anim_clk3 1s ease;
+  animation-delay: 0.9s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anim_clk3 {
+  0% {opacity: 0; bottom: 12%;}
+  100% {opacity: 1; bottom: 17%;}
 }
 
 .clock_face {
