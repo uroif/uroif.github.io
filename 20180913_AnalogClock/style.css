@@ -66,6 +66,7 @@ body {
 	padding-top: 74%;
 	background-color: #dddddd;
 	border: 1px solid #454545;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.8);
 	border-radius: 50%;
 	top: 13%;
     left: 13%;
@@ -78,6 +79,12 @@ body {
     left: 35%;
     text-align: center;
     font-size: 5vmin;
+    font-family: 'Courier New', monospace;
+}
+
+img {
+	position: absolute;
+	top: 0;
 }
 
 .dash {
@@ -88,51 +95,51 @@ body {
 }
 
 .dash1 {
-  top: 12%;
-  right: 25%;
+  top: 11%;
+  right: 24.5%;
   transform: rotate(120deg);
 }
 
 .dash2 {
-  top: 28%;
+  top: 27.5%;
   right: 9%;
   transform: rotate(150deg);
 }
 
 .dash3 {
-  top: 70%;
+  top: 71%;
   right: 9%;
-  transform: rotate(215deg);
+  transform: rotate(210deg);
 }
 
 .dash4 {
   top: 87%;
   right: 25%;
-  transform: rotate(235deg);
+  transform: rotate(240deg);
 }
 
 .dash5 {
-  top: 86%;
-  right: 70%;
+  top: 87.5%;
+  right: 69%;
   transform: rotate(120deg);
 }
 
 .dash6 {
-  top: 71%;
+  top: 71.5%;
   right: 85%;
   transform: rotate(150deg);
 }
 
 .dash7 {
-  top: 28%;
+  top: 27.5%;
   right: 85%;
-  transform: rotate(215deg);
+  transform: rotate(210deg);
 }
 
 .dash8 {
-  top: 13%;
-  right: 70%;
-  transform: rotate(235deg);
+  top: 11%;
+  right: 69%;
+  transform: rotate(240deg);
 }
 
 .dot {
@@ -152,13 +159,13 @@ body {
 	width: 26%;
 	padding-top: 26%;
 	background-color: #757575;	
-	border: 1px solid #454545;
 	border-radius: 50%;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+
 }
 
 .clk .num {
 	font-size: 2.5vmin;
-	/*font-weight: bold;*/
 }
 
 .clk .n12 {
@@ -186,10 +193,10 @@ body {
 	width: 60%;
 	padding-top: 60%;
 	background-color: #ECEFF1;	
-	border: 1px solid #454545;
 	border-radius: 50%;
     top: 20%;
     left: 20%;
+    /*box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);*/
 }
 
 .clk_dot {
@@ -209,6 +216,7 @@ body {
     top: 16%;
     left: 25%;
     text-align: center;
+    font-family: Courier, monospace;
     font-size: 2vmin;
 }
 
