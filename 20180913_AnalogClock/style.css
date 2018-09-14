@@ -22,7 +22,7 @@ body {
 	position: absolute;
 	width: 100%;
 	padding-top: 100%;
-	background-color: #f1c40f;
+	background-color: #424242;
     border: 1px solid #454545;
     border-radius: 50%;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.8);
@@ -37,37 +37,38 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     width: 10%;
+    color: #ffffff;
 }
 
 .n12 {
-    top: 0%;
+    top: 1%;
     left: 45%;
 }
 
 .n3 {
 	top: 45%;
-    right: 0;
+    right: 1%;
 }
 
 .n6 {
     left: 45%;
-	bottom: 0;	
+	bottom: 1%;	
 }
 
 .n9 {
-	left: 0;
+	left: 1%;
 	top: 45%;
 }
 
 .main_inside {
 	position: absolute;
-	width: 80%;
-	padding-top: 80%;
+	width: 74%;
+	padding-top: 74%;
 	background-color: #dddddd;
 	border: 1px solid #454545;
 	border-radius: 50%;
-	top: 10%;
-    left: 10%;
+	top: 13%;
+    left: 13%;
 }
 
 .main_txt {
@@ -79,15 +80,69 @@ body {
     font-size: 5vmin;
 }
 
+.dash {
+  position: absolute;
+  width: 6%;
+  padding-top: 1.2%;
+  background-color: #ffffff;
+}
+
+.dash1 {
+  top: 12%;
+  right: 25%;
+  transform: rotate(120deg);
+}
+
+.dash2 {
+  top: 28%;
+  right: 9%;
+  transform: rotate(150deg);
+}
+
+.dash3 {
+  top: 70%;
+  right: 9%;
+  transform: rotate(215deg);
+}
+
+.dash4 {
+  top: 87%;
+  right: 25%;
+  transform: rotate(235deg);
+}
+
+.dash5 {
+  top: 86%;
+  right: 70%;
+  transform: rotate(120deg);
+}
+
+.dash6 {
+  top: 71%;
+  right: 85%;
+  transform: rotate(150deg);
+}
+
+.dash7 {
+  top: 28%;
+  right: 85%;
+  transform: rotate(215deg);
+}
+
+.dash8 {
+  top: 13%;
+  right: 70%;
+  transform: rotate(235deg);
+}
+
 .dot {
 	position: absolute;
-	width: 2%;
-	padding-top: 2%;
-	background-color: red;
-	border: 1px solid #000000;
+	width: 3%;
+	padding-top: 3%;
+	background-color: #000000;
 	border-radius: 50%;
-	left: 49%;
-    top: 49%;
+	left: 48.5%;
+    top: 48.5%;
     z-index: 2
 }
 
@@ -96,65 +151,65 @@ body {
 	position: absolute;
 	width: 26%;
 	padding-top: 26%;
-	background-color: #90A4AE;	
+	background-color: #757575;	
 	border: 1px solid #454545;
 	border-radius: 50%;
 }
 
 .clk .num {
-	font-size: 3vmin;
-	font-weight: bold;
+	font-size: 2.5vmin;
+	/*font-weight: bold;*/
 }
 
 .clk .n12 {
-    top: 0%;
+    top: 4%;
     left: 45%;
 }
 
 .clk .n3 {
 	top: 45%;
-    right: 3%;
+    right: 4%;
 }
 
 .clk .n6 {
     left: 45%;
-	bottom: 0;	
+	bottom: 4%;	
 }
 
 .clk .n9 {
-	left: 3%;
+	left: 4%;
 	top: 45%;
 }
 
 .clk_inside {
 	position: absolute;
-	width: 70%;
-	padding-top: 70%;
+	width: 60%;
+	padding-top: 60%;
 	background-color: #ECEFF1;	
 	border: 1px solid #454545;
 	border-radius: 50%;
-    top: 15%;
-    left: 15%;
+    top: 20%;
+    left: 20%;
 }
 
 .clk_dot {
 	position: absolute;
 	width: 10%;
 	padding-top: 10%;
-	background-color: red;
-	border: 1px solid #000000;
+	background-color: #000000;
 	border-radius: 50%;
 	left: 45%;
     top: 45%;
+    z-index: 2
 }
 
 .txt {
 	position: absolute;
     width: 50%;
-    top: 20%;
+    top: 16%;
     left: 25%;
     text-align: center;
-    font-size: 1.5vmin;
+    font-size: 2vmin;
 }
 
 .clk1 {
@@ -171,26 +226,20 @@ body {
 	bottom: 17%;
 }
 
-.clock-face {
+.clock_face {
 	position: absolute;
     top: 0;
     z-index: 1;
 }
 
-.hour, .min, .second, .s_sec {
-	position: absolute;
-    stroke: black;
-}
+/* -----STYLE FOR MUMMY----- */
+#hour, #min, #second {position: absolute; stroke: black;}
+#hour {stroke-width: 1%;}
+#min {stroke-width: 0.6%;}
+#second {stroke: #D50000;stroke-width: 0.3%;}
 
-.hour {
-    stroke-width: 5px;
-}
-
-.min {
-    stroke-width: 3px;
-}
-
-.second, .s_sec {
-    stroke: #D50000;
-    stroke-width: 1px;
-}
+/* STYLE FOR CHILDREN */
+#hour1, #min1, #second1, #hour2, #min2, #second2, #hour3, #min3, #second3 {position: absolute; stroke: black;}
+#hour1, #hour2, #hour3 {stroke-width: 2%;}
+#min1, #min2, #min3 {stroke-width: 1.5%;}
+#second1, #second2, #second3 {stroke: #D50000;stroke-width: 0.5%;}
