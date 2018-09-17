@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 2%;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+#container {
+	width: 100%
+}
+
+h1 {
+	text-align: center;
+	background-color: #039BE5;
+	color: #ffffff;
+	padding: 2%;
+}
+
+#container > div {
+	margin-left: 10%;
+	margin-bottom: 2%;
+}
+
+form {
+	width: 90%;
+	margin-left: 10%;
+}
+
+p.note {
+	margin-top: 0.8%;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 1%;
+    padding-left: 1%;
+    font-size: 0.8em;
+}
+
+label {
+	margin-right: 2%;
+}
+
+input#male, input#female {
+	width: 20px;
+	height: 17px;
+	padding-right: 2%;
+}
+
+button {
+	margin-top: 3%;
+    width: 100px;
+    height: 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+button:focus {
+	outline: none;
+}
