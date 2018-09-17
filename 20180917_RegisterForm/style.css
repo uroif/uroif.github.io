@@ -10,8 +10,8 @@ body {
 	margin-top: 2%;
 	font-family: Arial, sans-serif;
 	font-size: 16px;
-	background-color: #3F51B5;
 	color: #ffffff;
+	background: url(bg3.jpg);
 }
 
 #container {
@@ -62,7 +62,6 @@ button {
     width: 100px;
     height: 30px;
     font-size: 1.1em;
-    border-radius: 5px;
     cursor: pointer;
     background-color: #FF1744;
     color: #ffffff;

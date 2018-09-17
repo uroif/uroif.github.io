@@ -195,12 +195,59 @@ section {
 }
 
 /*STYLE FOR QUIZ FRAME*/
+#status {
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 10%;
+    z-index: 1;
+	font-family: Courier, monospace;
+	color: #388E3C;
+    font-size: 2em;
+}
+
 #test {
-  width: 90%;
-  height: 300px;
-  margin-top: 20%;
-  position: absolute;
-  border:#5AB029 3px solid; 
-  padding: 10px 40px 40px 40px; 
-  background-color: #E5FCE3; 
+	position: absolute;
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 5%;
+    border: 3px solid #212121;
+    padding: 7% 5% 3%;
+    font-family: Quicksand, Arial, sans-serif;
+}
+
+button {
+	width: 10%;
+    padding: 1%;
+    /*border: 1.5px solid #454545;*/
+    background-color: #E53935;
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: Quicksand, Arial, sans-serif;
+    cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
+
+/*STYLE FOR CONGRAT PAGE*/
+#c_wrap {
+	position: absolute;
+}
+
+.t1 {
+	position: absolute;
+}
+
+.t2 {
+	position: absolute;
+}
+
+.girl {
+	position: absolute;
+}
+
+.cup {
+	position: absolute;
 }

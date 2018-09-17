@@ -1,5 +1,5 @@
 var pos = 0, correct = 0;
-var test, test_status, question, choice, choices, chA, chB, chC, chD;
+var test, status, question, choice, choices, chA, chB, chC, chD;
 var questions = [
   ["1 + 1 bằng mấy", "2", "3", "4", "5", "A"],
   ["2 * 2 bằng mấy", "2", "4", "6", "8", "B"],
@@ -15,8 +15,12 @@ function get(x) { // Get the id for short codes
 function makeQuestion() {
   test = get("test");
   if(pos >= questions.length) {
-  	test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
-    get("test_status").innerHTML = "Test completed";
+    if(correct == questions.length) {
+      window.location.assign('congrat.html');
+    } else {
+      get("status").innerHTML = "RẤT TIẾC...";
+      test.innerHTML = "<h2>Bạn đã trả lời đúng " + correct + " trên " + questions.length + " câu hỏi.</h2><br>Bạn có muốn chơi lại?<br><br>" + "<button onclick='reload()'> Chơi lại </button>";
+    };
 
     pos = 0; // Reset the result
     correct = 0; // Reset the result
@@ -24,19 +28,19 @@ function makeQuestion() {
     return false;
   };
 
-  get("test_status").innerHTML = "Câu "+ (pos + 1);
+  get("status").innerHTML = "Câu "+ (pos + 1);
   question = questions[pos][0];
   chA = questions[pos][1];
   chB = questions[pos][2];
   chC = questions[pos][3];
   chD = questions[pos][4];
 
-  test.innerHTML = "<h3>" + question + "</h3>" + "<br><br>";
+  test.innerHTML = "<br><h3>" + question + "</h3><br>";
   test.innerHTML += "<input type='radio' name='choices' value='A'> " + chA + "<br>";
   test.innerHTML += "<input type='radio' name='choices' value='B'> " + chB + "<br>";
   test.innerHTML += "<input type='radio' name='choices' value='C'> " + chC + "<br>";  
   test.innerHTML += "<input type='radio' name='choices' value='D'> " + chD + "<br><br>";
-  test.innerHTML += "<button onclick='checkAnswer()'> Submit </button>";
+  test.innerHTML += "<button onclick='checkAnswer()'> Đồng ý </button>";
 };
 
 function checkAnswer() {
@@ -54,5 +58,9 @@ function checkAnswer() {
   pos++;
   makeQuestion();
 };
+
+function reload() {
+  location.reload();
+}
 
 window.addEventListener("load", makeQuestion);
