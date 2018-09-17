@@ -10,20 +10,22 @@ body {
 	margin-top: 2%;
 	font-family: Arial, sans-serif;
 	font-size: 16px;
+	background-color: #3F51B5;
+	color: #ffffff;
 }
 
 #container {
 	width: 100%
+	position: relative;
 }
 
 h1 {
 	text-align: center;
-	background-color: #039BE5;
 	color: #ffffff;
 	padding: 2%;
 }
 
-#container > div {
+.guide {
 	margin-left: 10%;
 	margin-bottom: 2%;
 }
@@ -61,8 +63,40 @@ button {
     height: 30px;
     font-size: 1.1em;
     border-radius: 5px;
+    cursor: pointer;
+    background-color: #FF1744;
+    color: #ffffff;
 }
 
 button:focus {
 	outline: none;
 }
+
+/*STYLE FOR RESULT PAGE*/
+#info p {
+	display: inline-block;
+	font-weight: bold;
+}
+
+#r_container {
+	width: 100%;
+	position: relative;
+}
+
+#r_container > div {
+	margin-left: 10%;
+	margin-bottom: 2%;
+}
+
+.congrat {
+	position: absolute;
+	font-size: 40px;
+	animation: anim_congrat 2s ease;
+	bottom: 0;
+}
+
+@keyframes anim_congrat {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
