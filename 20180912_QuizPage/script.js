@@ -1,11 +1,11 @@
 var pos = 0, correct = 0;
 var test, status, question, choice, choices, chA, chB, chC, chD;
 var questions = [
-  ["1 + 1 bằng mấy", "2", "3", "4", "5", "A"],
-  ["2 * 2 bằng mấy", "2", "4", "6", "8", "B"],
-  ["3 / 3 bằng mấy", "1", "2", "3", "4", "A"],
-  ["4 + 4 bằng mấy", "8", "88", "2", "44", "A"],
-  ["6 + 9 bằng mấy", "69", "96", "15", "51", "C"]
+  ["Công ty Ford Motor có trụ sở đặt tại bang nào ở Mỹ?", "California", "Hawaii", "Michigan", "Nevada", "C"],
+  ["Người sáng lập hãng BMW tên là gì?", "Gustav Otto", "Franz Josef Popp", "Martin Stolle", "Karl Marx", "B"],
+  ["Chiếc xe đầu tiên của hãng xe Lamborghini có tên là gì?", "Lamborghini Miura", "Lamborghini Baby", "Lamborghini Islero GT", "Lamborghini 350 GT", "D"],
+  ["Dòng xe mới nhất do nhà sản xuất xe ô tô Maybach sản xuất có tên là gì?", "Mercedes-Maybach G 650 Landaulet", "Mercedes-Maybach Monster", "Mercedes-Maybach S600", "Mercedes-Maybach S600 Pullman", "A"],
+  ["Tổng giám đốc Nhà máy sản xuất ô tô VinFast là ai?", "Vin Diesel", "James B. Deluca", "Phạm Nhật Vượng", "Gianni Infantino", "B"]
   ];
 
 function get(x) { // Get the id for short codes 

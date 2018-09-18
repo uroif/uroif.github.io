@@ -232,22 +232,37 @@ button:focus {
 }
 
 /*STYLE FOR CONGRAT PAGE*/
+#congrat {
+    background: url(images/bg.jpg) no-repeat;
+    background-color: #011547;
+}
+
 #c_wrap {
 	position: absolute;
+	width: 100%;
+    padding-top: 60%;
 }
 
 .t1 {
 	position: absolute;
+	text-align: center;
+    color: #ffffff;
+    width: 50%;
+    right: 25%;
+	bottom: 10%;
+    font-family: Quicksand, Arial, sans-serif;
+    font-size: 3em;
 }
 
 .t2 {
 	position: absolute;
 }
 
-.girl {
+.t3 {
 	position: absolute;
 }
 
-.cup {
+.t4 {
 	position: absolute;
 }
+
