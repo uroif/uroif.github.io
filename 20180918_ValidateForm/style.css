@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 2%;
+	font-family: Arial, sans-serif;
+	color: #ffffff;
+	background: url(bg1.jpg) no-repeat;	
+}
+
+@media all and (min-width: 800px) {
+    body{font-size: 20px;}
+}
+
+@media all and (max-width: 800px) {
+    body{font-size: 1.8vw;}
+}
+
+#container {
+	width: 46%;
+	position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.8);
+    margin: auto;
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+	padding: 5%;
+}
+
+.guide {
+	margin-bottom: 5%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+form {
+	width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+p.note, span {
+	margin-top: 0.8%;
+	font-size: 0.7em;
+}
+
+input {
+    width: 50%;
+    padding-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 1%;
+    font-size: 0.7em;
+}
+
+label {
+	cursor: pointer;
+	font-size: 0.7em;
+}
+
+input#male, input#female {
+	width: 20px;
+	height: 16px;
+	padding-right: 2%;
+	cursor: pointer;
+}
+
+input#checkbox {
+	width: 20px;
+	height: 16px;
+	margin-right: 1%;
+	cursor: pointer;
+}
+
+button {
+	margin: 5% 0;
+    width: 100px;
+    height: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #42A5F5;
+    color: #ffffff;
+}
+
+button:focus {
+	outline: none;
+}
+
+/*STYLE FOR RESULT PAGE*/
+#info p {
+	display: inline-block;
+	font-weight: bold;
+}
+
+#r_container {
+	width: 100%;
+	position: relative;
+}
+
+#r_container > div {
+	margin-left: 10%;
+	margin-bottom: 2%;
+}
+
+.congrat {
+	position: absolute;
+	font-size: 40px;
+	animation: anim_congrat 2s ease;
+	bottom: 0;
+}
+
+@keyframes anim_congrat {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+

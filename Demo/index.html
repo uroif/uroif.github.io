@@ -1,28 +1,14 @@
 <html>
-<title> Square Root Calculator in JavaScript</title>
+<title> Demo </title>
+
 <body>
-<center>
- <script>
- function calcsqrt(form) 
-{
-	var number=form.number.value;
-	var ans=Math.sqrt(number);
-	if (number<0) ans="Invalid";
-	document.getElementById('ok').innerText = ans;
-}
- </script>
-	<table width="40%" border="8" cellpadding="5" cellspacing="15" bgcolor="lightgreen">
-<tr>
-<td align="center" ><h3> <font face="comic sans ms" color="blue" >Square Root Calculator </font></h3>
-<form action="#" method="get" name="form">
- <font size="4" face="comic sans ms" color="blue">√</font><input name="number" type="text" id="ok" class="regfont" size="6"/>
- <br /><br /><input type="button" onclick="calcsqrt(this.form)" value="Find the Square Root"/>
- <br /><br /><font face="comic sans ms" color="blue"> 
-				 The Square Root Value is:<input name="sqrt" type="text" class="regfont" size="20"/><br /><br />
-</form>
-</td>
-</tr>
-</table>
- </center>
- </body>
- </html>
+
+<div>
+	<span v-for="n in 10"> {{ n }}</span>
+</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
