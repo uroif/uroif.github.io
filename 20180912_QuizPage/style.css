@@ -197,7 +197,7 @@ section {
 /*STYLE FOR QUIZ FRAME*/
 #status {
     position: absolute;
-    margin-top: 22%;
+    margin-top: 16%;
     margin-left: 10%;
     z-index: 1;
 	font-family: Courier, monospace;
@@ -208,9 +208,10 @@ section {
 #test {
 	position: absolute;
     width: 90%;
-    margin-top: 20%;
+    margin-top: 14%;
     margin-left: 5%;
     border: 3px solid #212121;
+    background-color: #B3E5FC;
     padding: 7% 5% 3%;
     font-family: Quicksand, Arial, sans-serif;
 }
@@ -234,6 +235,7 @@ button:focus {
 /*STYLE FOR CONGRAT PAGE*/
 #congrat {
     background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
     background-color: #011547;
 }
 
@@ -248,21 +250,103 @@ button:focus {
 	text-align: center;
     color: #ffffff;
     width: 50%;
-    right: 25%;
-	bottom: 10%;
-    font-family: Quicksand, Arial, sans-serif;
+	bottom: -10%;
+    font-family: Comfortaa, Arial, sans-serif;
     font-size: 3em;
+    animation: anim_t1 2.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim_t1 {
+	0% {opacity: 0; transform: translateX(250%);}
+	20% {opacity: 1; transform: translateX(90%);}
+	80% {opacity: 1; transform: translateX(30%);}
+	100% {opacity: 0; transform: translateX(-150%);}
 }
 
 .t2 {
 	position: absolute;
+	text-align: center;
+    color: #ffffff;
+    width: 60%;
+	bottom: -10%;
+    font-family: Comfortaa, Arial, sans-serif;
+    font-size: 3em;
+    animation: anim_t2 2.5s linear;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+	transform: translateX(-180%);
 }
+
+@keyframes anim_t2 {
+	0% {opacity: 0; transform: translateX(250%);}
+	20% {opacity: 1; transform: translateX(60%);}
+	80% {opacity: 1; transform: translateX(10%);}
+	100% {opacity: 0; transform: translateX(-180%);}
+}
+
 
 .t3 {
 	position: absolute;
+	text-align: center;
+    color: #ffffff;
+    width: 80%;
+	bottom: -10%;
+    font-family: Comfortaa, Arial, sans-serif;
+    font-size: 2.5em;
+    animation: anim_t3 2.5s linear;
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
+	transform: translateX(-180%);
 }
+
+@keyframes anim_t3 {
+	0% {opacity: 0; transform: translateX(250%);}
+	20% {opacity: 1; transform: translateX(35%);}
+	80% {opacity: 1; transform: translateX(-10%);}
+	100% {opacity: 0; transform: translateX(-180%);}
+}
+
 
 .t4 {
 	position: absolute;
+	text-align: center;
+    color: #ffffff;
+    width: 70%;
+	bottom: -10%;
+    font-family: Comfortaa, Arial, sans-serif;
+    font-size: 3em;
+    animation: anim_t4 2.5s linear;
+    animation-delay: 6s;
+    animation-fill-mode: backwards;
+    transform: translateX(-180%);
+}
+
+@keyframes anim_t4 {
+	0% {opacity: 0; transform: translateX(250%);}
+	20% {opacity: 1; transform: translateX(50%);}
+	80% {opacity: 1; transform: translateX(20%);}
+	100% {opacity: 0; transform: translateX(-180%);}
+}
+
+.t5 {
+	position: absolute;
+	text-align: center;
+    color: #ffffff;
+    width: 50%;
+	bottom: -10%;
+    font-family: Comfortaa, Arial, sans-serif;
+    font-size: 3em;
+    animation: anim_t5 2.5s linear;
+    animation-delay: 8s;
+    animation-fill-mode: backwards;
+    transform: translateX(-180%);
+}
+
+@keyframes anim_t5 {
+	0% {opacity: 0; transform: translateX(250%);}
+	20% {opacity: 1; transform: translateX(80%);}
+	80% {opacity: 1; transform: translateX(20%);}
+	100% {opacity: 0; transform: translateX(-180%);}
 }
 
