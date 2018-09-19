@@ -93,6 +93,14 @@ button:focus {
 	outline: none;
 }
 
+.error {
+	text-align: right;
+    position: absolute;
+    margin-left: 2%;
+    color: red;
+	font-style: italic;
+}
+
 /*STYLE FOR RESULT PAGE*/
 #info p {
 	display: inline-block;

@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Register</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
-	
+
 	<div id="container">
-		
+
 		<h1>REGISTRATION</h1>
 
 		<div class="guide">Please enter your information, it only takes a minute.</div>
 
-		<form id="reg_form" action="result.html" name="form" method="get">
-			<input type="text" name="fullname" placeholder="Full Name" /><br>
-			<input type="text" name="address" placeholder="Address" /><br>
-			<input type="tel" name="tel" placeholder="Phone Number" /><br>
-			<input type="email" name="email" placeholder="example@example.com" /><br>
-			<input type="url" name="url" placeholder="www.facebook.com/example" /><br>
-			<input type="password" name="password" placeholder="Password" /><br>
-			<input type="password" name="password" placeholder="Confirm Password" /><br>
-			<p class="note">Date of Birth</p><input type="date" name="birth"><br>
+		<form id="reg_form" action="result.html" name="form" method="get" onsubmit="return check();">
+			<input type="text" name="fullname" placeholder="Full Name" required /><span class="error er_name"></span><br>
+			<input type="text" name="address" placeholder="Address" required /><span class="error er_add"></span><br>
+			<input type="tel" name="tel" placeholder="Phone Number" required /><span class="error er_tel"></span><br>
+			<input type="email" name="email" placeholder="example@example.com" required /><span class="error er_email"></span><br>
+			<input type="url" name="url" placeholder="https://www.facebook.com/example" required /><span class="error er_fb"></span><br>
+			<input type="password" name="password" placeholder="Password" required /><br>
+			<input type="password" name="cf_password" placeholder="Confirm Password" required /><span class="error er_pw"></span><br>
+			<p class="note">Date of Birth</p><input type="date" name="birth" required><br>
 			<span class="note">Gender:</span>
 			<input type="radio" name="gender" id="male" value="Male" checked="checked" /><label for="male">Male</label>
 			<input type="radio" name="gender" id="female" value="Female" /><label for="female">Female</label>
 			<br>
-			<input type="checkbox" name="agreement" id="checkbox" value="agreement" /><label for="checkbox">I agree to the <u>Terms and Conditions</u>.</label><br>
+			<input type="checkbox" name="agreement" id="checkbox" value="agreement" required /><label for="checkbox">I agree to
+				the <u>Terms and Conditions</u>.</label><br>
 			<button type="submit" name="submit" id="submit" value="Register" />Register</button>
 
 		</form>
 
 	</div>
-	
-<script>
-	
-</script>	
 
+	<script src="script_form.js"></script>
 </body>
+
 </html>
