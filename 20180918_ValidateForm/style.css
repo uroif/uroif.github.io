@@ -13,16 +13,16 @@ body {
 	background: url(bg1.jpg) no-repeat;	
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1000px) {
     body{font-size: 20px;}
 }
 
-@media all and (max-width: 800px) {
-    body{font-size: 1.8vw;}
+@media all and (max-width: 1000px) {
+    body{font-size: 2vw;}
 }
 
 #container {
-	width: 46%;
+	width: 50%;
 	position: relative;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.8);
@@ -32,13 +32,14 @@ body {
 h1 {
 	text-align: center;
 	color: #ffffff;
-	padding: 5%;
+	padding: 3%;
+	font-size: 1.8em;
 }
 
 .guide {
-	margin-bottom: 5%;
+	margin-bottom: 3%;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.75em;
 }
 
 form {
@@ -54,10 +55,10 @@ p.note, span {
 
 input {
     width: 50%;
-    padding-top: 2%;
+    padding-top: 1%;
     margin-bottom: 2%;
     padding-left: 1%;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 
 label {
@@ -80,11 +81,12 @@ input#checkbox {
 }
 
 button {
-	margin: 5% 0;
-    width: 100px;
-    height: 30px;
-    font-size: 1.1em;
-    cursor: pointer;
+	margin: 3% 0;
+    width: 30%;
+	padding: 1.5% 0;
+	font-size: 1em;
+	cursor: pointer;
+	border: 0;
     background-color: #42A5F5;
     color: #ffffff;
 }
@@ -94,9 +96,9 @@ button:focus {
 }
 
 .error {
-	text-align: right;
+	text-align: left;
     position: absolute;
-    margin-left: 2%;
+    margin-left: 1%;
     color: red;
 	font-style: italic;
 }

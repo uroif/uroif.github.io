@@ -7,51 +7,39 @@ function check() {
     pw = document.querySelector('input[name=password]').value;
     cf_pw = document.querySelector('input[name=cf_password]').value;
 
-    if(fnameF(fname)) {
-        if(addF(add)) {
-            if(telF(tel)) {
-                if(emailF(email)) {
-                    if(fbF(fb)) {
-                        if(pwF(pw)) {
-                        }
-                    }
-                }
-            }
-        }
-    }
-    return false;
+    let number = /^[0-9]+$/;
+    let isValid = true;
+    document.querySelectorAll('.error').innerHTML = "";
+
+    if (fname.trim() !== '') {
+        if (add.trim() !== '') {
+            if (tel.match(number)) {
+                if (fb.search('https://www.facebook.com/') !== -1) {
+                    if (pw == cf_pw) {
+                        document.querySelector('.er_pw').innerHTML = "";
+                    } else {
+                        document.querySelector('.er_pw').innerHTML = "Password mismatched.";
+                        isValid = false;
+                    };
+                    document.querySelector('.er_fb').innerHTML = "";
+                } else {
+                    document.querySelector('.er_fb').innerHTML = "Invalid URL.";
+                    isValid = false;
+                };
+                document.querySelector('.er_tel').innerHTML = "";
+            } else {
+                document.querySelector('.er_tel').innerHTML = "Invalid numbers.";
+                isValid = false;
+            };
+            document.querySelector('.er_add').innerHTML = "";
+        } else {
+            document.querySelector('.er_add').innerHTML = "Invalid address.";
+            isValid = false;
+        };
+        document.querySelector('.er_name').innerHTML = "";
+    } else {
+        document.querySelector('.er_name').innerHTML = "Invalid name.";
+        isValid = false;
+    };
+    return isValid;
 };
-
-function fnameF(fname) {
-    if(fname.trim() = '') {
-        document.querySelector('.er_name').value = "Invalid";
-        return false;
-    } 
-    return true;
-}
-
-function addF(add) {
-    if(add.trim() = '') {
-        document.querySelector('.er_add').value = "Invalid";
-        return false;
-    } 
-    return true;       
-}
-
-function telF(tel) {
-    var numbers = /^[0-9]+$/;
-    if(tel.match(number)) {
-        return true;
-    } else {
-        document.querySelector('.er_tel').value = "Invalid";
-        return false;
-    }
-}
-
-function pwF(pw) {
-    if(pw !== cf_pw) {
-        return false;
-    } else {
-        return true;
-    }
-}
