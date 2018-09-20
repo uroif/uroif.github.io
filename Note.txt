@@ -5,3 +5,15 @@ Closure
 Callback
 This
 Bind, Apply, Call
+
+*****************8
+Đại học đang chết dần, hãy tự thiết kế giáo trình cho chính mình.
+
+Những trường Đại học đang chết dần.
+
+Tôi không đề cập đến những học viện, nơi mà có thể vẫn tồn tại trong vài thập kỷ tới.
+
+Điều tôi đang đề cập đến, nó là khuôn mẫu, là mô hình.
+Một mô hình mà để được học, bạn phải:
+1. Chọn một ngành học.
+2. 
