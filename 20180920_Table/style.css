@@ -55,8 +55,12 @@ tr > td:first-child {
     padding: 2% 5%;
 }
 
+tr:nth-child(even) {
+    background: #dddddd;
+}
+
 tr:hover {
-    background-color: #E0E0E0;
+    background-color: #aaaaaa;
 }
 
 img {
