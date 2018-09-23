@@ -3,7 +3,7 @@ var vm = new Vue({
     data: {
         product_name: 'Bike',
         image: './images/green_bike.jpg',
-        inStock: false,
+        inStock: true,
         details: ['Easy driving', 'Safely', 'Fast and Furious'],
         variants: [
             {
