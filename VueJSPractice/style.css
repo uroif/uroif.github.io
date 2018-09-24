@@ -36,6 +36,10 @@ button:focus {
 	background-color: gray;
 }
 
+.textUnderline {
+	text-decoration: line-through;
+}
+
 .color_box {
 	width: 5%;
 	padding-top: 5%;

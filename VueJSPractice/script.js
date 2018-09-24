@@ -1,8 +1,9 @@
 var vm = new Vue({
     el: '#app',
     data: {
-        product_name: 'Bike',
-        image: './images/green_bike.jpg',
+        brand: 'Amazon',
+        productName: 'Bike',
+        selectedVariant: 0,
         inStock: true,
         details: ['Easy driving', 'Safely', 'Fast and Furious'],
         variants: [
@@ -24,14 +25,23 @@ var vm = new Vue({
             this.cart += 1;
         },
         removeFromCart() {
-            if(this.cart < 1) {
+            if (this.cart < 1) {
                 return false;
             } else {
                 this.cart -= 1;
             }
         },
-        updateProduct(variantImage) {
-            this.image = variantImage;
+        updateProduct(index) {
+            this.selectedVariant = index;
+            console.log(index);
         }
-    } 
+    },
+    computed: {
+        title() {
+            return this.brand + ' ' + this.productName;
+        },
+        image() {
+            return this.variants[this.selectedVariant].variantImage
+        }
+    },
 })

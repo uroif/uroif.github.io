@@ -1,6 +1,13 @@
-<html>
-<title>Vue.js Practice</title>
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vue.js Practice</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
@@ -10,31 +17,26 @@
 				<img :src=image />
 			</div>
 			<div class="product_info">
-				<h1>{{ product_name }}</h1>
+				<h1>{{ title }}</h1>
 				<p v-if="inStock">In stock</p>
-				<p v-else>Out of stock</p>
+				<p v-else :disabled="!inStock" :class="{ textUnderline: !inStock }">Out of stock</p>
 
 				<ul>
 					<li v-for="detail in details">{{ detail }}</li>
 				</ul>
 
-				<div class="color_box" 
-					 v-for="variant in variants" 
-					 :key="variant.variantId" 
-					 :style="{ backgroundColor: variant.variantColor }"				 
-					 @mouseover="updateProduct(variant.variantImage)">
+				<div class="color_box"
+					 v-for="(variant, index) in variants" 
+					 :key="variant.variantId"
+					 :style="{ backgroundColor: variant.variantColor }"
+					 @mouseover="updateProduct(index)">
 				</div>
 
-				<button v-on:click="addToCart"
-					 :disabled="!inStock"
-					 :class="{ disabledButton: !inStock }">
-					 Add to Cart
+				<button v-on:click="addToCart" :disabled="!inStock" :class="{ disabledButton: !inStock }">
+					Add to Cart
 				</button>
-				<button class="remove"
-					 @click="removeFromCart"
-					 :disabled="!inStock"
-					 :class="{ disabledButton: !inStock }">
-					 Remove from Cart
+				<button class="remove" @click="removeFromCart" :disabled="!inStock" :class="{ disabledButton: !inStock }">
+					Remove from Cart
 				</button>
 
 				<div class="cart">
