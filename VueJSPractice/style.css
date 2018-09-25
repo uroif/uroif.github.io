@@ -9,6 +9,13 @@ body {
 	margin: auto;
 }
 
+.nav_bar {
+	width: 100%;
+	padding-top: 5%;
+	background-color: lightgreen;
+	margin-bottom: 1%;
+}
+
 button {
 	width: 15%;
 	padding: 2% 0;
