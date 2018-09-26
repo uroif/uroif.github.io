@@ -11,10 +11,62 @@
 
 <body>
 
-    <div id="app">
-        <input type="text" v-on:input="changeValue">
-        <p>{{ message }}</p>
-    </div>
+	<div id="app">
+		<div @mousemove="coordinate">
+			<input type="text" v-on:input="changeValue">
+			<p>{{ test() }}</p><br>
+			<a :href="link">Google</a>
+			<p v-html="testLink"></p><br>
+			<button @click="increment">Press to increase</button>
+			<button @click="count--">Press to decrease</button>
+			<p>I'm {{ count }}</p>
+			<p>Thong bao: {{ count > 10 ? 'Lon hon 10' : 'Nho hon 10' }}</p><br>
+			<button @click="show = !show">An Hien</button>
+			<p v-if="show">Toa do chuot: {{ x }} - {{ y }}</p>
+			<p v-else>Test dieu kien else</p>
+			<p @mousemove.stop>Di chuot qua day khong xac dinh toa do</p><br>
+			<input type="text" v-model="name">
+			<p>Test v-model: {{ name }}</p><br><br>
+			<template v-if="show">
+				<div class="square" @click="redBG = !redBG" :class="{red: redBG}"></div>
+				<div class="square" :class="{red: redBG}"></div>
+				<div class="square"></div>
+				<div class="square" :class="{red: redBG}"></div>
+				<hr>
+				<div class="circle" @click="redBG = !redBG" :class="{red: redBG}"></div>
+				<div class="circle" :class="{red: redBG}"></div>
+				<div class="circle" :class="[color, {red: redBG}]"></div>
+				<div class="circle" :class="color"></div><br>
+				<input type="text" v-model="color">
+				<hr>
+				<div class="square" :style="{backgroundColor: color2}"></div>
+				<div class="square" :style="customStyle"></div>
+				<div class="square" :style="{height: width + 'px'}"></div>
+				<div class="square" :style="[customStyle, {height: width + 'px'}]"></div><br>
+				<input type="text" v-model="color2"><br>
+				<input type="text" v-model="width"><br>
+			</template>
+			<p v-show="show">Test v-show</p>
+			<hr>
+			<button @click="menus.push('Test push')">Add Item</button>
+			<button @click="menus.pop()">Remove Last Item</button>
+			<button @click="menus.splice(1, 1)">Remove Second Item</button>
+			<ul>
+				<li v-for="(menu, index) in menus">{{ menu }} co index la {{ index }}</li>
+			</ul>
+			<hr>
+			<ul>
+				<li v-for="person in people">
+					<p v-for="(info, key, index) in person">{{ index+1 }}-{{ key }}: {{ info }}</p>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div id="app2">
+		<welcome></welcome>
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
 	<script src="script.js"></script>
