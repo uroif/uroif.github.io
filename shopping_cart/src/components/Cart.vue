@@ -8,7 +8,7 @@
             <li>Shopping Cart</li>
         </ul>
 
-        <span class="count">3 items in the bag</span>
+        <span class="count">{{ totalQuantity() }} items in the bag</span>
     </header>
     <section class="container">
         <ul class="products">
@@ -28,11 +28,11 @@
 
                 <div class="col right">
                     <div class="quantity">
-                        <input type="number" class="quantity" step="1" value="2" />
+                        <input type="number" class="quantity" step="1" min="1" max="100" @input="checkValue" v-model="products[0].quantity" />
                     </div>
 
                     <div class="remove">
-                        <svg version="1.1" class="close" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
+                        <svg version="1.1" class="close" @click="removeItem(0)" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
                             x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
                             <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812"></polygon>
                         </svg>
@@ -56,11 +56,11 @@
 
                 <div class="col right">
                     <div class="quantity">
-                        <input type="number" class="quantity" step="1" value="1" />
+                        <input type="number" class="quantity" step="1" min="1" max="100" @input="checkValue" v-model="products[1].quantity" />
                     </div>
 
                     <div class="remove">
-                        <svg version="1.1" class="close" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
+                        <svg version="1.1" class="close" @click="removeItem(1)" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
                             x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
                             <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812"></polygon>
                         </svg>
@@ -73,19 +73,19 @@
     <section class="container">
         <div class="promotion">
             <label for="promo-code">Have A Promo Code?</label>
-            <input type="text" id="promo-code" /> <button type="button"></button>
+            <input type="text" id="promo-code" /> <button type="button" @click="checkPromo"></button>
         </div>
 
         <div class="summary">
             <ul>
-                <li>Subtotal <span>${{ subTotal }}</span></li>
-                <li>Tax <span>${{ tax }}</span></li>
-                <li class="total">Total <span>${{ total }}</span></li>
+                <li>Subtotal <span>${{ subTotalCal() }}</span></li>
+                <li>Tax <span>${{ taxCal() }}</span></li>
+                <li class="total">Total <span>${{ totalCal() }}</span></li>
             </ul>
         </div>
 
         <div class="checkout">
-            <button type="button">Check Out</button>
+            <button type="button" @click="checkOut">Check Out</button>
         </div>
     </section>
 </div>
@@ -96,8 +96,10 @@ export default {
   name: "Cart",
   data() {
     return {
-      subTotal: 0.00,
-      total: 0.00,
+      subTotal: 0,
+      tax: 0,
+      total: 0,
+      discountRate: 1,
       products: [
         {
           image: "https://via.placeholder.com/200x150",
@@ -106,7 +108,6 @@ export default {
           price: 5.99,
           quantity: 2,
           productID: 1
-          
         },
         {
           image: "https://via.placeholder.com/200x150",
@@ -117,7 +118,6 @@ export default {
           productID: 2
         }
       ],
-      tax: 5,
       promotions: [
         {
           code: "29xgbuHa4O",
@@ -135,9 +135,56 @@ export default {
     };
   },
   methods: {
-    subTotal() {
-        this.qty1 = document.querySelectorAll('input[class="quantity"]').value;
-        console.log(qty1);
+    removeItem(index) {
+      // return alert('Ok ' + index)
+      // this.products.splice(index, 1);
+      this.products[index].quantity = 0;
+      document.querySelectorAll('.row')[index].style.display = 'none';
+    },
+    checkValue() {
+      for (let i = 0; i < this.promotions.length; i++) {
+        if (this.products[i].quantity < 1 || this.products[i].quantity > 100) {
+          return alert('Quantity must be between 1 and 100');
+        }
+      }
+    },
+    totalQuantity() {
+      return parseInt(this.products[0].quantity) + parseInt(this.products[1].quantity);
+    },
+    subTotalCal() {
+      let valueItem1;
+      let valueItem2;
+      valueItem1 = this.products[0].price * this.products[0].quantity;
+      valueItem2 = this.products[1].price * this.products[1].quantity;
+      this.subTotal = valueItem1 + valueItem2;
+      return this.subTotal.toFixed(2) * this.discountRate;
+    },
+    taxCal() {
+      this.tax = this.subTotal * 0.1;
+      return this.tax.toFixed(2) * this.discountRate;
+    },
+    totalCal() {
+      this.total = this.subTotal + this.tax;
+      return this.total.toFixed(2) * this.discountRate;
+    },
+    checkPromo() {
+      let promoCode;
+      promoCode = document.querySelector("#promo-code").value;
+      for (let i = 0; i < this.promotions.length; i++) {
+        if (promoCode == 0) {
+          this.discountRate = 1;
+          return alert("Please enter Promo code!");
+        } else if (promoCode == this.promotions[i].code) {
+          this.discountRate = parseInt(this.promotions[i].discount) / 100;
+          return alert("Congratulations!");
+        }
+        this.discountRate = 1;
+        document.querySelector("#promo-code").value = '';
+        return alert('Are you kidding me? \nPlease enter correct Promo code!');
+      }
+    },
+    checkOut() {
+      return alert('Welcome to the Hell!')
     }
   }
 };
