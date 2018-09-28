@@ -20,7 +20,11 @@ Vue.component('product', {
             <h1>{{ product }}</h1>
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
-  
+
+            <div v-for="(variant, index) in variants" :key="variant.variantId">
+            <p @mouseover="updateProduct(index)"
+            >Quantity: {{ variant.variantQuantity }}</p></div>
+
             <info-tabs :shipping="shipping" :details="details"></info-tabs>
   
             <div class="color-box"

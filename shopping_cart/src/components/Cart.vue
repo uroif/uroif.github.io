@@ -1,98 +1,144 @@
 <template>
-  <div class="hello">
-   <header class="container">
-    <h1>Shopping Cart</h1>
-    
-    <ul class="breadcrumb">
-      <li>Home</li>
-      <li>Shopping Cart</li>
-    </ul>
-    
-    <span class="count">3 items in the bag</span>
-  </header>
-  <section class="container">
-    <ul class="products">
-      <li class="row">
-        <div class="col left">
-          <div class="thumbnail">
-            <a href="#">
-              <img src="https://via.placeholder.com/200x150" alt="" />
-            </a>
-          </div>
-          <div class="detail">
-            <div class="name"><a href="#">PRODUCT ITEM NUMBER 1</a></div>
-            <div class="description">Description for product item number 1</div>
-            <div class="price">$5.99</div>
-          </div>
+<div class="hello">
+    <header class="container">
+        <h1>Shopping Cart</h1>
+
+        <ul class="breadcrumb">
+            <li>Home</li>
+            <li>Shopping Cart</li>
+        </ul>
+
+        <span class="count">3 items in the bag</span>
+    </header>
+    <section class="container">
+        <ul class="products">
+            <li class="row">
+                <div class="col left">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/200x150" alt="" />
+                        </a>
+                    </div>
+                    <div class="detail">
+                        <div class="name"><a href="#">PRODUCT ITEM NUMBER 1</a></div>
+                        <div class="description">Description for product item number 1</div>
+                        <div class="price">${{ products[0].price }}</div>
+                    </div>
+                </div>
+
+                <div class="col right">
+                    <div class="quantity">
+                        <input type="number" class="quantity" step="1" value="2" />
+                    </div>
+
+                    <div class="remove">
+                        <svg version="1.1" class="close" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+                            <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812"></polygon>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+
+            <li class="row">
+                <div class="col left">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/200x150" alt="" />
+                        </a>
+                    </div>
+                    <div class="detail">
+                        <div class="name"><a href="#">PRODUCT ITEM NUMBER 2</a></div>
+                        <div class="description">Description for product item number 2</div>
+                        <div class="price">${{ products[1].price }}</div>
+                    </div>
+                </div>
+
+                <div class="col right">
+                    <div class="quantity">
+                        <input type="number" class="quantity" step="1" value="1" />
+                    </div>
+
+                    <div class="remove">
+                        <svg version="1.1" class="close" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+                            <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812"></polygon>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="container">
+        <div class="promotion">
+            <label for="promo-code">Have A Promo Code?</label>
+            <input type="text" id="promo-code" /> <button type="button"></button>
         </div>
 
-        <div class="col right">
-          <div class="quantity">
-            <input type="number" class="quantity" step="1" value="2" />
-          </div>
-          
-          <div class="remove">
-            <svg version="1.1" class="close" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"><polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812"></polygon></svg>
-          </div>
-        </div>
-      </li>
-
-      <li class="row">
-        <div class="col left">
-          <div class="thumbnail">
-            <a href="#">
-              <img src="https://via.placeholder.com/200x150" alt="" />
-            </a>
-          </div>
-          <div class="detail">
-            <div class="name"><a href="#">PRODUCT ITEM NUMBER 2</a></div>
-            <div class="description">Description for product item number 2</div>
-            <div class="price">$9.99</div>
-          </div>
+        <div class="summary">
+            <ul>
+                <li>Subtotal <span>${{ subTotal }}</span></li>
+                <li>Tax <span>${{ tax }}</span></li>
+                <li class="total">Total <span>${{ total }}</span></li>
+            </ul>
         </div>
 
-        <div class="col right">
-          <div class="quantity">
-            <input type="number" class="quantity" step="1" value="1" />
-          </div>
-          
-          <div class="remove">
-            <svg version="1.1" class="close" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"><polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812"></polygon></svg>
-          </div>
+        <div class="checkout">
+            <button type="button">Check Out</button>
         </div>
-      </li>
-    </ul>
-  </section>
-
-  <section class="container">
-    <div class="promotion">
-      <label for="promo-code">Have A Promo Code?</label>
-      <input type="text" id="promo-code" /> <button type="button"></button>
-    </div>
-
-    <div class="summary">
-      <ul>
-        <li>Subtotal <span>$21.97</span></li>
-        <li>Tax <span>$5.00</span></li>
-        <li class="total">Total <span>$26.97</span></li>
-      </ul>
-    </div>
-
-    <div class="checkout">
-      <button type="button">Check Out</button>
-    </div>
-  </section>
+    </section>
 </div>
-  </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Cart",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      subTotal: 0.00,
+      total: 0.00,
+      products: [
+        {
+          image: "https://via.placeholder.com/200x150",
+          name: "PRODUCT ITEM NUMBER 1",
+          description: "Description for product item number 1",
+          price: 5.99,
+          quantity: 2,
+          productID: 1
+          
+        },
+        {
+          image: "https://via.placeholder.com/200x150",
+          name: "PRODUCT ITEM NUMBER 2",
+          description: "Description for product item number 1",
+          price: 9.99,
+          quantity: 1,
+          productID: 2
+        }
+      ],
+      tax: 5,
+      promotions: [
+        {
+          code: "29xgbuHa4O",
+          discount: "50%"
+        },
+        {
+          code: "mUxSnhywT1",
+          discount: "40%"
+        },
+        {
+          code: "nDdViZL4l3",
+          discount: "30%"
+        }
+      ]
     };
+  },
+  methods: {
+    subTotal() {
+        this.qty1 = document.querySelectorAll('input[class="quantity"]').value;
+        console.log(qty1);
+    }
   }
 };
 </script>
@@ -167,8 +213,8 @@ input {
   transition: all 0.25s linear;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -229,7 +275,9 @@ header .count {
   width: 100%;
 }
 
-.col, .quantity, .remove {
+.col,
+.quantity,
+.remove {
   float: left;
 }
 
@@ -262,7 +310,8 @@ header .count {
   font-size: 1.5rem;
 }
 
-.quantity, .remove {
+.quantity,
+.remove {
   width: 50%;
   text-align: center;
 }
@@ -285,16 +334,15 @@ header .count {
   font: 600 1.5rem Helvetica, Arial, sans-serif;
 }
 
-.quantity > input:hover, .quantity > input:focus {
+.quantity > input:hover,
+.quantity > input:focus {
   border-color: #f58551;
 }
 
 .close {
   fill: #7d7d7d;
-  transition: color 150ms linear,
-    background-color 150ms linear,
-    fill 150ms linear,
-    150ms opacity linear;
+  transition: color 150ms linear, background-color 150ms linear,
+    fill 150ms linear, 150ms opacity linear;
   cursor: pointer;
 }
 
@@ -303,7 +351,9 @@ header .count {
 }
 
 /* --- SUMMARY --- */
-.promotion, .summary, .checkout {
+.promotion,
+.summary,
+.checkout {
   float: left;
   width: 100%;
   margin-top: 1.5rem;
@@ -379,13 +429,13 @@ header .count {
   .thumbnail img {
     display: none;
   }
-  
+
   .quantity > input {
     width: 40px;
     height: 40px;
     left: calc(50% - 20px);
   }
-  
+
   .remove svg {
     width: 40px;
     height: 40px;
@@ -403,7 +453,8 @@ header .count {
     max-width: 960px;
   }
 
-  .thumbnail, .detail {
+  .thumbnail,
+  .detail {
     float: left;
   }
 
@@ -415,7 +466,8 @@ header .count {
     width: 65%;
   }
 
-  .promotion, .summary {
+  .promotion,
+  .summary {
     width: 50%;
   }
 
@@ -423,7 +475,8 @@ header .count {
     width: 100%;
   }
 
-  .checkout, .summary {
+  .checkout,
+  .summary {
     text-align: right;
   }
 }
@@ -434,5 +487,4 @@ header .count {
     font-size: 16px;
   }
 }
-
 </style>
