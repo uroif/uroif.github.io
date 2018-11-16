@@ -1,91 +1,166 @@
-<div class="hello">
-    <header class="container">
-        <h1>Shopping Cart</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-        <ul class="breadcrumb">
-            <li>Home</li>
-            <li>Shopping Cart</li>
-        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
 
-        <span class="count">3 items in the bag</span>
-    </header>
-    <section class="container">
-        <ul class="products">
-            <li class="row">
-                <div class="col left">
-                    <div class="thumbnail">
-                        <a href="#">
-                            <img src="https://via.placeholder.com/200x150" alt="" />
-                        </a>
-                    </div>
-                    <div class="detail">
-                        <div class="name"><a href="#">PRODUCT ITEM NUMBER 1</a></div>
-                        <div class="description">Description for product item number 1</div>
-                        <div class="price">${{ products[0].price }}</div>
-                    </div>
+<body>
+    <main class="container">
+        <header class="jumbotron text-center">
+            <h1>Dropdown Slide Effect Bootstrap</h1>
+        </header>
+
+        <div class="page-header">
+            <h2>Within a navbar</h2>
+        </div>
+        <nav id="navbar-example" class="navbar navbar-default navbar-static">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project Name</a>
                 </div>
-
-                <div class="col right">
-                    <div class="quantity">
-                        <input type="number" class="quantity" step="1" value="2" />
-                    </div>
-
-                    <div class="remove">
-                        <svg version="1.1" class="close" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
-                            x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
-                            <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812"></polygon>
-                        </svg>
-                    </div>
+                <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                role="button" aria-expanded="false">
+                                Dropdown
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another
+                                        action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something
+                                        else here</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated
+                                        link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                role="button" aria-expanded="false">
+                                Dropdown
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another
+                                        action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something
+                                        else here</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated
+                                        link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="fat-menu" class="dropdown">
+                            <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                role="button" aria-expanded="false">
+                                Dropdown
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another
+                                        action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something
+                                        else here</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated
+                                        link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
+                <!-- /.nav-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- /navbar-example -->
+
+        <div class="page-header">
+            <h2>Within pills</h2>
+        </div>
+        <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#">Regular link</a></li>
+            <li role="presentation" class="dropdown">
+                <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button"
+                    aria-expanded="false">
+                    Dropdown
+                    <span class="caret"></span>
+                </a>
+                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another
+                            action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something
+                            else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated
+                            link</a></li>
+                </ul>
             </li>
-
-            <li class="row">
-                <div class="col left">
-                    <div class="thumbnail">
-                        <a href="#">
-                            <img src="https://via.placeholder.com/200x150" alt="" />
-                        </a>
-                    </div>
-                    <div class="detail">
-                        <div class="name"><a href="#">PRODUCT ITEM NUMBER 2</a></div>
-                        <div class="description">Description for product item number 2</div>
-                        <div class="price">${{ products[1].price }}</div>
-                    </div>
-                </div>
-
-                <div class="col right">
-                    <div class="quantity">
-                        <input type="number" class="quantity" step="1" value="1" />
-                    </div>
-
-                    <div class="remove">
-                        <svg version="1.1" class="close" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
-                            x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
-                            <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812"></polygon>
-                        </svg>
-                    </div>
-                </div>
+            <li role="presentation" class="dropdown">
+                <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button"
+                    aria-expanded="false">
+                    Dropdown
+                    <span class="caret"></span>
+                </a>
+                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another
+                            action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something
+                            else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated
+                            link</a></li>
+                </ul>
+            </li>
+            <li role="presentation" class="dropdown">
+                <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button"
+                    aria-expanded="false">
+                    Dropdown
+                    <span class="caret"></span>
+                </a>
+                <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another
+                            action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something
+                            else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated
+                            link</a></li>
+                </ul>
             </li>
         </ul>
-    </section>
+        <!-- /pills -->
 
-    <section class="container">
-        <div class="promotion">
-            <label for="promo-code">Have A Promo Code?</label>
-            <input type="text" id="promo-code" /> <button type="button"></button>
-        </div>
+        <footer>
+            <p class="text-center">Forked <a href="https://codepen.io/iftee/pen/rVzNGO">iftee</a>.</p>
+        </footer>
+    </main>
 
-        <div class="summary">
-            <ul>
-                <li>Subtotal <span>$21.97</span></li>
-                <li>Tax <span>$5.00</span></li>
-                <li class="total">Total <span>$26.97</span></li>
-            </ul>
-        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
-        <div class="checkout">
-            <button type="button">Check Out</button>
-        </div>
-    </section>
-</div>
-</div>
+</body>
+
+</html>
