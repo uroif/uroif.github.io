@@ -24,6 +24,9 @@ body {
   .navbar {
     z-index: 1;
   }
+  .modal-info {
+    font-size: 12px;
+  }
 }
 
 /* Medium devices (tablets, 992px and up) */
@@ -106,27 +109,68 @@ section {
 }
 
 /* =====STYLE FOR MODAL===== */
-.modal-dialog {
-  max-width: 950px;
-}
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) {
+  .modal-dialog {
+    width: 320px;
+  }
+  .modal-info {
+    font-size: 10px;
+  }
+} */
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+  .modal-dialog {
+    width: 468px;
+  }
+} */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+  .modal-dialog {
+    width: 576px;
+  }
+} */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) and (max-width: 1199.98px) {
+  .modal-dialog {
+    width: 768px;
+  }
+} */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+  .modal-dialog {
+    max-width: 992px;
+  }
+} */
 
 .modal-body {
-  /* display: flex; */
-  width: 60%;
+  display: flex;
+  width: 100%;
 }
 
-.modal-img {
-  /* flex: 1; */
+.modal-slider-for {
+  display: inline-block;
+  width: 40%;
 }
 
-.modal-img img {
-  max-width: 100px;
+.modal-slider-nav {
+  display: inline-block;
+  width: 15%;
+}
+
+.modal-slider-nav div {
+  /* margin-bottom: 2%; */
 }
 
 .modal-info {
-  /* flex: 1; */
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  width: 45%;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .modal-name {
@@ -135,8 +179,6 @@ section {
 
 .modal-price {
   color: #fdfffc;
-  background: #2ec4b6;
-  padding: 1px 5px;
 }
 
 .modal-intro {
