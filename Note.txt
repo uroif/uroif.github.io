@@ -1,9 +1,0 @@
-Object
-Prototype
-Scope - Hoisting
-Closure
-Callback
-This
-Bind, Apply, Call
-
-*****************8
