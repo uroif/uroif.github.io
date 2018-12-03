@@ -1,0 +1,23 @@
+[1202/230900:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[1202/230900:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[1202/231244:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[1202/231244:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue
+[1202/231245:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[1202/231245:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[1202/231245:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue
+[1202/231245:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue
+[1202/231245:ERROR:gl_surface_egl.cc(337)] eglCreateWindowSurface failed with error EGL_BAD_NATIVE_WINDOW
+[1202/231245:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[1202/231245:ERROR:gl_surface_egl.cc(494)] Failed to resize window.
+[1202/231245:ERROR:gles2_cmd_decoder.cc(3743)] GLES2DecoderImpl: Context lost because context no longer current after resize callback.
+[1202/231245:ERROR:gles2_cmd_decoder.cc(3872)] Error: 5 for Command kResizeCHROMIUM
+[1202/231245:ERROR:gl_bindings_autogen_gl.cc(5194)] Trying to call glGetGraphicsResetStatusARB() without current GL context
+[1202/231245:ERROR:gles2_cmd_decoder.cc(3055)]   GLES2DecoderImpl: Context lost during MakeCurrent.
+[1202/231245:ERROR:gles2_cmd_decoder.cc(3060)] Exiting GPU process because some drivers cannot reset a D3D device in the Chrome GPU process sandbox.
+[1202/231245:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue
+[1202/231245:ERROR:renderer_main.cc(207)] Running without renderer sandbox
+[1202/231245:ERROR:gpu_process_transport_factory.cc(461)] Lost UI shared context.
+[1202/231245:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue
+[1202/231245:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue
+[1202/232427:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue
+[1202/232428:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue

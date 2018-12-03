@@ -52,28 +52,21 @@ $(document).ready(function() {
 });
 
 // Slider for modal
+
 $(".modal").ready(function() {
-  $(".modal-slider-for").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: ".modal-slider-nav",
-    arrows: false,
-    autoplay: true,
-    centerMode: true,
-    waitForAnimate: true,
-    fade: true
-  });
-  $(".modal-slider-nav").slick({
+  $(".modal-slider").slick({
+    setPosition: 0,
     slidesToShow: 3,
-    asNavFor: ".modal-slider-for",
-    dots: false,
-    arrows: false,
-    vertical: true,
-    focusOnSelect: true,
+    autoplaySpeed: 5000,
+    arrows: true,
     autoplay: true,
-    settings: "unslick",
+    pauseOnHover: true,
   });
 });
+
+// $(".modal").on('opened', function() {
+//   $(".modal-slider").slick("setPosition", 0);
+// });
 
 // Keep navigation when scroll down
 $(document).scroll(function(e) {

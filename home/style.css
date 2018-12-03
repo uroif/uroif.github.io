@@ -148,41 +148,7 @@ section {
 } */
 
 .modal-body {
-  display: flex;
   width: 100%;
-}
-
-.modal-slider-for {
-  display: inline-block;
-  width: 40%;
-}
-
-.modal-slider-nav {
-  display: inline-block;
-  width: 15%;
-}
-
-.modal-slider-nav div {
-  /* margin-bottom: 2%; */
-}
-
-.modal-info {
-  display: inline-block;
-  width: 45%;
-  /* display: flex; */
-  /* flex-direction: column; */
-}
-
-.modal-name {
-  font-family: 'Krub', sans-serif;
-}
-
-.modal-price {
-  color: #fdfffc;
-}
-
-.modal-intro {
-  font-family: Kodchasan, sans-serif;
 }
 
 /* =====STYLE FOR WRAP 1===== */
