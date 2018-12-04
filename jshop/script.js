@@ -64,10 +64,6 @@ $(".modal").ready(function() {
   });
 });
 
-// $(".modal").on('opened', function() {
-//   $(".modal-slider").slick("setPosition", 0);
-// });
-
 // Keep navigation when scroll down
 $(document).scroll(function(e) {
   var scrollTop = $(document).scrollTop();
@@ -81,16 +77,41 @@ $(document).scroll(function(e) {
     $(".navbar").animate({ height: "70px" }, 200);
     $(".navbar-brand").animate({ "font-size": "1.8rem" }, 200);
     $(".hotline-r").animate({ "font-size": "1.2rem" }, 200);
-    $(".back2top").animate(
-      { right: "20px", bottom: "20px", opacity: "0", cursor: "none" },
-      200
-    );
+    $(".back2top").animate({ right: "20px", bottom: "20px", opacity: "0", cursor: "none" }, 200);
   }
 });
 
-$(document).ready(function() {
-  var item_1 = "#slider-1 .carousel-item";
-  var item_inner_1 = "#slider-1 .carousel-inner";
-  classes = GetUnique(item_1);
-  setcss(classes, item_1, item_inner_1);
+$(document).scroll(function(e) {
+  var scrollTop = $(document).scrollTop();
+  if (scrollTop > 500) {
+    $(".back2top").animate({ right: "20px", bottom: "25px", opacity: "1" }, 30);
+  } else {
+    $(".back2top").animate({ right: "20px", bottom: "20px", opacity: "0", cursor: "none" }, 200);
+  }
+});
+
+// $(document).ready(function() {
+//   var item_1 = "#slider-1 .carousel-item";
+//   var item_inner_1 = "#slider-1 .carousel-inner";
+//   classes = GetUnique(item_1);
+//   setcss(classes, item_1, item_inner_1);
+// });
+
+// Fadein when scroll
+wow = new WOW({
+  duration:     0.5,
+  boxClass:     'wow',
+  animateClass: 'animated',
+  offset:       0,
+  mobile:       true,
+  live:         true
+})
+wow.init();
+
+// Scroll to top animation
+$('.back2top').each(function(){
+  $(this).click(function(){ 
+      $('html,body').animate({ scrollTop: 0 }, 'slow');
+      return false; 
+  });
 });

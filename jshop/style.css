@@ -47,6 +47,39 @@ body {
   }
 }
 
+/* =====STYLE FOR WOW ANIMATION===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* =====STYLE FOR SLICK SLIDER===== */
+.slick-prev:before {
+  color: lightslategray;
+}
+.slick-next:before {
+  color: lightslategray;
+}
+
 /* =====STYLE FOR PAGE LOADING===== */
 
 /* =====STYLE FOR BODY===== */
@@ -66,13 +99,15 @@ body {
   font-size: 1.8rem;
 }
 
-.hotline-r, .hotline-l {
+.hotline-r,
+.hotline-l {
   color: #2ec4b6;
   font-size: 1.2rem;
 }
 
-.nav-link, .dropdown-item {
-  font-family: 'Kanit', sans-serif;
+.nav-link,
+.dropdown-item {
+  font-family: "Kanit", sans-serif;
   font-size: 20px;
   color: #011627 !important;
   transition: all 0.3s ease;
@@ -163,7 +198,7 @@ section {
 }
 
 .wrap1-item-img:hover .wrap1-img {
-  transform: scale(1.08)
+  transform: scale(1.08);
 }
 
 .wrap1-item-img:hover .detail {
@@ -336,7 +371,7 @@ footer {
 
 .social_icon {
   display: inline-block;
-  width: 8%;
+  width: 25%;
 }
 
 .qrcode {
@@ -346,30 +381,16 @@ footer {
 /* =====STYLE FOR BACK TO TOP ARROW===== */
 .back2top {
   position: fixed;
-  width: 40px;
-  height: 40px;
   right: 20px;
   bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
-  transform: rotate(-90deg);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 32px;
   transition: all 0.3s ease;
 }
 
-.back2top a {
-  position: absolute;
-  margin: -6px 4px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .back2top:hover {
-  background-color: rgba(0, 0, 0, 0);
   bottom: 30px;
-}
-
-.back2top:hover a {
-  color: #424242;
+  cursor: pointer;
 }
 
 .hide-item {
