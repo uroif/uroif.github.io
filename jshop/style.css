@@ -24,9 +24,9 @@ body {
   .navbar {
     z-index: 1;
   }
-  .modal-info {
+  /* .modal-info {
     font-size: 12px;
-  }
+  } */
 }
 
 /* Medium devices (tablets, 992px and up) */
@@ -89,10 +89,6 @@ body {
 }
 
 /* =====STYLE FOR HEADER===== */
-/* .navbar {
-  box-shadow: 0px 1px 5px 1px #000000;
-} */
-
 .navbar-brand {
   font-family: Krub, sans-serif;
   color: #e71d36 !important;
@@ -381,15 +377,15 @@ footer {
 /* =====STYLE FOR BACK TO TOP ARROW===== */
 .back2top {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  /* right: 20px; */
+  /* bottom: 20px; */
   color: rgba(0, 0, 0, 0.5);
   font-size: 32px;
   transition: all 0.3s ease;
 }
 
 .back2top:hover {
-  bottom: 30px;
+  /* bottom: 30px; */
   cursor: pointer;
 }
 
