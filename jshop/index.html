@@ -164,7 +164,7 @@
                         <button type="button" class="close mt-1 mr-1" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
-                        <h3 class="modal-name">Lorem ipsum</h3>
+                        <h3 class="modal-name"><a class="no-underline" href="#">Lorem ipsum</a></h3>
                         <div class="modal-price mt-3 font-italic">100.000VND</div>
                         <div class="modal-detail mt-4">
                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ipsum?
@@ -452,28 +452,39 @@
           <div class="row saleoff d-flex">
         
             <!-- ===== ITEM 1 ===== -->
-            <div class="col-12 col-sm-12 col-md-6">
-              <div class="wrap2-item">
-                <div class="wrap2-item-img border animate">
-                  <img src="images/features/w1i1.jpg" alt="" />
-                </div>
-                <div class="wrap2-item-info w-50 h-100 position-absolute animate">
-                  <p class="wrap2-ii wrap2-ii-1 text-dark text-center mt-5">PRODUCT NAME</p>
-                  <p class="wrap2-ii wrap2-ii-2 text-center">intro</p>
-                  <p class="wrap2-ii wrap2-ii-3 text-light text-center mt-5">SALE <span class="text-warning">50%</span></p>
-                </div>
+            <div class="col-12 col-sm-12 col-md-6 my-2">
+              <div class="wrap2-item1">
+                <a href="#">
+                  <div class="wrap2-item1-img border-gray animate">
+                    <img src="images/features/w1i1.jpg" alt="" />
+                  </div>
+                  <div class="wrap2-item1-info w-50 h-100 position-absolute animate">
+                    <p class="wrap2-ii wrap2-ii-1 text-white text-center mt-5">PRODUCT NAME</p>
+                    <p class="wrap2-ii wrap2-ii-2 text-light text-center">intro</p>
+                    <p class="wrap2-ii wrap2-ii-3 text-light text-center mt-5">SALE <span class="text-warning">50%</span></p>
+                  </div>
+                </a>
               </div>
             </div>
-        
-            <!-- ===== ITEM 2 ===== -->
-            <div class="col-12 col-sm-12 col-md-6">
-              <div class="wrap2-item">
-                <div class="wrap2-item-img">
-                  <img src="images/features/w1i2.jpg" alt="" />
-                </div>
+            <!-- ===== END OF ITEM 1 ===== -->
 
+            <!-- ===== ITEM 2 ===== -->
+            <div class="col-12 col-sm-12 col-md-6 my-2">
+              <div class="wrap2-item2">
+                <a href="#">
+                  <div class="wrap2-item2-img border-gray animate">
+                    <img src="images/features/w1i2.jpg" alt="" />
+                  </div>
+                  <div class="wrap2-item2-info w-50 h-100 position-absolute animate">
+                    <p class="wrap2-ii wrap2-ii-1 text-white text-center mt-5">PRODUCT NAME</p>
+                    <p class="wrap2-ii wrap2-ii-2 text-light text-center">intro</p>
+                    <p class="wrap2-ii wrap2-ii-3 text-light text-center mt-5">SALE <span class="text-warning">50%</span></p>
+                  </div>
+                </a>
               </div>
             </div>
+            <!-- ===== END OF ITEM 2 ===== -->
+
           </div>
         </div>
         <!-- ===== END OF WRAP 2 AREA ===== -->
@@ -484,7 +495,8 @@
         <div class="wrap3 wow fadeInUp">
           <h2 class="wow fadeInLeft" data-wow-delay="0.5s">BÁN CHẠY</h2>
           <div class="wrap-slider">
-            <div class="position-relative">
+
+            <div class="position-relative hidden-border animate">
               <a href="#">
                 <img src="images/collection3/w3i5.jpg" alt="First slide" />
                 <div class="promo-symbol position-absolute animate">
@@ -492,50 +504,57 @@
                 </div>
               </a>
             </div>
-            <div class="position-relative">
+
+            <div class="position-relative hidden-border animate">
               <img src="images/collection1/w1i4.jpg" alt="Second slide" />
             </div>
-            <div class="position-relative">
+
+            <div class="position-relative hidden-border animate">
               <img src="images/collection2/w2i4.jpg" alt="Third slide" />
               <div class="promo-symbol position-absolute animate">
                 <p class="position-absolute text-light">SALE</p>
               </div>
             </div>
-            <div class="position-relative">
+
+            <div class="position-relative hidden-border animate">
               <img src="images/collection2/w2i5.jpg" alt="Fourth slide" />
             </div>
-            <div class="position-relative">
+
+            <div class="position-relative hidden-border animate">
               <img src="images/collection1/w1i2.jpg" alt="Fifth slide" />
             </div>
-            <div class="position-relative">
+
+            <div class="position-relative hidden-border animate">
               <img src="images/collection3/w3i2.jpg" alt="Sixth slide" />
             </div>
+
           </div>
         </div>
+        <!-- ===== END OF WRAP 3 AREA ===== -->
+
       </section>
-      <!-- ===== END OF WRAP 3 AREA ===== -->
 
       <hr class="mx-auto wow fadeInUp" />
 
       <!-- ===== FOOTER ===== -->
       <footer class="d-flex text-light bg-dark mx-auto mt-2 wow fadeInUp">
         <div class="w-50 address ml-5 my-3">
-          <h4>Address:</h4>
+          <h4>Address</h4>
           <ul>
             <li>Address 1: Lorem ipsum dolor sit amet.</li>
             <li>Address 1: Lorem ipsum dolor sit amet.</li>
           </ul>
         </div>
         <div class="w-25 links ml-3 my-3">
-          <h5>Links:</h5>
+          <h5>Links</h5>
           <ul>
-            <li><a href="#">Google</a></li>
-            <li><a href="#">Google</a></li>
-            <li><a href="#">Google</a></li>
+            <li><a class="text-light no-underline" href="#">Google</a></li>
+            <li><a class="text-light no-underline" href="#">Google</a></li>
+            <li><a class="text-light no-underline" href="#">Google</a></li>
           </ul>
         </div>
         <div class="w-25 social my-3">
-          <h5 class="d-inline-block">Find us on:</h5>
+          <h5 class="d-inline-block">Find us on</h5>
           <div class="d-inline-block social_icon">  <i class="fab fa-facebook">  </i></div>
           <div class="d-inline-block social_icon">  <i class="fab fa-instagram">  </i></div>
           <div class="qrcode w-50"><img src="images/qr_code.jpg" alt="" /></div>
