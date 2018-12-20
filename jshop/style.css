@@ -218,7 +218,7 @@ section {
 
 /* =====STYLE FOR WRAP 1===== */
 .wrap1-item {
-  border: solid 2px rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .wrap1-item-img {
@@ -226,12 +226,12 @@ section {
 }
 
 .wrap1-item:hover {
-  border: solid 1px #aaaaaa;
+  border: 2px solid #aaaaaa;
 }
 
 .wrap1-item:hover .wrap1-img {
   transform: scale(1.08);
-  border: solid 1px #EEEEEE;
+  border: 2px solid #EEEEEE;
 }
 
 .promo-symbol {
@@ -243,7 +243,6 @@ section {
 }
 
 .promo-symbol p {
-  /* font-size: 100%; */
   transform: translate(50%, 10%);
 }
 
@@ -281,13 +280,13 @@ section {
 
 /* =====STYLE FOR WRAP 2===== */
 .wrap2-item1:hover .wrap2-item1-info {
-  left: 3% !important;
-  width: 94% !important;
+  left: 10% !important;
+  width: 80% !important;
 }
 
 .wrap2-item2:hover .wrap2-item2-info {
-  right: 3% !important;
-  width: 94% !important;
+  right: 10% !important;
+  width: 80% !important;
 }
 
 .wrap2-item1-info {
@@ -349,6 +348,12 @@ section {
 
 .slick-slide {
   margin: 0 15px;
+}
+
+.wrap3-item:hover .detail {
+  opacity: 1;
+  cursor: pointer;
+  transform: translate(30%, -250%);
 }
 
 /* =====STYLE FOR FOOTER===== */
