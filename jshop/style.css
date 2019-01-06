@@ -13,6 +13,7 @@ body {
   position: relative;
 }
 
+/* ===== DEFINE CUSTOM CLASSES ===== */
 .hidden-border {
   border: 2px solid rgba(0, 0, 0, 0);
 }
@@ -25,8 +26,16 @@ body {
   text-decoration: none !important;
 }
 
-/* Small devices (landscape phones, 991px and below */
-@media (max-width: 991px) {
+.pointer {
+  cursor: pointer;
+}
+/* ===== END OF DEFINE CUSTOM CLASSES ===== */
+
+/* Small devices (landscape phones, 767px and below */
+@media (max-width: 767px) {
+  .brand a {
+    font-size: 1.4rem;
+  }
   .hotline-l {
     display: block;
   }
@@ -36,24 +45,54 @@ body {
   .navbar {
     z-index: 1;
   }
+  /* .wrap3-item p {
+    font-size: 16px !important;
+  } */
 }
 
-/* Medium devices (tablets, 992px and up) */
-@media (min-width: 992px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   .brand {
-    width: 20%;
+    width: 30%;
   }
+
+  .brand a {
+    font-size: 1.3rem;
+  }
+
   .collapse.navbar-collapse {
-    width: 60%;
+    width: 50%;
   }
+
   .hotline-r {
     display: block;
     width: 20%;
     text-align: right;
   }
+
+  .hotline-r span {
+    font-size: 0.8rem;
+  }
+
   .hotline-l {
     display: none;
   }
+  /* .wrap3-item p {
+    font-size: 16px !important;
+  } */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .brand a {
+    font-size: 1.8rem;
+  }
+  .hotline-r span {
+    font-size: 1.2rem;
+  }
+  /* .wrap3-item p {
+    font-size: 20px;
+  } */
 }
 
 /* =====STYLE FOR WOW ANIMATION===== */
@@ -121,37 +160,33 @@ body {
 /* =====STYLE FOR HEADER===== */
 .navbar-brand {
   font-family: Krub, sans-serif;
-  color: #e71d36 !important;
   font-size: 1.8rem;
 }
 
-.hotline-r,
-.hotline-l {
-  color: #2ec4b6;
+.hotline-r, .hotline-l {
   font-size: 1.2rem;
 }
 
-.nav-link,
-.dropdown-item {
+.nav-link, .dropdown-item {
   font-family: "Kanit", sans-serif;
   font-size: 20px;
-  color: #011627 !important;
   transition: all 0.3s ease;
 }
 
-.nav-link:hover {
-  background: #eeeeee;
-  color: #212121 !important;
-}
-
-.dropdown-item:hover {
-  background: #eeeeee;
-  color: #212121 !important;
+.dropdown-menu {
+  margin-top: 0;
+  border: 2px solid #2098d1;
+  background-clip: unset;
+  border-radius: unset;
 }
 
 .animate {
   transition: all 0.3s ease;
 }
+
+/* .hvr-sweep-to-bottom:before {
+  background: #cccccc;
+} */
 
 /* =====STYLE FOR MAIN CAROUSEL===== */
 aside {
@@ -210,6 +245,10 @@ section {
 
 .modal-body {
   width: 100%;
+}
+
+.modal-content {
+  border-radius: 0%;
 }
 
 .close {
