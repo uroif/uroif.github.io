@@ -68,12 +68,12 @@ $(".dropdown").on("show.bs.dropdown", function() {
     } else if (scrollTop > 0) {
       $(".navbar").animate({ height: "45px" }, 30);
       $(".navbar-brand").animate({ "font-size": "1.5rem" }, 30);
-      $(".hotline-r").animate({ "font-size": "1.1rem" }, 30);
+      $("header").animate({ "background-color": "red" }, 30);
       $(".back2top").animate({ right: "20px", bottom: "20px", opacity: "0", cursor: "none" }, 200);
     } else {
       $(".navbar").animate({ height: "70px" }, 200);
       $(".navbar-brand").animate({ "font-size": "1.8rem" }, 200);
-      $(".hotline-r").animate({ "font-size": "1.2rem" }, 200);
+      $("header").animate({ "background-color": "#FFFFFF" }, 30);
     }
   });
   
