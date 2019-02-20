@@ -1,4 +1,4 @@
-// Add slideDown animation to Bootstrap dropdown when expanding
+// SlideDown animation to Bootstrap dropdown when expanding
 $(".dropdown").on("show.bs.dropdown", function() {
     $(this)
       .find(".dropdown-menu")
@@ -7,7 +7,7 @@ $(".dropdown").on("show.bs.dropdown", function() {
       .slideDown(300);
   });
   
-  // Add slideUp animation to Bootstrap dropdown when collapsing
+  // SlideUp animation to Bootstrap dropdown when collapsing
   $(".dropdown").on("hide.bs.dropdown", function() {
     $(this)
       .find(".dropdown-menu")
@@ -16,10 +16,10 @@ $(".dropdown").on("show.bs.dropdown", function() {
       .slideUp(300);
   });
   
-  // Add slideshow for items last section
+  // Slideshow for items
   $(document).ready(function() {
     $(".wrap-slider").slick({
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 5000,
@@ -34,14 +34,14 @@ $(".dropdown").on("show.bs.dropdown", function() {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             dots: true
           }
         },
         {
-          breakpoint: 300,
+          breakpoint: 320,
           settings: {
             slidesToShow: 1,
             dots: true
