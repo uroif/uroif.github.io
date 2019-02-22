@@ -1,211 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-    />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli|Quicksand|Oswald"
-      rel="stylesheet"
-    />
-    <title>CyWatch</title>
-  </head>
 
-  <body class="loading">
-    <div class="container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand|Oswald|Coiny|Dancing+Script" rel="stylesheet" />
+  <title>CyWatch</title>
+</head>
+
+  <body>
+    <div class="_container">
       <header class="fixed-top wow fadeInDown">
         <nav class="navbar navbar-expand-md">
           <div class="brand">
-            <a class="navbar-brand font-oswald color-9395A9" href="#"
-              >CY<span class="color-393B60">WATCH</span></a
-            >
+            <a class="navbar-brand color-9395A9" href="#">CY<span class="color-393B60">WATCH</span></a>
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon leftmenutrigger"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link hvr-overline-reveal color-393B60" href="#"
-                  >Trang chủ<span class="sr-only">(current)</span></a
-                >
+                <a class="nav-link hvr-overline-reveal color-393B60" href="#">Trang chủ<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link hvr-overline-reveal color-9395A9"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Thương hiệu <i class="fas fa-angle-down"></i
-                ></a>
+                <a class="nav-link hvr-overline-reveal color-9395A9" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Thương hiệu <i class="fas fa-angle-down"></i></a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item hvr-sweep-to-bottom" href="#"
-                    >Action</a
-                  >
-                  <a class="dropdown-item hvr-sweep-to-bottom" href="#"
-                    >Another action</a
-                  >
+                  <a class="dropdown-item hvr-sweep-to-bottom" href="#">Action</a>
+                  <a class="dropdown-item hvr-sweep-to-bottom" href="#">Another action</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item hvr-sweep-to-bottom" href="#"
-                    >Something else here</a
-                  >
+                  <a class="dropdown-item hvr-sweep-to-bottom" href="#">Something else here</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link hvr-overline-reveal color-9395A9" href="#"
-                  >Khuyến mại</a
-                >
+                <a class="nav-link hvr-overline-reveal color-9395A9" href="#">Khuyến mại</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link hvr-overline-reveal color-9395A9" href="#"
-                  >Liên hệ</a
-                >
+                <a class="nav-link hvr-overline-reveal color-9395A9" href="#">Liên hệ</a>
               </li>
             </ul>
           </div>
-          <div class="search"><i class="fas fa-search"></i></div>
-          <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+          <div class="search"><a href="#"><i class="fas fa-search"></i></a></div>
+          <div class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
         </nav>
       </header>
 
       <!-- ===== BIG CAROUSEL PROMOTION ===== -->
-      <aside class="wow fadeIn">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide carousel-fade"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                class="d-block w-100"
-                src="images/Activity Trackers/Fitbit Blaze Smart Fitness Watch/carousel1.jpg"
-                alt="First slide"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>FITBIT BLAZE</h5>
-                <p>Special Edition</p>
-                <p>XEM NGAY</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="images/Activity Trackers\Garmin vívosmart HR/carousel2.jpg"
-                alt="Second slide"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>...</h5>
-                <p>...</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="images/Activity Trackers/Fitbit Flex Wireless Activity/carousel3.jpg"
-                alt="Third slide"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>...</h5>
-                <p>...</p>
-              </div>
-            </div>
+      <aside class="promotion wow fadeIn">
+
+        <div class="promotion1 position-relative">
+          <img src="images/Activity Trackers/Fitbit Blaze Smart Fitness Watch/carousel1.jpg" alt="">
+          <div class="promo1-box position-absolute">
+            <p class="promo-txt1 position-absolute">FITBIT BLAZE</p>
+            <p class="promo-txt2 position-absolute">Special Edition</p>
+            <p class="promo-txt3 position-absolute cursor-pointer">XEM NGAY</p>
           </div>
-          <a
-            class="carousel-control-prev wow fadeInLeft"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-            data-wow-delay="1s"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next wow fadeInRight"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-            data-wow-delay="1s"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
+
+        <div class="promotion2 position-relative">
+          <img src="images/Activity Trackers/Garmin vívosmart HR/carousel2.jpg" alt="">
+          <p class="promo-txt1 position-absolute">Garmin Vívosmart HR</p>
+          <p class="promo-txt2 position-absolute">Trend Of This Year</p>
+          <p class="promo-txt3 position-absolute cursor-pointer">XEM NGAY</p>
+        </div>
+        
+        <div class="promotion3 position-relative">
+          <img src="images/Activity Trackers/Fitbit Flex Wireless Activity/carousel3.jpg" alt="">
+          <p class="promo-txt1 position-absolute">Fitbit Flex Wireless Activity</p>
+          <p class="promo-txt2 position-absolute">For Flexible Man</p>
+          <p class="promo-txt3 position-absolute cursor-pointer">XEM NGAY</p>
+        </div>
+
       </aside>
+      <!-- ===== END OF BIG CAROUSEL PROMOTION ===== -->
 
       <section>
         <!-- ===== COLLECTIONS ===== -->
         <div class="collection wow fadeInUp">
           <div class="row">
 
-              <div class="col-sm-12 col-lg-4 animate cursor-pointer collection1-item" onclick="window.location='#'">
-                <div class="collection-img"></div>
-                <div class="collection-txt">
+            <div class="col-sm-12 col-lg-4 cursor-pointer position-relative collection1" onclick="window.location='#'">
+              <div class="collection-item position-absolute">
+                <div class="collection-img position-absolute animate">
+                  <img src="images/Activity Trackers/Garmin vívofit 2 Activity Tracker/3r.jpg" alt="">
+                </div>
+                <div class="collection-txt position-absolute">
                   <p class="text-white m-auto">ACTIVITY<br>TRACKERS</p>
                 </div>
+                <div class="collection-cover animate position-absolute"></div>
               </div>
-
-            <div class="col-sm-12 col-lg-4 animate cursor-pointer collection2-item" onclick="window.location='#'">
-              <div class="collection-img"></div>
-              <div class="collection-txt">
-                  <p class="text-white m-auto">SPORT<br>WATCHES</p>
-                </div>
             </div>
 
-              <div class="col-sm-12 col-lg-4 animate cursor-pointer collection3-item" onclick="window.location='#'">
-                <div class="collection-img"></div>
-                <div class="collection-txt">
-                    <p class="text-white m-auto">SMART<br>WATCHES</p>
-                  </div>
+            <div class="col-sm-12 col-lg-4 animate cursor-pointer position-relative collection2" onclick="window.location='#'">
+              <div class="collection-item position-absolute">
+                <div class="collection-img position-absolute animate">
+                  <img src="images/Sport Watches/Garmin vívoactive 3/3r.jpg" alt="">
+                </div>
+                <div class="collection-txt position-absolute">
+                  <p class="text-white m-auto">SPORT<br>WATCHES</p>
+                </div>
+                <div class="collection-cover animate position-absolute"></div>
               </div>
+            </div>
+            
+            <div class="col-sm-12 col-lg-4 animate cursor-pointer position-relative collection3" onclick="window.location='#'">
+              <div class="collection-item position-absolute">
+                <div class="collection-img position-absolute animate">
+                  <img src="images/Smart Watches/Apple Watch Series 4/2r.jpg" alt="">
+                </div>
+                <div class="collection-txt position-absolute">
+                  <p class="text-white m-auto">SMART<br>WATCHES</p>
+                </div>
+                <div class="collection-cover animate position-absolute"></div>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -213,83 +132,168 @@
 
         <!-- ===== WRAP 1 AREA ===== -->
         <div class="wrap1 wow fadeInUp">
-            <h1 class="wow fadeInLeft text-center" data-wow-delay="0.5s">Giảm Giá</h1>
-            <div class="wrap-slider">
-              
-              <div class="wrap1-item position-relative hidden-border animate">
+          <h1 class="wow fadeInLeft text-center" data-wow-delay="0.5s">Giảm Giá</h1>
+          <div class="wrap-slider">
+        
+            <div class="wrap1-item position-relative hidden-border animate">
+              <div class="wrap-img position-absolute">
                 <img src="images/Activity Trackers/Fitbit Blaze Smart Fitness Watch/3r.jpg" alt="First slide" />
+              </div>
+              <div class="promo-symbol position-absolute animate">
+                <p class="position-absolute text-light">SALE</p>
+              </div>
+              <div class="detail position-absolute animate">
+                <p class="position-absolute text-light text-center">
+                  Xem Ngay
+                </p>
+              </div>
+              <div class="add-to-cart position-absolute animate">
+                <p class="position-absolute text-light text-center">
+                  Thêm Vào Giỏ Hàng
+                </p>
+              </div>
+              <div class="info position-absolute">
+                <p class="price">100.000 đ</p>
+                <p class="old-price">120.000 đ</p>
+              </div>
+              <div class="product-name position-absolute">Fitbit Blaze Smart Fitness</div>
+            </div>
+        
+            <div class="wrap1-item position-relative hidden-border animate">
+              <div class="wrap-img position-absolute">
+                <img src="images/Activity Trackers/Garmin vívosmart HR/5r.jpg" alt="Second slide" />
+              </div>
+              <div class="promo-symbol position-absolute animate">
+                <p class="position-absolute text-light">SALE</p>
+              </div>
+              <div class="detail position-absolute animate">
+                <p class="position-absolute text-light text-center">
+                  Xem Ngay
+                </p>
+              </div>
+              <div class="add-to-cart position-absolute animate">
+                <p class="position-absolute text-light text-center">
+                  Thêm Vào Giỏ Hàng
+                </p>
+              </div>
+              <div class="info position-absolute">
+                <p class="price">100.000 đ</p>
+                <p class="old-price">120.000 đ</p>
+              </div>
+              <div class="product-name position-absolute">Fitbit Blaze Smart Fitness</div>
+            </div>
+        
+            <div class="wrap1-item position-relative hidden-border animate">
+              <div class="wrap-img position-absolute">
+                  <img src="images/Smart Watches/Fossil Q Gen 3 Smartwatch/2.jpg" alt="Second slide" />
+                </div>
                 <div class="promo-symbol position-absolute animate">
                   <p class="position-absolute text-light">SALE</p>
                 </div>
                 <div class="detail position-absolute animate">
-                  <p class="position-absolute text-light text-center w-100">
-                    XEM NHANH
+                  <p class="position-absolute text-light text-center">
+                    Xem Ngay
                   </p>
                 </div>
-              </div>
-  
-              <div class="wrap1-item position-relative hidden-border animate">
-                <img src="images/Activity Trackers/Garmin vívosmart HR/5r.jpg" alt="Second slide" />
-                <div class="detail position-absolute animate" data-toggle="modal" data-target="#modal-w1-i1">
-                  <p class="position-absolute text-light text-center w-100">
-                    XEM NHANH
+                <div class="add-to-cart position-absolute animate">
+                  <p class="position-absolute text-light text-center">
+                    Thêm Vào Giỏ Hàng
                   </p>
                 </div>
-              </div>
-  
-              <div class="wrap1-item position-relative hidden-border animate">
-                <img src="images/Smart Watches/Fossil Q Gen 3 Smartwatch/2.jpg" alt="Third slide" />
+                <div class="info position-absolute">
+                  <p class="price">100.000 đ</p>
+                  <p class="old-price">120.000 đ</p>
+                </div>
+                <div class="product-name position-absolute">Fitbit Blaze Smart Fitness</div>
+            </div>
+        
+            <div class="wrap1-item position-relative hidden-border animate">
+              <div class="wrap-img position-absolute">
+                  <img src="images/Smart Watches/Samsung Gear Sport Smartwatch/2.jpg" alt="Second slide" />
+                </div>
                 <div class="promo-symbol position-absolute animate">
                   <p class="position-absolute text-light">SALE</p>
                 </div>
-                <div class="detail position-absolute animate" data-toggle="modal" data-target="#modal-w1-i1">
-                  <p class="position-absolute text-light text-center w-100">
-                    XEM NHANH
+                <div class="detail position-absolute animate">
+                  <p class="position-absolute text-light text-center">
+                    Xem Ngay
                   </p>
                 </div>
-              </div>
-              
-              <div class="wrap1-item position-relative hidden-border animate">
-                <img src="images/Smart Watches/Samsung Gear Sport Smartwatch/2.jpg" alt="Fourth slide" />
-                <div class="detail position-absolute animate" data-toggle="modal" data-target="#modal-w1-i1">
-                  <p class="position-absolute text-light text-center w-100">
-                    XEM NHANH
+                <div class="add-to-cart position-absolute animate">
+                  <p class="position-absolute text-light text-center">
+                    Thêm Vào Giỏ Hàng
                   </p>
                 </div>
-              </div>
-              
-              <div class="wrap1-item position-relative hidden-border animate">
-                <img src="images/Smart Watches/Apple Watch Series 3/1r.jpg" alt="Fifth slide" />
-                <div class="detail position-absolute animate" data-toggle="modal" data-target="#modal-w1-i1">
-                  <p class="position-absolute text-light text-center w-100">
-                    XEM NHANH
+                <div class="info position-absolute">
+                  <p class="price">100.000 đ</p>
+                  <p class="old-price">120.000 đ</p>
+                </div>
+                <div class="product-name position-absolute">Fitbit Blaze Smart Fitness</div>
+            </div>
+        
+            <div class="wrap1-item position-relative hidden-border animate">
+              <div class="wrap-img position-absolute">
+                  <img src="images/Smart Watches/Apple Watch Series 3/1r.jpg" alt="Second slide" />
+                </div>
+                <div class="promo-symbol position-absolute animate">
+                  <p class="position-absolute text-light">SALE</p>
+                </div>
+                <div class="detail position-absolute animate">
+                  <p class="position-absolute text-light text-center">
+                    Xem Ngay
                   </p>
                 </div>
-              </div>
-              
-              <div class="wrap1-item position-relative hidden-border animate">
-                <img src="images/Sport Watches/Garmin Forerunner 235/2r.jpg" alt="Sixth slide" />
-                <div class="detail position-absolute animate" data-toggle="modal" data-target="#modal-w1-i1">
-                  <p class="position-absolute text-light text-center w-100">
-                    XEM NHANH
+                <div class="add-to-cart position-absolute animate">
+                  <p class="position-absolute text-light text-center">
+                    Thêm Vào Giỏ Hàng
                   </p>
                 </div>
-              </div>
-              </div>
-              </div>
+                <div class="info position-absolute">
+                  <p class="price">100.000 đ</p>
+                  <p class="old-price">120.000 đ</p>
+                </div>
+                <div class="product-name position-absolute">Fitbit Blaze Smart Fitness</div>
+            </div>
+        
+            <div class="wrap1-item position-relative hidden-border animate">
+              <div class="wrap-img position-absolute">
+                  <img src="images/Sport Watches/Garmin Forerunner 235/2r.jpg" alt="Second slide" />
+                </div>
+                <div class="promo-symbol position-absolute animate">
+                  <p class="position-absolute text-light">SALE</p>
+                </div>
+                <div class="detail position-absolute animate">
+                  <p class="position-absolute text-light text-center">
+                    Xem Ngay
+                  </p>
+                </div>
+                <div class="add-to-cart position-absolute animate">
+                  <p class="position-absolute text-light text-center">
+                    Thêm Vào Giỏ Hàng
+                  </p>
+                </div>
+                <div class="info position-absolute">
+                  <p class="price">100.000 đ</p>
+                  <p class="old-price">120.000 đ</p>
+                </div>
+                <div class="product-name position-absolute">Fitbit Blaze Smart Fitness</div>
+            </div>
+
+          </div>
+        </div>
         <!-- ===== END OF WRAP 1 AREA ===== -->
 
         <!-- ===== WRAP 2 AREA ===== -->
         <!-- ===== END OF WRAP 2 AREA ===== -->
 
         <!-- ===== ADVERTISEMENT ===== -->
-        <div class="advert wow fadeInUp">
-          <div>
+        <div class="advert wow fadeInUp position-relative">
+          <div class="position-absolute ad-img">
             <img src="images/Sport Watches/Fitbit Ionic GPS Smart Watch/bg.jpg" alt="Advertisement Image">
           </div>
-          <div class="ad-txt">
-            <p>SPRING SALE</p>
-            <P>GIẢM ĐẾN <span>50%</span></P>
+          <div class="position-absolute ad-box">
+            <p class="ad-txt1 text-white">SPRING SALE</p>
+            <P class="ad-txt2 color-C3C3CE">GIẢM ĐẾN <span class="text-white">50%</span></P>
           </div>
         </div>
         <!-- ===== END OF ADVERTISEMENT ===== -->
@@ -299,35 +303,33 @@
       </section>
 
       <!-- ===== FOOTER ===== -->
-      <footer class="d-flex text-light bg-dark mx-auto mt-2 wow fadeInUp">
-        <div class="w-50 address ml-5 my-3">
-          <h4>Address</h4>
-          <ul>
-            <li>Address 1: Lorem ipsum dolor sit amet.</li>
-            <li>Address 1: Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </div>
-        <div class="w-25 links ml-3 my-3">
-          <h5>Links</h5>
-          <ul>
-            <li><a class="text-light no-underline" href="#">Google</a></li>
-            <li><a class="text-light no-underline" href="#">Google</a></li>
-            <li><a class="text-light no-underline" href="#">Google</a></li>
-          </ul>
-        </div>
-        <div class="w-25 social my-3">
-          <h5 class="d-inline-block">Find us on</h5>
-          <div class="d-inline-block social_icon">
-            <a class="text-light no-underline" href="#"
-              ><i class="fab fa-facebook"> </i
-            ></a>
+      <footer class="wow fadeInUp">
+        <div class="wrap-footer d-flex">
+          <div class="w-50 address ml-5 my-3">
+            <h4>Address</h4>
+            <ul>
+              <li>Address 1: Lorem ipsum dolor sit amet.</li>
+              <li>Address 1: Lorem ipsum dolor sit amet.</li>
+            </ul>
           </div>
-          <div class="d-inline-block social_icon">
-            <a class="text-light no-underline" href="#"
-              ><i class="fab fa-instagram"> </i
-            ></a>
+          <div class="w-25 links ml-3 my-3">
+            <h5>Links</h5>
+            <ul>
+              <li><a class="text-light no-underline" href="#">Google</a></li>
+              <li><a class="text-light no-underline" href="#">Google</a></li>
+              <li><a class="text-light no-underline" href="#">Google</a></li>
+            </ul>
           </div>
-          <div class="qrcode w-50"><img src="images/qr_code.jpg" alt="" /></div>
+          <div class="w-25 social my-3">
+            <h5 class="d-inline-block">Find us on</h5>
+            <div class="d-inline-block social_icon">
+              <a class="text-light no-underline" href="#"><i class="fab fa-facebook"> </i></a>
+            </div>
+            <div class="d-inline-block social_icon">
+              <a class="text-light no-underline" href="#"><i class="fab fa-instagram"> </i></a>
+            </div>
+            <div class="qrcode w-50"><img src="images/qr_code.jpg" alt="" /></div>
+          </div>
         </div>
       </footer>
 
