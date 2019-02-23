@@ -1,33 +1,33 @@
 // SlideDown animation to Bootstrap dropdown when expanding
-$(".dropdown").on("show.bs.dropdown", function() {
-  $(this)
-    .find(".dropdown-menu")
-    .first()
-    .stop(true, true)
-    .slideDown(300);
-});
+// $(".dropdown").on("show.bs.dropdown", function() {
+//   $(this)
+//     .find(".dropdown-menu")
+//     .first()
+//     .stop(true, true)
+//     .slideDown(300);
+// });
 
 // SlideUp animation to Bootstrap dropdown when collapsing
-$(".dropdown").on("hide.bs.dropdown", function() {
-  $(this)
-    .find(".dropdown-menu")
-    .first()
-    .stop(true, true)
-    .slideUp(300);
-});
+// $(".dropdown").on("hide.bs.dropdown", function() {
+//   $(this)
+//     .find(".dropdown-menu")
+//     .first()
+//     .stop(true, true)
+//     .slideUp(300);
+// });
 
 // Hover item to Bootstrap dropdown
 $('ul.navbar-nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(300);
 }, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(300);
+  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(300);
 });
 
 // Slideshow for promotions
 $(".promotion").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 5000,
   dots: true,
   fade: true,
@@ -50,7 +50,7 @@ $(document).ready(function() {
   $(".wrap-slider").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     dots: false,
     pauseOnFocus: true,

@@ -210,6 +210,7 @@ header {
 
 .navbar .fa-angle-down {
   font-size: 17px;
+  color: #9395a9;
 }
 
 .brand {
@@ -218,13 +219,11 @@ header {
 }
 
 .collapse.navbar-collapse {
-  width: 40%;
+  /* width: 40%; */
 }
 
 .search {
   width: 5%;
-  /* border-right: 1px solid #9395A9; */
-  /* border-left: 1px solid #9395A9; */
   padding: 22px 0;
   text-align: center;
 }
@@ -245,9 +244,14 @@ header {
   transition: all 0.3s ease;
 }
 
+.nav-link:hover {
+  color: #393b60 !important;
+}
+
 .dropdown-menu {
-  margin-top: 0;
-  /* border: 2px solid #2098d1; */
+  width: 100%;
+  top: 70px;
+  position: fixed !important;
   background-clip: unset;
   border-radius: unset;
 }
@@ -255,10 +259,6 @@ header {
 .animate {
   transition: all 0.3s ease;
 }
-
-/* .hvr-sweep-to-bottom:before {
-    background: #cccccc;
-  } */
 
 /* =====STYLE FOR MAIN CAROUSEL===== */
 aside {
@@ -350,14 +350,8 @@ aside {
   background-color: #393b60;
 }
 
-/* =====STYLE FOR HR BAR===== */
-/* hr {
-  max-width: 1000px;
-} */
-
 /* =====STYLE FOR SECTION===== */
 section {
-  /* max-width: 1000px; */
   margin: auto;
   margin-top: 100px;
 }
@@ -505,6 +499,7 @@ h1 {
 .wrap-slider .old-price {
   margin-left: 5%;
   font-size: 1vmax;
+  color: #9395a9;
   text-decoration: line-through;
 }
 
@@ -566,13 +561,56 @@ footer {
 .wrap-footer {
   margin: auto;
   width: 80%;
+  height: 180px;
+  font-size: 1.2vmax;
 }
 
-.social_icon {
-  font-size: 20px;
+.menu-footer {
+  width: 35%;
+  margin-top: 2%;
 }
 
-/* =====STYLE FOR BACK TO TOP ARROW===== */
+.menu-footer h4 {
+  font-size: 2.4vmax;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+}
+
+.menu-footer h4 span {
+  color: #9395a9;
+}
+
+.menu-footer ul {
+  right: 10%;
+  list-style-type: none;
+}
+
+.copyright {
+  bottom: 10%;
+  color: #9395a9;
+}
+
+.address {
+  width: 40%;
+  margin-top: 2%;
+}
+
+.address i, .address p {
+  display: inline-block;
+}
+
+.social {
+  width: 25%;
+  margin-top: 2%;
+  font-size: 2vmax;
+}
+
+.social .fab {
+  margin-right: 5%;
+}
+
+/* ===== END OF STYLE FOR FOOTER ===== */
+
+/* ===== STYLE FOR BACK TO TOP ===== */
 .back2top {
   color: rgba(0, 0, 0, 0.5);
   font-size: 32px;
