@@ -48,7 +48,6 @@ body {
   cursor: pointer;
 }
 
-
 .animate {
   transition: all 0.2s ease;
 }
@@ -81,11 +80,38 @@ body {
     width: 95%;
     display: flex;
   }
-  
+
   .dropdown-menu-wrap2 a {
     color: #393b60;
-  }   
+  }
+
+  .collection > .row > div {
+    padding-bottom: 80%;
+    margin-bottom: 3%;
+  }
+
+  .collection-txt p {
+    font-size: 6.4vmax;
+    text-align: center;
+  }
+
+  .detail p, .add-to-cart p {
+    font-size: 2.2vmax;
+  }
+
+  .wrap-slider .price {
+    font-size: 4vmax;
+  }
+  
+  .wrap-slider .old-price {
+    font-size: 2vmax;
+  }
+  
+  .wrap-slider .product-name {
+    font-size: 2.4vmax;
+  }
 }
+/* ===== END OF STYLE FOR Small devices (landscape phones, 767px and below ===== */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -110,11 +136,11 @@ body {
     width: 66%;
     display: flex;
   }
-  
+
   .dropdown-menu-wrap1 a {
     color: #393b60;
-  }   
-  
+  }
+
   .dropdown-menu-wrap1 p {
     font-weight: bold;
     margin-bottom: 0.3rem;
@@ -127,47 +153,69 @@ body {
     border: none;
     border-top: 1px solid #c3c3ce;
     border-radius: 0;
-    box-shadow: 0px 5px 15px -7px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 15px -7px rgba(0, 0, 0, 0.5);
   }
-  
+
   .brand-list1 p {
     width: 110px;
   }
-  
+
   .collection-list1 {
     margin: auto;
   }
-  
+
   .collection-list-item {
     display: flex;
   }
-  
+
   .collection-list-item > div {
     width: 130px;
     display: inline-block;
     margin-right: 3%;
   }
-  
+
   .collection-list-item-img {
     border: 1px solid #c3c3ce;
   }
-  
+
   .collection-list-item-img:hover {
     border: 1px solid rgba(57, 59, 96, 1);
   }
-  
+
   .collection-list-item > div > a {
     display: block;
     font-size: 14px;
     text-align: center;
   }
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
+  .collection > .row > div {
+    padding-bottom: 27%;
+  }
 
-/* =====STYLE FOR WOW ANIMATION===== */
+  .collection-txt p {
+    font-size: 2vmax;
+    text-align: center;
+  }
+
+  .detail p, .add-to-cart p {
+    font-size: 1.2vmax;
+  }
+
+  .wrap-slider .price {
+    font-size: 2vmax;
+  }
+  
+  .wrap-slider .old-price {
+    font-size: 1vmax;
+  }
+  
+  .wrap-slider .product-name {
+    font-size: 1.2vmax;
+  }
+}
+/* ===== END OF STYLE FOR Medium devices (tablets, 768px and up) ===== */
+
+/* ===== STYLE FOR WOW ANIMATION ===== */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -332,8 +380,6 @@ header {
   color: #393b60 !important;
 }
 
-
-
 /* =====STYLE FOR MAIN CAROUSEL===== */
 aside {
   margin-top: 74px;
@@ -352,7 +398,7 @@ aside {
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
   right: 0;
-  font-size: calc(48px + (26 - 14) * ((100vw - 300px) / (1920 - 320)));
+  font-size: 6.6vw;
 }
 
 .promotion1 .promo-txt2 {
@@ -378,7 +424,7 @@ aside {
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
   top: 52%;
   left: 6%;
-  font-size: 120px;
+  font-size: 6.6vw;
 }
 
 .promotion2 .promo-txt2 {
@@ -386,14 +432,14 @@ aside {
   color: #393b60;
   top: 74%;
   left: 24%;
-  font-size: 50px;
+  font-size: 3.5vw;
 }
 
 .promotion2 .promo-txt3 {
   top: 86%;
   left: 29%;
   padding: 0.2% 1%;
-  font-size: 30px;
+  font-size: 2vw;
   color: #ffffff;
   background-color: #393b60;
 }
@@ -404,7 +450,7 @@ aside {
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
   top: 52%;
   left: 6%;
-  font-size: 120px;
+  font-size: 6.6vw;
 }
 
 .promotion3 .promo-txt2 {
@@ -412,14 +458,14 @@ aside {
   color: #393b60;
   top: 74%;
   left: 24%;
-  font-size: 50px;
+  font-size: 3.5vw;
 }
 
 .promotion3 .promo-txt3 {
   top: 86%;
   left: 29%;
   padding: 0.2% 1%;
-  font-size: 30px;
+  font-size: 2.5vw;
   color: #ffffff;
   background-color: #393b60;
 }
@@ -433,10 +479,6 @@ section {
 /* ===== STYLE FOR COLLECTIONS ===== */
 .row {
   margin: auto 5%;
-}
-
-.collection > .row > div {
-  padding-bottom: 27%;
 }
 
 .collection-item:hover .collection-img {
@@ -467,11 +509,6 @@ section {
   bottom: 0;
   line-height: 1.2;
   display: flex;
-}
-
-.collection-txt p {
-  font-size: 2vmax;
-  text-align: center;
 }
 
 /* =====STYLE FOR WRAP 1===== */
@@ -548,7 +585,6 @@ h1 {
 
 .detail p,
 .add-to-cart p {
-  font-size: 1.2vmax;
   width: 100%;
   top: 50%;
   left: 50%;
@@ -567,19 +603,16 @@ h1 {
 .wrap-slider .price {
   margin-left: 3%;
   font-weight: bold;
-  font-size: 2vmax;
 }
 
 .wrap-slider .old-price {
   margin-left: 5%;
-  font-size: 1vmax;
   color: #9395a9;
   text-decoration: line-through;
 }
 
 .wrap-slider .product-name {
   width: 100%;
-  font-size: 1.2vmax;
   left: 3%;
   bottom: 2%;
 }
@@ -596,7 +629,7 @@ h1 {
 }
 
 .ad-img img {
-  transform: translateY(-250px);
+  transform: translateY(-25%);
 }
 
 .ad-box {
@@ -668,7 +701,8 @@ footer {
   margin-top: 2%;
 }
 
-.address i, .address p {
+.address i,
+.address p {
   display: inline-block;
 }
 
