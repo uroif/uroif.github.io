@@ -1,9 +1,9 @@
 // if (screen.width >= 768) {
-  $('ul.navbar-nav li.dropdown').hover(function () {
-    $(this).find('.dropdown-menu').stop(true, true).delay(50).slideDown(200);
-  }, function () {
-    $(this).find('.dropdown-menu').stop(true, true).delay(50).slideUp(200);
-  });
+  // $('ul.navbar-nav li.dropdown').hover(function () {
+  //   $(this).find('.dropdown-menu').stop(true, true).delay(50).slideDown(200);
+  // }, function () {
+  //   $(this).find('.dropdown-menu').stop(true, true).delay(50).slideUp(200);
+  // });
 // }
 
 // if (screen.width < 768) {
@@ -15,22 +15,22 @@
 // }
 
 // if (screen.width < 768) {
-//   // SlideDown animation to Bootstrap dropdown when expanding
-//   $(".dropdown").on("show.bs.dropdown", function () {
-//     $(this)
-//       .find(".dropdown-menu")
-//       .first()
-//       .stop(true, true)
-//       .slideDown(200);
-//   });
-//   // SlideUp animation to Bootstrap dropdown when collapsing
-//   $(".dropdown").on("hide.bs.dropdown", function () {
-//     $(this)
-//       .find(".dropdown-menu")
-//       .first()
-//       .stop(true, true)
-//       .slideUp(200);
-//   });
+  // SlideDown animation to Bootstrap dropdown when expanding
+  $(".dropdown").on("show.bs.dropdown", function () {
+    $(this)
+      .find(".dropdown-menu")
+      .first()
+      .stop(true, true)
+      .slideDown(200);
+  });
+  // SlideUp animation to Bootstrap dropdown when collapsing
+  $(".dropdown").on("hide.bs.dropdown", function () {
+    $(this)
+      .find(".dropdown-menu")
+      .first()
+      .stop(true, true)
+      .slideUp(200);
+  });
 // }
 
 // function myFunction(x) {
