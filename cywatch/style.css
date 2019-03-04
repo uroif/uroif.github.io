@@ -58,6 +58,7 @@ body {
   .navbar {
     z-index: 1;
   }
+
   .navbar-toggler-icon span {
     display: block;
     width: 100%;
@@ -65,12 +66,20 @@ body {
     margin-bottom: 28%;
     background: rgba(57, 59, 96, 1);
   }
+
   .navbar-brand {
     width: 75%;
   }
+
   .navbar-collapse {
     background: #ffffff;
+    margin-top: -1%;
   }
+
+  .dropdown-menu {
+    border-radius: 0 !important;
+  }
+
   .dropdown-menu-wrap1 {
     display: none;
   }
@@ -78,11 +87,23 @@ body {
   .dropdown-menu-wrap2 {
     margin: auto;
     width: 95%;
-    display: flex;
+  }
+
+  .dropdown-menu-wrap2 p {
+    margin-bottom: 0;
   }
 
   .dropdown-menu-wrap2 a {
     color: #393b60;
+    margin-left: 1rem;
+  }
+
+  .collection-list2 {
+    margin-top: 0.5rem;
+  }
+  
+  .promotion .slick-slide img {
+    transform: scale(1.3);
   }
 
   .collection > .row > div {
@@ -263,7 +284,7 @@ body {
 /* ===== STYLE FOR SLICK SLIDER ===== */
 .promotion .slick-arrow {
   position: absolute;
-  font-size: 50px;
+  font-size: 4.6vmax;
   color: #9395a9;
   z-index: 1;
   cursor: pointer;
@@ -363,6 +384,7 @@ header {
 .cart {
   width: 5%;
   text-align: center;
+  margin: 1%;
 }
 
 .navbar-brand {
