@@ -131,6 +131,36 @@ body {
   .wrap-slider .product-name {
     font-size: 2.4vmax;
   }
+
+  .wrap-footer {
+    display: block;
+    font-size: 2.2vmax;
+  }
+
+  .menu-footer {
+    padding-bottom: 10%;
+  }
+
+  .menu-footer h4 {
+    position: absolute;
+    font-size: 4.4vmax;
+  }
+
+  .menu-footer ul {
+    position: absolute;
+  }
+
+  .wrap-footer > div {
+    width: 100%;
+    padding-top: 2%;
+  }
+
+  .social {
+    margin-top: -2% !important;
+    text-align: center;
+    font-size: 5vmax;
+  }
+
 }
 /* ===== END OF STYLE FOR Small devices (landscape phones, 767px and below ===== */
 
@@ -232,6 +262,28 @@ body {
   
   .wrap-slider .product-name {
     font-size: 1.2vmax;
+  }
+
+  .wrap-footer {
+    display: flex;
+    font-size: 1.2vmax;
+  }
+
+  .menu-footer {
+    position: relative;
+  }
+
+  .menu-footer h4, .menu-footer ul {
+    position: absolute;
+  }
+
+  .menu-footer h4 {
+    font-size: 2.4vmax;
+  }
+
+  .social {
+    font-size: 2vmax;
+    text-align: right;
   }
 }
 /* ===== END OF STYLE FOR Medium devices (tablets, 768px and up) ===== */
@@ -688,10 +740,8 @@ footer {
 }
 
 .wrap-footer {
-  margin: auto;
+  margin: 2% auto;
   width: 80%;
-  height: 180px;
-  font-size: 1.2vmax;
 }
 
 .menu-footer {
@@ -700,7 +750,6 @@ footer {
 }
 
 .menu-footer h4 {
-  font-size: 2.4vmax;
   font-family: Oswald, Arial, Helvetica, sans-serif;
 }
 
@@ -709,13 +758,15 @@ footer {
 }
 
 .menu-footer ul {
-  right: 10%;
+  right: 30%;
   list-style-type: none;
 }
 
 .copyright {
-  bottom: 10%;
+  width: 80%;
+  margin: auto;
   color: #9395a9;
+  padding-bottom: 2%;
 }
 
 .address {
@@ -731,7 +782,6 @@ footer {
 .social {
   width: 25%;
   margin-top: 2%;
-  font-size: 2vmax;
 }
 
 .social .fab {
