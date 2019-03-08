@@ -56,8 +56,8 @@ $(".promotion").slick({
   dots: true,
   fade: true,
   easing: 'linear',
-  nextArrow: '<i class="fa fa-chevron-circle-right"></i>',
-  prevArrow: '<i class="fa fa-chevron-circle-left"></i>',
+  nextArrow: '<i class="fa fa-caret-right"></i>',
+  prevArrow: '<i class="fa fa-caret-left"></i>',
   pauseOnFocus: true,
   responsive: [
     {
@@ -118,8 +118,8 @@ $(".modal-img-s").click(function() {
 // Keep navigation when scroll down
 $(document).scroll(function(e) {
   var scrollTop = $(document).scrollTop();
-  if (scrollTop > 720) {
-    $(".back2top").animate({ right: "20px", bottom: "25px", opacity: "1" }, 30);
+  if (scrollTop > 600) {
+    $(".back2top").animate({ right: "20px", bottom: "50px", opacity: "1" }, 20);
   } else if (scrollTop > 0) {
     $("header").animate(
       { "box-shadow": "0px 2px 15px 0px rgba(0,0,0,0.5)" },
@@ -128,8 +128,8 @@ $(document).scroll(function(e) {
     // $(".navbar-brand").animate({ "font-size": "1.5rem" }, 30);
     $("header").animate({ "background-color": "red" }, 30);
     $(".back2top").animate(
-      { right: "20px", bottom: "20px", opacity: "0", cursor: "none" },
-      200
+      { right: "20px", bottom: "40px", opacity: "0", cursor: "none" },
+      20
     );
   } else {
     $("header").animate({ "box-shadow": "0px 2px 15px 0px rgba(0,0,0,0)" }, 0);
