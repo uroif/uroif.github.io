@@ -406,6 +406,7 @@ a, a:hover {
   max-width: 1920px;
   margin: auto;
 }
+/* ===== END OF STYLE FOR BODY ===== */
 
 /* ===== STYLE FOR HEADER ===== */
 header {
@@ -459,9 +460,9 @@ header {
 .nav-link:hover {
   color: #393b60 !important;
 }
-/* ===== END OF STYLE FOR HEADER===== */
+/* ===== END OF STYLE FOR HEADER ===== */
 
-/* =====STYLE FOR MAIN CAROUSEL===== */
+/* ===== STYLE FOR MAIN CAROUSEL ===== */
 aside {
   margin-top: 70px;
 }
@@ -556,12 +557,14 @@ aside {
   color: #ffffff;
   background-color: #393b60;
 }
+/* ===== END STYLE FOR MAIN CAROUSEL ===== */
 
-/* =====STYLE FOR SECTION===== */
+/* ===== STYLE FOR SECTION ===== */
 section {
   margin: auto;
   margin-top: 100px;
 }
+/* ===== END OF STYLE FOR SECTION ===== */
 
 /* ===== STYLE FOR COLLECTIONS ===== */
 .row {
@@ -601,8 +604,43 @@ section {
   line-height: 1.2;
   display: flex;
 }
+/* ===== END OF STYLE FOR COLLECTIONS ===== */
 
-/* =====STYLE FOR WRAP 1===== */
+/* ===== STYLE FOR MODAL ===== */
+.modal-header {
+  display: unset;
+}
+
+.modal-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal-img {
+  margin: auto;
+  width: 15%;
+}
+
+.modal-info {
+  margin: auto;
+  width: 60%;
+}
+
+.modal-info h4 a {
+  font-size: 1.6vmax;
+  color: #393b60;
+}
+
+.modal-price {
+  font-size: 1.5vmax;
+}
+
+.modal-qty {
+  font-size: 1.8vmax;
+}
+/* ===== END OF STYLE FOR MODAL ===== */
+
+/* ===== STYLE FOR WRAP 1 ===== */
 h1 {
   font-family: Coiny, Arial, sans-serif;
 }
