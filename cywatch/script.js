@@ -63,7 +63,6 @@ $(".promotion").slick({
     {
       breakpoint: 768,
       settings: {
-
       }
     }
   ]
@@ -120,21 +119,8 @@ $(document).scroll(function(e) {
   var scrollTop = $(document).scrollTop();
   if (scrollTop > 600) {
     $(".back2top").animate({ right: "20px", bottom: "50px", opacity: "1" }, 20);
-  } else if (scrollTop > 0) {
-    $("header").animate(
-      { "box-shadow": "0px 2px 15px 0px rgba(0,0,0,0.5)" },
-      0
-    );
-    // $(".navbar-brand").animate({ "font-size": "1.5rem" }, 30);
-    $("header").animate({ "background-color": "red" }, 30);
-    $(".back2top").animate(
-      { right: "20px", bottom: "40px", opacity: "0", cursor: "none" },
-      20
-    );
   } else {
-    $("header").animate({ "box-shadow": "0px 2px 15px 0px rgba(0,0,0,0)" }, 0);
-    // $(".navbar-brand").animate({ "font-size": "1.8rem" }, 200);
-    $("header").animate({ "background-color": "#FFFFFF" }, 30);
+    $(".back2top").animate({ right: "20px", bottom: "40px", opacity: "0", cursor: "none" }, 20);
   }
 });
 
