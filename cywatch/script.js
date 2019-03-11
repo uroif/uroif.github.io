@@ -15,38 +15,6 @@ $(".dropdown").on("hide.bs.dropdown", function () {
     .slideUp(200);
 });
 
-// function myFunction(x) {
-//   if (x.matches) {
-//     // Hover item to Bootstrap dropdown
-//     $('ul.navbar-nav li.dropdown').hover(function () {
-//       $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(200);
-//     }, function () {
-//       $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(200);
-//     });
-//   } else {
-//     // SlideDown animation to Bootstrap dropdown when expanding
-//     $(".dropdown").on("show.bs.dropdown", function () {
-//       $(this)
-//         .find(".dropdown-menu")
-//         .first()
-//         .stop(true, true)
-//         .slideDown(300);
-//     });
-//     // SlideUp animation to Bootstrap dropdown when collapsing
-//     $(".dropdown").on("hide.bs.dropdown", function () {
-//       $(this)
-//         .find(".dropdown-menu")
-//         .first()
-//         .stop(true, true)
-//         .slideUp(300);
-//     });
-//   }
-// }
-
-// var x = window.matchMedia("(min-width: 768px)")
-// myFunction(x)
-// x.addListener(myFunction)
-
 // Slideshow for promotions
 $(".promotion").slick({
   slidesToShow: 1,
@@ -118,9 +86,9 @@ $(".modal-img-s").click(function() {
 $(document).scroll(function(e) {
   var scrollTop = $(document).scrollTop();
   if (scrollTop > 600) {
-    $(".back2top").animate({ right: "20px", bottom: "50px", opacity: "1" }, 20);
+    $(".back2top").animate({ right: "20px", bottom: "110px", opacity: "1" }, 20);
   } else {
-    $(".back2top").animate({ right: "20px", bottom: "40px", opacity: "0", cursor: "none" }, 20);
+    $(".back2top").animate({ right: "20px", bottom: "100px", opacity: "0", cursor: "none" }, 20);
   }
 });
 

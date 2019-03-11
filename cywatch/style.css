@@ -15,6 +15,10 @@ body {
   color: #393b60;
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 /* ===== DEFINE CUSTOM CLASSES ===== */
 .color-393B60 {
   color: #393b60 !important;
@@ -122,7 +126,7 @@ body {
   }
 
   .wrap-slider .price {
-    font-size: 4vmax;
+    font-size: 3.5vmax;
   }
   
   .wrap-slider .old-price {
@@ -254,7 +258,7 @@ body {
   }
 
   .wrap-slider .price {
-    font-size: 2vmax;
+    font-size: 1.6vmax;
   }
   
   .wrap-slider .old-price {
@@ -449,7 +453,7 @@ header {
 .nav-link,
 .dropdown-item {
   font-size: 18px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .nav-link:hover {
@@ -470,6 +474,10 @@ aside {
   transform: translate(-5%, -90%);
 }
 
+.promo-txt3 a {
+  color: rgba(195, 195, 206, 0.8);
+}
+
 .promotion1 .promo-txt1 {
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -480,7 +488,8 @@ aside {
 
 .promotion1 .promo-txt2 {
   font-family: "Dancing Script", Arial, sans-serif;
-  color: #393b60;
+  color: #ffffff;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
   top: 52%;
   right: 0;
   font-size: 3.5vmax;
@@ -496,7 +505,7 @@ aside {
 }
 
 .promotion2 .promo-txt1 {
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
   top: 52%;
@@ -505,8 +514,8 @@ aside {
 }
 
 .promotion2 .promo-txt2 {
-  font-family: "Dancing Script", Arial, sans-serif;
-  color: #393b60;
+  font-family: Jura, Arial, sans-serif;
+  color: #c3c3ce;
   top: 74%;
   left: 24%;
   font-size: 3.5vw;
@@ -531,8 +540,9 @@ aside {
 }
 
 .promotion3 .promo-txt2 {
-  font-family: "Dancing Script", Arial, sans-serif;
-  color: #393b60;
+  font-family: Quicksand, Arial, sans-serif;
+  color: #ffffff;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
   top: 74%;
   left: 24%;
   font-size: 3.5vw;
@@ -556,6 +566,10 @@ section {
 /* ===== STYLE FOR COLLECTIONS ===== */
 .row {
   margin: auto 5%;
+}
+
+.collection a {
+  color: rgba(195, 195, 206, 1);
 }
 
 .collection-item:hover .collection-img {
@@ -603,17 +617,17 @@ h1 {
 
 .wrap1 {
   margin: auto 8%;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
-.wrap1-item {
+.wrap-item {
   width: 98% !important;
   margin-left: 1%;
   padding-bottom: 130%;
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
-.wrap1-item:hover {
+.wrap-item:hover {
   border: 1px solid rgba(57, 59, 96, 1);
 }
 
@@ -630,13 +644,13 @@ h1 {
   transform: translate(-50%, 10%);
 }
 
-.wrap1-item:hover .detail {
+.wrap-item:hover .detail {
   opacity: 1;
   cursor: pointer;
   top: 42%;
 }
 
-.wrap1-item:hover .add-to-cart {
+.wrap-item:hover .add-to-cart {
   opacity: 1;
   cursor: pointer;
   top: 55%;
@@ -671,7 +685,6 @@ h1 {
 }
 
 .detail p a {
-  text-decoration: none;
   color: #ffffff;
 }
 
@@ -700,6 +713,31 @@ h1 {
   left: 3%;
   bottom: 2%;
 }
+/* ===== END OF STYLE FOR WRAP 1 ===== */
+
+/* ===== STYLE FOR WRAP 2 ===== */
+.wrap2 {
+  margin: auto 8%;
+  margin-top: 30px;
+}
+/* ===== END OF STYLE FOR WRAP 2 ===== */
+
+
+/* ===== STYLE FOR WRAP 3 ===== */
+.wrap3 {
+  margin: auto 8%;
+  margin-top: 60px;
+}
+/* ===== END OF STYLE FOR WRAP 3 ===== */
+
+
+/* ===== STYLE FOR WRAP 4 ===== */
+.wrap4 {
+  margin: auto 8%;
+  margin-top: 30px;
+}
+/* ===== END OF STYLE FOR WRAP 4 ===== */
+
 
 /* ===== STYLE FOR ADVERTISEMENT ===== */
 .advert {
@@ -759,12 +797,13 @@ footer {
   margin-top: 2%;
 }
 
-.menu-footer h4 {
+.menu-footer h4 a {
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  color: #9395a9;
 }
 
 .menu-footer h4 span {
-  color: #9395a9;
+  color: #ffffff;
 }
 
 .menu-footer ul {
@@ -772,11 +811,8 @@ footer {
   list-style-type: none;
 }
 
-.copyright {
-  width: 80%;
-  margin: auto;
-  color: #9395a9;
-  padding-bottom: 2%;
+.menu-footer ul a {
+  color: #c3c3ce;
 }
 
 .address {
@@ -787,15 +823,24 @@ footer {
 .address i,
 .address p {
   display: inline-block;
+  color: #c3c3ce;
 }
 
 .social {
   width: 25%;
   margin-top: 2%;
+  color: #c3c3ce;
 }
 
 .social .fab {
   margin-right: 5%;
+}
+
+.copyright {
+  width: 80%;
+  margin: auto;
+  color: #9395a9;
+  padding-bottom: 2%;
 }
 
 /* ===== END OF STYLE FOR FOOTER ===== */
@@ -806,7 +851,7 @@ footer {
   font-size: 40px;
   transition: all 0.2s ease;
   right: 20px;
-  bottom: 40px;
+  bottom: 100px;
 }
 
 .back2top:hover {
@@ -840,5 +885,31 @@ footer {
   color: rgba(57, 59, 96, 1);
   background: rgba(195, 195, 206, 0.8);
 }
-
 /* ===== END OF STYLE FOR SUPPORT ===== */
+
+/* ================================= */
+/* STYLE FOR PAGE CART */
+/* ================================= */
+.page-cart {
+  margin-top: 70px;
+}
+
+.advertise {
+  padding-bottom: 30%;
+  overflow: hidden;
+}
+
+.under-construction img {
+  margin: auto;
+  display: block;
+  width: 25%;
+}
+
+.under-construction p {
+  color: rgba(82, 84, 121, 1);
+  margin-left: 10%;
+}
+
+.under-construction p a {
+  color: rgba(82, 84, 121, 1);
+}
