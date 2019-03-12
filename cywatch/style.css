@@ -943,6 +943,45 @@ footer {
 /* ===== END OF STYLE FOR SUPPORT ===== */
 
 /* ================================= */
+/* STYLE FOR PAGE LIST OF PRODUCTS */
+/* ================================= */
+.advert-lop img {
+  transform: translateY(-10%);
+}
+
+.breadcrumb-lop {
+  color: rgba(195, 195, 206, 1);
+  margin-top: -25px;
+  margin-left: 10%;
+}
+
+.breadcrumb-lop a {
+  color: rgba(195, 195, 206, 1);
+}
+
+.wrap-lop {
+  width: 80%;
+  margin: auto;
+}
+
+.left-menu {
+  width: 20%;
+}
+
+.right-wrap-lop {
+  width: 80%;
+}
+
+.right-wrap-lop .wrap-item {
+  width: unset !important;
+  margin-left: unset;
+  padding-bottom: 30%;
+}
+/* ================================= */
+/* END OF STYLE FOR PAGE LIST OF PRODUCTS */
+/* ================================= */
+
+/* ================================= */
 /* STYLE FOR PAGE CART */
 /* ================================= */
 .page-cart {
