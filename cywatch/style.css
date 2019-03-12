@@ -475,8 +475,22 @@ aside {
   transform: translate(-5%, -90%);
 }
 
+.promo2-box {
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  left: 10%;
+}
+
+.promo3-box {
+  width: 80%;
+  height: 50%;
+  top: 50%;
+  left: 5%;
+}
+
 .promo-txt3 a {
-  color: rgba(195, 195, 206, 0.8);
+  color: #ffffff;
 }
 
 .promotion1 .promo-txt1 {
@@ -509,22 +523,18 @@ aside {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  top: 52%;
-  left: 6%;
-  font-size: 6.6vw;
+  font-size: 5.6vw;
 }
 
 .promotion2 .promo-txt2 {
   font-family: Jura, Arial, sans-serif;
   color: #c3c3ce;
-  top: 74%;
-  left: 24%;
+  top: 35%;
   font-size: 3.5vw;
 }
 
 .promotion2 .promo-txt3 {
-  top: 86%;
-  left: 29%;
+  top: 70%;
   padding: 0.2% 1%;
   font-size: 2vw;
   color: #ffffff;
@@ -535,27 +545,26 @@ aside {
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  top: 52%;
-  left: 6%;
-  font-size: 6.6vw;
+  font-size: 5.6vw;
 }
 
 .promotion3 .promo-txt2 {
   font-family: Quicksand, Arial, sans-serif;
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  top: 74%;
-  left: 24%;
+  top: 34%;
   font-size: 3.5vw;
+  font-style: italic;
 }
 
 .promotion3 .promo-txt3 {
-  top: 86%;
-  left: 29%;
+  top: 65%;
+  left: 30%;
   padding: 0.2% 1%;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   color: #ffffff;
   background-color: #393b60;
+  transform: skew(-13deg);
 }
 /* ===== END STYLE FOR MAIN CAROUSEL ===== */
 
@@ -607,6 +616,14 @@ section {
 /* ===== END OF STYLE FOR COLLECTIONS ===== */
 
 /* ===== STYLE FOR MODAL ===== */
+.modal-dialog {
+  min-width: 45%;
+}
+
+.modal-content, .btn {
+  border-radius: 0;
+}
+
 .modal-header {
   display: unset;
 }
@@ -618,7 +635,7 @@ section {
 
 .modal-img {
   margin: auto;
-  width: 15%;
+  width: 20%;
 }
 
 .modal-info {
