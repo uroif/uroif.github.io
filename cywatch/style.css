@@ -945,14 +945,19 @@ footer {
 /* ================================= */
 /* STYLE FOR PAGE LIST OF PRODUCTS */
 /* ================================= */
+.advert-lop {
+  max-height: 600px;
+  overflow: hidden;
+}
+
 .advert-lop img {
-  transform: translateY(-10%);
+  transform: translateY(0%);
 }
 
 .breadcrumb-lop {
   color: rgba(195, 195, 206, 1);
-  margin-top: -25px;
-  margin-left: 10%;
+  margin-top: 15px;
+  margin-left: 8%;
 }
 
 .breadcrumb-lop a {
@@ -960,23 +965,80 @@ footer {
 }
 
 .wrap-lop {
-  width: 80%;
-  margin: auto;
+  width: 84%;
+  margin: 1% auto auto;
 }
 
 .left-menu {
   width: 20%;
+  font-size: 1.1vmax;
+}
+
+.left-menu div {  
+  padding: 5%;
+  border: 1px solid rgba(195, 195, 206, 0.4);
+}
+
+.left-menu p {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
 }
 
 .right-wrap-lop {
   width: 80%;
 }
 
+.right-wrap-lop .filter-bar div {
+  width: 90%;
+  margin: 0 auto 2% auto;
+  padding: 1%;
+  text-align: right;
+  background: rgba(195, 195, 206, 0.4);
+}
+
 .right-wrap-lop .wrap-item {
   width: unset !important;
   margin-left: unset;
-  padding-bottom: 30%;
+  margin: 25px auto;
+  padding-bottom: 250px;
 }
+
+.right-wrap-lop .detail p, .right-wrap-lop .add-to-cart p {
+  font-size: 0.8em;
+}
+
+.right-wrap-lop .info {
+  bottom: 5%;
+}
+
+.right-wrap-lop .price {
+  display: inline-block;
+  font-size: 1em;
+}
+
+.right-wrap-lop .old-price {
+  display: inline-block;
+  font-size: 0.7em;
+  text-decoration: line-through;
+  color: rgba(195, 195, 206, 1.0);
+}
+
+.right-wrap-lop .product-name {
+  bottom: 0;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.pagination div {
+  margin: 3% auto auto;
+  font-size: 1.5rem;
+}
+
+.pagination p {
+  display: inline-block;
+}
+
+
 /* ================================= */
 /* END OF STYLE FOR PAGE LIST OF PRODUCTS */
 /* ================================= */
