@@ -161,13 +161,47 @@
 
             <div class="filter-bar">
               <div>
-                <span style="font-weight: bold; margin-right: 20px;">Sắp xếp theo</span>
-                <span>GIÁ THẤP</span>
-                <span>GIÁ CAO</span>
-                <span style="border: 1px solid rgba(82, 84, 121, 1); padding: 1px;">BÁN CHẠY</span>
-                <span>MỚI VỀ</span>
+                <span style="font-weight: bold; margin-right: 15px;">Sắp xếp theo</span>
+                <span><a href="#">GIÁ THẤP</a></span>
+                <span><a href="#">GIÁ CAO</a></span>
+                <span style="border: 1px solid rgba(82, 84, 121, 1); padding: 3px;"><a href="#">BÁN CHẠY</a></span>
+                <span><a href="">MỚI VỀ</a></span>
               </div>
             </div>
+
+            
+            <!-- ===== MODAL THÊM VÀO GIỎ HÀNG ==== -->
+            <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="modal-w1-i1-label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+            
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title">THÊM VÀO GIỎ HÀNG</h5>
+                  </div>
+            
+                  <div class="modal-body d-flex">
+                    <div class="modal-img">
+                      <img class="border" src="images/Activity Trackers/Fitbit Blaze Smart Fitness Watch/3r.jpg" alt="" />
+                    </div>
+                    <div class="modal-info">
+                      <h4><a href="product_detail.html">Fitbit Blaze Smart Fitness Watch</a></h4>
+                      <div class="modal-price mt-2">Giá: <span>1.000.000 đ</span></div>
+                      <div class="modal-qty mt-3">Số lượng: <span style="font-weight: bold;">1</span></div>
+                    </div>
+                  </div>
+            
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-muted" data-dismiss="modal">Tiếp tục mua hàng</button>
+                    <button type="button" class="btn btn-success" onclick="window.location.href = 'cart.html';">Xem giỏ hàng</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+            <!-- END OF MODAL THÊM VÀO GIỎ HÀNG -->
 
             <div class="products">
               <div class="row">
@@ -488,9 +522,13 @@
 
             <div class="pagination">
               <div>
-                <i class="far fa-caret-square-left"></i>
-                <p><span style="color: #ffffff; background: #393b60; padding: 2%;">  1 </span>   2   ...   6   7  </p>
-                <i class="far fa-caret-square-right"></i>
+                <span class="arrow-lop"><a href="#"><</a></span>
+                <span class="pagi-mark"><a href="#">1</a></span>
+                <span><a href="#">2</a></span>
+                <span>...</span>
+                <span><a href="#">6</a></span>
+                <span><a href="#">7</a></span>
+                <span class="arrow-lop"><a href="#">></a></span>
               </div>
             </div>
                     

@@ -166,6 +166,11 @@ a, a:hover {
     font-size: 5vmax;
   }
 
+  .filter-bar span {
+    font-size: 0.8rem;
+    margin: 0 0.5% !important;
+  }
+
 }
 /* ===== END OF STYLE FOR Small devices (landscape phones, 767px and below ===== */
 
@@ -970,7 +975,7 @@ footer {
 }
 
 .left-menu {
-  width: 20%;
+  width: 22%;
   font-size: 1.1vmax;
 }
 
@@ -985,7 +990,7 @@ footer {
 }
 
 .right-wrap-lop {
-  width: 80%;
+  width: 78%;
 }
 
 .right-wrap-lop .filter-bar div {
@@ -994,6 +999,14 @@ footer {
   padding: 1%;
   text-align: right;
   background: rgba(195, 195, 206, 0.4);
+}
+
+.right-wrap-lop .filter-bar span {
+  margin: 0 1%;
+}
+
+.right-wrap-lop .filter-bar a {
+  color: rgba(57, 59, 96, 1);
 }
 
 .right-wrap-lop .wrap-item {
@@ -1030,15 +1043,32 @@ footer {
 }
 
 .pagination div {
-  margin: 3% auto auto;
-  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-.pagination p {
-  display: inline-block;
+.pagination span {
+  margin: 1%;
 }
 
+.pagination .far {
+  font-size: 1.2rem;
+}
 
+.pagination a {
+  color: rgba(57, 59, 96, 1);
+}
+
+.pagi-mark a {
+  padding: 0 1.2%;
+  color: #ffffff;
+  background: rgba(57, 59, 96, 1);
+}
+
+.arrow-lop {
+  font-size: 1.5em;
+}
 /* ================================= */
 /* END OF STYLE FOR PAGE LIST OF PRODUCTS */
 /* ================================= */
