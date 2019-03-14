@@ -75,7 +75,7 @@ $(document).ready(function() {
 
 // Click image to show in modal
 $("document").ready(function() {
-  $(".modal-img-m2,.modal-img-m3").hide();
+  $(".modal-img-m2,.modal-img-m3,.modal-img-m4,.modal-img-m5").hide();
 });
 $(".modal-img-s").click(function() {
   $(".modal-img-m").hide();
