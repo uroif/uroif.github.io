@@ -119,7 +119,7 @@
       <section class="page-cart">
     
         <!-- ===== BANNER ===== -->
-        <div class="advert-lop">
+        <div class="advert-lop advert-lop-pd">
           <div class="ad-img">
             <img src="images/Smart Watches/Samsung Gear Sport Smartwatch/samsung-gear-sport.jpg" alt="Advertisement Image">
           </div>
@@ -136,35 +136,113 @@
         <div class="wrap-info-pd">
         
           <!-- ===== SLIDE SHOW ===== -->
-          <div class="slideshow-pd">
-              <div class="modal-imgs-main">
-                  <div class="modal-img-m1 border"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/1.jpg" alt="" /></div>
-                  <div class="modal-img-m2 border"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/2.jpg" alt="" /></div>
-                  <div class="modal-img-m3 border"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/3.jpg" alt="" /></div>
-                  <div class="modal-img-m4 border"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/4.jpg" alt="" /></div>
-                  <div class="modal-img-m5 border"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/5.jpg" alt="" /></div>
+          <div class="slideshow-pd d-flex">
+              <div class="modal-imgs-sub">
+                  <div class="modal-img-s modal-img-s1 hvr-bubble-right pointer" target="1"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/1.jpg" alt=""></div>
+                  <div class="modal-img-s modal-img-s2 hvr-bubble-right pointer" target="2"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/2.jpg" alt=""></div>
+                  <div class="modal-img-s modal-img-s3 hvr-bubble-right pointer" target="3"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/3.jpg" alt=""></div>
+                  <div class="modal-img-s modal-img-s4 hvr-bubble-right pointer" target="4"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/4.jpg" alt=""></div>
+                  <div class="modal-img-s modal-img-s5 hvr-bubble-right pointer" target="5"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/5.jpg" alt=""></div>
               </div>
-              <div class="modal-imgs-sub d-flex flex-column">
-                  <div class="modal-img-s1 hvr-bubble-top pointer" target="1"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/1.jpg" alt=""></div>
-                  <div class="modal-img-s2 hvr-bubble-top pointer" target="2"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/2.jpg" alt=""></div>
-                  <div class="modal-img-s3 hvr-bubble-top pointer" target="3"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/3.jpg" alt=""></div>
-                  <div class="modal-img-s4 hvr-bubble-top pointer" target="3"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/4.jpg" alt=""></div>
-                  <div class="modal-img-s5 hvr-bubble-top pointer" target="3"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/5.jpg" alt=""></div>
+              <div class="modal-imgs-main d-inline-block">
+                  <div class="modal-img-m modal-img-m1"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/1.jpg" alt="" /></div>
+                  <div class="modal-img-m modal-img-m2"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/2.jpg" alt="" /></div>
+                  <div class="modal-img-m modal-img-m3"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/3.jpg" alt="" /></div>
+                  <div class="modal-img-m modal-img-m4"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/4.jpg" alt="" /></div>
+                  <div class="modal-img-m modal-img-m5"><img src="images/Smart Watches/Samsung Gear Sport Smartwatch/5.jpg" alt="" /></div>
               </div>
           </div>
           <!-- ===== END OF SLIDE SHOW ===== -->
+
+          <!-- ===== MODAL THÊM VÀO GIỎ HÀNG ==== -->
+          <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="modal-w1-i1-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+          
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h5 class="modal-title">THÊM VÀO GIỎ HÀNG</h5>
+                </div>
+          
+                <div class="modal-body d-flex">
+                  <div class="modal-img">
+                    <img class="border" src="images/Activity Trackers/Fitbit Blaze Smart Fitness Watch/3r.jpg" alt="" />
+                  </div>
+                  <div class="modal-info">
+                    <h4><a href="product_detail.html">Fitbit Blaze Smart Fitness Watch</a></h4>
+                    <div class="modal-price mt-2">Giá: <span>1.000.000 đ</span></div>
+                    <div class="modal-qty mt-3">Số lượng: <span style="font-weight: bold;">1</span></div>
+                  </div>
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-muted" data-dismiss="modal">Tiếp tục mua hàng</button>
+                  <button type="button" class="btn btn-success" onclick="window.location.href = 'cart.html';">Xem giỏ hàng</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          <!-- END OF MODAL THÊM VÀO GIỎ HÀNG -->
         
           <!-- ===== PRICE INFO ===== -->
           <div class="price-pd">
-        
+            <div>
+              <p style="font-size: 1.4rem;">Samsung Gear Sport (SM-R600)</p>
+              <p>Thương hiệu: <a href="list_of_products.html">Samsung</a></p>
+              <p>Giá: <span class="new-price-pd">5.000.000 đ</span> <span class="old-price-pd">6.000.000 đ</span></p>
+              <p>Giao hàng: Miễn phí</p>
+              <p>Tình trạng: Còn hàng</p>
+              <p style="margin-bottom: unset;">Chọn màu:</p>
+              <div class="color-pd">
+                <a href="#"><span class="color-pd1"></span></a>
+                <a href="#"><span class="color-pd2"></span></a>
+                <a href="#"><span class="color-pd3"></span></a>
+              </div>
+              <a href="cart.html"><p class="buy-now-pd">Mua Ngay</p></a>
+              <p class="cart-pd cursor-pointer" data-toggle="modal" data-target="#modal-cart">Thêm Vào Giỏ Hàng</p>
+            </div>
           </div>
           <!-- ===== END OF PRICE INFO ===== -->
         
         </div>
           
         <!-- ===== PRODUCT DESCRIPTION ===== -->
-        <div class="description">
-        
+        <div class="description-pd">
+        <h3>Thông tin sản phẩm</h3>
+        <p>
+            NETWORK	Technology: No cellular connectivity
+            <br>LAUNCH	Announced	2017, August. Status	Available. Released 2017, October
+            <br>BODY	Dimensions	44.6 x 42.9 x 11.6 mm (1.76 x 1.69 x 0.46 in)
+            <br>Weight	67g (w/ strap); 50g (w/о strap) (1.76 oz)
+            <br>SIM	No
+            <br>- Samsung Pay
+            <br>- MIL-STD-810G compliant
+            <br>- 50m waterproof
+            <br>- Compatible with standard 20mm straps
+            <br>DISPLAY	Type	Super AMOLED capacitive touchscreen, 16M colors
+            <br>Size	1.2 inches, 4.6 cm2 (~24.3% screen-to-body ratio)
+            <br>Resolution	360 x 360 pixels, 1:1 ratio (~424 ppi density)
+            <br>Protection	Corning Gorilla Glass 3
+            <br>- Always-on display
+            <br>- Rotating bezel
+            <br>PLATFORM	OS	Tizen-based wearable platform 3.0. Chipset	Exynos 3250 Dual
+            <br>CPU	Dual-core 1.0 GHz Cortex-A7
+            <br>GPU	Mali-400MP2
+            <br>MEMORY	Card slot	No. Internal	4 GB, 768 MB RAM
+            <br>CAMERA	 	
+            <br>SOUND	Loudspeaker	No. 3.5mm jack	No
+            <br>COMMS	WLAN	Wi-Fi 802.11 b/g/n. Bluetooth	4.2, A2DP, LE
+            <br>GPS	Yes, GLONASS. NFC	Yes. Radio	No. USB	No
+            <br>FEATURES	Sensors	Accelerometer, gyro, heart rate, barometer
+            <br>- Qi wireless charging
+            <br>- Bixby natural language commands and dictation
+            <br>BATTERY	 	Non-removable Li-Ion 300 mAh battery
+            <br>Stand-by	Up to 48 h (mixed usage) (2G) / Up to 48 h (3G)
+            <br>MISC	Colors	Black, Blue
+        </p>
         </div>
         <!-- ===== END OF PRODUCT DESCRIPTION ===== -->
         

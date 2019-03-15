@@ -171,6 +171,10 @@ a, a:hover {
     margin: 0 0.5% !important;
   }
 
+  .wrap-info-pd {
+    display: block;
+  }
+
 }
 /* ===== END OF STYLE FOR Small devices (landscape phones, 767px and below ===== */
 
@@ -294,6 +298,29 @@ a, a:hover {
   .social {
     font-size: 2vmax;
     text-align: right;
+  }
+
+  .wrap-info-pd {
+    display: flex;
+  }
+
+  .slideshow-pd {
+    width: 60%;
+  }
+
+  .price-pd {
+    width: 40%;
+  }
+
+  .price-pd .new-price-pd {
+    font-size: 2.8vmax;
+  }
+
+  .price-pd .old-price-pd {
+    font-size: 1.5vmax;
+    color: rgba(195, 195, 206, 1);
+    margin-left: 3%;
+    text-decoration: line-through;
   }
 }
 /* ===== END OF STYLE FOR Medium devices (tablets, 768px and up) ===== */
@@ -1072,18 +1099,94 @@ footer {
 /* ================================= */
 /* END OF STYLE FOR PAGE LIST OF PRODUCTS */
 /* ================================= */
-.slideshow-pd .modal-imgs-main div {
-  width: 400px;
-}
 
-.slideshow-pd .modal-imgs-sub div {
-  width: 100px;
-}
 
 /* ================================= */
 /* STYLE FOR PAGE PRODUCT DETAIL */
 /* ================================= */
+.wrap-info-pd {
+  width: 84%;
+  margin: 15px auto auto;
+}
 
+.slideshow-pd .modal-imgs-sub {
+  width: 12%;
+  margin-top: 6%;
+}
+
+.slideshow-pd .modal-imgs-main {
+  width: 80%;
+  margin-left: 8%;
+}
+
+.slideshow-pd .modal-imgs-sub div {
+  margin-bottom: 10px;
+}
+
+.price-pd {
+  font-family: Quicksand, Arial, sans-serif;
+  font-weight: bold;
+  color: rgba(57, 59, 96, 1);
+}
+
+.price-pd > div {
+  padding: 5%;
+  background: rgba(195, 195, 206, 0.4);
+}
+
+.price-pd > div > p > a {
+  color : rgba(57, 59, 96, 1);
+}
+
+.color-pd {
+  margin-top: -4%;
+  margin-left: 30%;
+}
+
+.color-pd span {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  margin: 0 3%;
+  display: inline-block;
+}
+
+.color-pd1 {
+  background: #000000;
+}
+
+.color-pd2 {
+  background: #EE5151;
+}
+
+.color-pd3 {
+  background: #ffffff;
+}
+
+.buy-now-pd {
+  background: #EE5151;
+  color: white;
+  margin: 4% auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.4rem;
+  height: 40px;
+}
+
+.cart-pd {
+  background: rgba(57, 59, 96, 1);
+  color: white;
+  margin: 4% auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.4rem;
+  height: 40px;
+}
+
+.description-pd {
+  width: 84%;
+  margin: 2% auto auto;
+}
 /* ================================= */
 /* END STYLE FOR PAGE PRODUCT DETAIL */
 /* ================================= */
