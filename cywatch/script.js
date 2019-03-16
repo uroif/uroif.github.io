@@ -110,3 +110,16 @@ $(".back2top").each(function() {
     return false;
   });
 });
+
+// Countdown from 5 seconds
+$(document).ready(function(e) {
+  var timeleft = 5;
+  var downloadTimer = setInterval(function(){
+    document.getElementById("order-success-countdown").innerHTML = timeleft + "";
+    timeleft -= 1;
+    if(timeleft <= 0){
+      clearInterval(downloadTimer);
+      document.getElementById("order-success-countdown").innerHTML = "0"
+    }
+  }, 1000);
+});

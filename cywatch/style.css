@@ -1418,18 +1418,132 @@ footer {
 
 
 /* ================================= */
-/* STYLE FOR PAGE CART */
+/* STYLE FOR PAGE ORDER */
 /* ================================= */
+.order-step2 {
+  display: inline-block;
+  width: 200px;
+  height: 80px;
+  position: relative;
+  background: rgba(57, 59, 96, 1);
+}
+
+.order-step2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+}
+
+.order-step2:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid rgba(57, 59, 96, 1);
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+}
+
+.order-step2 p {
+  top: 50%;
+  left: 35%;
+  position: absolute;
+  transform: translate(-15%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.order-wrap {
+  width: 84%;
+  margin:auto;
+}
+
+.order-methods {
+  color: #ffffff;
+  background: rgba(57, 59, 96, 1);
+}
+
+.order-methods p {
+  padding: 1% 2%;
+}
+
+.order-info {
+  margin-left: 2%;
+}
+
+.order-info p, .order-payment p {
+  margin-bottom: 0;
+}
+
+.order-info [type=text] {
+  display: block;
+  width: 420px;
+  padding: 0.3% 1%;
+  margin: 1% 5%;
+}
+
+.order-info form p {
+  font-style: italic;
+  margin-left: 5%;
+}
+
+.order-payment {
+  margin-left: 2%;
+}
+
+.order-payment > div {
+  margin-left: 5%;
+}
+
+.order-payment > div > div > p {
+  font-weight: bold;
+  margin-left: 5%;
+  margin-bottom: 0.5%;
+}
+
+.order-payment > div > p {
+  font-style: italic;
+  margin-bottom: 0.5%;
+}
+
+.order-next {
+  text-align: right;
+  margin: 5% 0;
+}
+
+.order-next [type=button] {
+  padding: 1%;
+  border-width: 0;
+  color: #ffffff;
+  background: rgba(238, 81, 81, 1);
+}
 /* ================================= */
-/* STYLE FOR PAGE CART */
+/* END OF STYLE FOR PAGE ORDER */
 /* ================================= */
 
 
 /* ================================= */
-/* STYLE FOR PAGE CART */
+/* STYLE FOR PAGE ORDER SUCCESS */
 /* ================================= */
+.order-success-wrap {
+  width: 84%;
+  margin: 2% auto;
+}
+
+.order-success-wrap a {
+  color: rgba(57, 59, 96, 1);
+}
 /* ================================= */
-/* STYLE FOR PAGE CART */
+/* END STYLE FOR PAGE ORDER SUCCESS */
 /* ================================= */
 
 
