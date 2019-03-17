@@ -313,6 +313,7 @@ a:hover {
 
   .price-pd {
     width: 40%;
+    margin-top: 3%;
   }
 
   .price-pd .new-price-pd {
@@ -606,7 +607,7 @@ aside {
 /* ===== STYLE FOR SECTION ===== */
 section {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 /* ===== END OF STYLE FOR SECTION ===== */
 
@@ -1183,6 +1184,8 @@ footer {
 /* END STYLE FOR PAGE PRODUCT DETAIL */
 /* ================================= */
 
+
+
 /* ================================= */
 /* STYLE FOR PAGE CART */
 /* ================================= */
@@ -1344,6 +1347,11 @@ footer {
   margin-bottom: 20px;
 }
 
+.cart-qty [type=number] {
+  width: 40%;
+  padding-left: 5%;
+}
+
 .cart-amount {
   width: 10%;
   text-align: right;
@@ -1376,12 +1384,20 @@ footer {
   line-height: 70px;
 }
 
+.cart-sum-box1 {
+  width: 64%;
+}
+
+.cart-sum-box2 {
+  width: 36%;
+}
+
 .cart-sum-type {
   margin-left: 2%;
 }
 
 .cart-sum-input input {
-  width: 100px;
+  width: 15%;
   height: 40px;
   margin-left: 2%;
   line-height: initial;
@@ -1394,12 +1410,13 @@ footer {
 }
 
 .cart-sum-total {
-  margin: 0 3% 0 18%;
+  margin-right: 3%;
 }
 
 .cart-sum-number {
   font-size: 3vmax;
   line-height: 0px;
+  margin-right: 5%;
 }
 
 .cart-next {
@@ -1507,22 +1524,44 @@ footer {
 
 .order-payment > div > div > p {
   font-weight: bold;
-  margin-left: 5%;
+  margin-left: 8%;
   margin-bottom: 0.5%;
 }
 
 .order-payment > div > p {
   font-style: italic;
-  margin-bottom: 0.5%;
+  margin-left: 5%;
+}
+
+.order-wrap .order-button {
+  text-align: right;
+}
+
+.order-back {
+  display: inline-block;
+  text-align: right;
+  margin: 5% 0;
+  font-size: 1.5vmax;
+}
+
+.order-back [type="button"] {
+  padding: 8%;
+  width: 130px;
+  border-width: 0;
+  color: #ffffff;
+  background: rgba(195, 195, 206, 1);
 }
 
 .order-next {
+  display: inline-block;
   text-align: right;
   margin: 5% 0;
+  font-size: 1.5vmax;
 }
 
 .order-next [type="button"] {
-  padding: 1%;
+  padding: 8%;
+  width: 130px;
   border-width: 0;
   color: #ffffff;
   background: rgba(238, 81, 81, 1);
@@ -1530,6 +1569,8 @@ footer {
 /* ================================= */
 /* END OF STYLE FOR PAGE ORDER */
 /* ================================= */
+
+
 
 /* ================================= */
 /* STYLE FOR PAGE ORDER SUCCESS */
@@ -1694,8 +1735,8 @@ footer {
 
 .contact-info .contact-circle {
   position: relative;
-  width: 50%;
-  padding-bottom: 50%;
+  width: 40%;
+  padding-bottom: 40%;
   border: 3px solid rgba(57, 59, 96, 1);
   border-radius: 50%;
   margin: auto;
@@ -1703,7 +1744,7 @@ footer {
 
 .contact-info .contact-circle .fas {
   position: absolute;
-  font-size: 8vmax;
+  font-size: 6vmax;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1723,6 +1764,7 @@ footer {
 .contact-bank {
   width: 84%;
   margin: 2% auto;
+  font-size: 1.2vmax;
 }
 
 .contact-bank > div {
@@ -1741,6 +1783,7 @@ footer {
 .contact-us {
   width: 84%;
   margin: 2% auto;
+  font-size: 1.2vmax;
 }
 
 .contact-us > p {
