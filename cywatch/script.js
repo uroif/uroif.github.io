@@ -113,7 +113,7 @@ $(".back2top").each(function() {
 
 // Countdown from 5 seconds
 $(document).ready(function(e) {
-  var timeleft = 5;
+  var timeleft = 9;
   var downloadTimer = setInterval(function(){
     document.getElementById("order-success-countdown").innerHTML = timeleft + "";
     timeleft -= 1;

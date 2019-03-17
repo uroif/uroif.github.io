@@ -15,7 +15,8 @@ body {
   color: #393b60;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -106,7 +107,7 @@ a, a:hover {
   .collection-list2 {
     margin-top: 0.5rem;
   }
-  
+
   .promotion .slick-slide img {
     transform: scale(1.3);
   }
@@ -121,18 +122,19 @@ a, a:hover {
     text-align: center;
   }
 
-  .detail p, .add-to-cart p {
+  .detail p,
+  .add-to-cart p {
     font-size: 2.2vmax;
   }
 
   .wrap-slider .price {
     font-size: 3.5vmax;
   }
-  
+
   .wrap-slider .old-price {
     font-size: 2vmax;
   }
-  
+
   .wrap-slider .product-name {
     font-size: 2.4vmax;
   }
@@ -174,7 +176,6 @@ a, a:hover {
   .wrap-info-pd {
     display: block;
   }
-
 }
 /* ===== END OF STYLE FOR Small devices (landscape phones, 767px and below ===== */
 
@@ -262,18 +263,19 @@ a, a:hover {
     text-align: center;
   }
 
-  .detail p, .add-to-cart p {
+  .detail p,
+  .add-to-cart p {
     font-size: 1.2vmax;
   }
 
   .wrap-slider .price {
     font-size: 1.6vmax;
   }
-  
+
   .wrap-slider .old-price {
     font-size: 1vmax;
   }
-  
+
   .wrap-slider .product-name {
     font-size: 1.2vmax;
   }
@@ -287,7 +289,8 @@ a, a:hover {
     position: relative;
   }
 
-  .menu-footer h4, .menu-footer ul {
+  .menu-footer h4,
+  .menu-footer ul {
     position: absolute;
   }
 
@@ -652,7 +655,8 @@ section {
   min-width: 45%;
 }
 
-.modal-content, .btn {
+.modal-content,
+.btn {
   border-radius: 0;
 }
 
@@ -809,14 +813,12 @@ h1 {
 }
 /* ===== END OF STYLE FOR WRAP 2 ===== */
 
-
 /* ===== STYLE FOR WRAP 3 ===== */
 .wrap3 {
   margin: auto 8%;
   margin-top: 60px;
 }
 /* ===== END OF STYLE FOR WRAP 3 ===== */
-
 
 /* ===== STYLE FOR WRAP 4 ===== */
 .wrap4 {
@@ -825,7 +827,6 @@ h1 {
 }
 /* ===== END OF STYLE FOR WRAP 4 ===== */
 
-
 /* ===== STYLE FOR ADVERTISEMENT ===== */
 .advert {
   padding-bottom: 30%;
@@ -833,15 +834,15 @@ h1 {
   overflow: hidden;
 }
 
-.ad-img {
+.advert .ad-img {
   width: 100%;
 }
 
-.ad-img img {
+.advert .ad-img img {
   transform: translateY(-25%);
 }
 
-.ad-box {
+.advert .ad-box {
   width: 30%;
   height: 50%;
   left: 17%;
@@ -850,19 +851,19 @@ h1 {
   background: rgba(195, 195, 206, 0.4);
 }
 
-.ad-txt1 {
+.advert .ad-txt1 {
   text-align: center;
   margin-top: 5%;
   font-size: 3.5vmax;
 }
 
-.ad-txt2 {
+.advert .ad-txt2 {
   text-align: center;
   margin-top: -5%;
   font-size: 3vmax;
 }
 
-.ad-txt2 span {
+.advert .ad-txt2 span {
   font-size: 5vmax;
 }
 /* ===== END OF STYLE FOR ADVERTISEMENT ===== */
@@ -997,7 +998,7 @@ footer {
   font-size: 1.1vmax;
 }
 
-.left-menu div {  
+.left-menu div {
   padding: 5%;
   border: 1px solid rgba(195, 195, 206, 0.4);
 }
@@ -1034,7 +1035,8 @@ footer {
   padding-bottom: 250px;
 }
 
-.right-wrap-lop .detail p, .right-wrap-lop .add-to-cart p {
+.right-wrap-lop .detail p,
+.right-wrap-lop .add-to-cart p {
   font-size: 0.8em;
 }
 
@@ -1051,7 +1053,7 @@ footer {
   display: inline-block;
   font-size: 0.7em;
   text-decoration: line-through;
-  color: rgba(195, 195, 206, 1.0);
+  color: rgba(195, 195, 206, 1);
 }
 
 .right-wrap-lop .product-name {
@@ -1091,7 +1093,6 @@ footer {
 /* END OF STYLE FOR PAGE LIST OF PRODUCTS */
 /* ================================= */
 
-
 /* ================================= */
 /* STYLE FOR PAGE PRODUCT DETAIL */
 /* ================================= */
@@ -1126,7 +1127,7 @@ footer {
 }
 
 .price-pd > div > p > a {
-  color : rgba(57, 59, 96, 1);
+  color: rgba(57, 59, 96, 1);
 }
 
 .color-pd {
@@ -1147,7 +1148,7 @@ footer {
 }
 
 .color-pd2 {
-  background: #EE5151;
+  background: #ee5151;
 }
 
 .color-pd3 {
@@ -1155,7 +1156,7 @@ footer {
 }
 
 .buy-now-pd {
-  background: #EE5151;
+  background: #ee5151;
   color: white;
   margin: 4% auto;
   text-align: center;
@@ -1326,7 +1327,7 @@ footer {
 }
 
 .cart-price-unit span {
-  color: rgba(195, 195, 206, 1.0);
+  color: rgba(195, 195, 206, 1);
   text-decoration: line-through;
 }
 
@@ -1386,7 +1387,7 @@ footer {
   line-height: initial;
 }
 
-.cart-sum-input [type=button] {
+.cart-sum-input [type="button"] {
   border-width: 0;
   color: #ffffff;
   background: rgba(238, 81, 81, 1);
@@ -1406,7 +1407,7 @@ footer {
   margin: 5% 0;
 }
 
-.cart-next [type=button] {
+.cart-next [type="button"] {
   padding: 1%;
   border-width: 0;
   color: #ffffff;
@@ -1415,7 +1416,6 @@ footer {
 /* ================================= */
 /* END OF STYLE FOR PAGE CART */
 /* ================================= */
-
 
 /* ================================= */
 /* STYLE FOR PAGE ORDER */
@@ -1464,7 +1464,7 @@ footer {
 
 .order-wrap {
   width: 84%;
-  margin:auto;
+  margin: auto;
 }
 
 .order-methods {
@@ -1480,11 +1480,12 @@ footer {
   margin-left: 2%;
 }
 
-.order-info p, .order-payment p {
+.order-info p,
+.order-payment p {
   margin-bottom: 0;
 }
 
-.order-info [type=text] {
+.order-info [type="text"] {
   display: block;
   width: 420px;
   padding: 0.3% 1%;
@@ -1520,7 +1521,7 @@ footer {
   margin: 5% 0;
 }
 
-.order-next [type=button] {
+.order-next [type="button"] {
   padding: 1%;
   border-width: 0;
   color: #ffffff;
@@ -1529,7 +1530,6 @@ footer {
 /* ================================= */
 /* END OF STYLE FOR PAGE ORDER */
 /* ================================= */
-
 
 /* ================================= */
 /* STYLE FOR PAGE ORDER SUCCESS */
@@ -1546,51 +1546,284 @@ footer {
 /* END STYLE FOR PAGE ORDER SUCCESS */
 /* ================================= */
 
-
 /* ================================= */
-/* STYLE FOR PAGE CART */
+/* STYLE FOR PAGE PROMOTION */
 /* ================================= */
-/* ================================= */
-/* STYLE FOR PAGE CART */
-/* ================================= */
-
-
-/* ================================= */
-/* STYLE FOR PAGE CART */
-/* ================================= */
-/* ================================= */
-/* STYLE FOR PAGE CART */
-/* ================================= */
-
-
-/* ================================= */
-/* STYLE FOR PAGE CART */
-/* ================================= */
-.page-cart {
-  margin-top: 70px;
+.promo1,
+.promo2,
+.promo3 {
+  width: 84%;
+  padding-bottom: 26%;
+  margin: 2% auto;
 }
 
-.advertise {
-  padding-bottom: 30%;
-  overflow: hidden;
+.promo1 .ad-img,
+.promo2 .ad-img,
+.promo3 .ad-img {
+  width: 100%;
 }
 
-.under-construction img {
+.promo1 .ad-box {
+  width: 100%;
+  height: 30%;
+  bottom: -17%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.promo1 .ad-txt1 {
+  top: 10%;
+  right: 10%;
+  color: #ffffff;
+  font-size: 4vmax;
+}
+
+.promo1 .ad-txt2 {
+  top: 30%;
+  right: 5%;
+  color: #ffffff;
+  font-size: 3vmax;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.promo1 .ad-txt2 span {
+  color: rgba(238, 81, 81, 1);
+  font-size: 10vmax;
+}
+
+.promo1 .ad-box .ad-txt3 {
+  text-align: center;
+  font-size: 5vmax;
+}
+
+.promo2 {
+  margin-top: 10%;
+}
+
+.promo2 .ad-box1 {
+  top: 20%;
+  right: 5%;
+  width: 40%;
+  height: 50%;
+  text-align: center;
+}
+
+.promo2 .ad-box1 .fa-apple {
+  font-size: 10vmax;
+  left: 40%;
+  color: rgba(57, 59, 96, 1);
+}
+
+.promo2 .ad-box1 .ad-txt1 {
+  font-size: 4vmax;
+  width: 100%;
+  top: 70%;
+  color: rgba(57, 59, 96, 1);
+}
+
+.promo2 .ad-box2 {
+  bottom: -17%;
+  right: 0;
+  width: 50%;
+  height: 34%;
+  background: rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.promo2 .ad-box2 .ad-txt2 {
+  font-size: 6vmax;
+  color: #ffffff;
+}
+
+.promo2 .ad-txt2 span {
+  color: rgba(238, 81, 81, 1);
+  font-weight: bold;
+}
+
+.promo3 {
+  margin: 10% auto;
+}
+
+.promo3 .ad-box {
+  width: 70%;
+  height: 60%;
+  top: 28%;
+  left: 15%;
+  background: rgba(82, 84, 121, 0.8);
+}
+
+.promo3 .ad-box .ad-txt1 {
+  font-size: 3vmax;
+  left: 5%;
+}
+
+.promo3 .ad-box .ad-txt1 span {
+  font-size: 6vmax;
+  color: rgba(238, 81, 81, 1);
+}
+
+.promo3 .ad-box .ad-txt2 {
+  font-size: 3vmax;
+  left: 5%;
+  top: 45%;
+}
+
+.promo3 .ad-box .ad-txt3 {
+  font-size: 2vmax;
+  left: 5%;
+  top: 70%;
+}
+
+.promo3 .ad-box .ad-txt4 {
+  font-size: 0.8vmax;
+  font-style: italic;
+  right: 1%;
+  bottom: -4%;
+  color: rgba(195, 195, 206, 1);
+}
+/* ================================= */
+/* END OF STYLE FOR PAGE PROMOTION */
+/* ================================= */
+
+/* ================================= */
+/* STYLE FOR PAGE CONTACT */
+/* ================================= */
+.contact-info {
+  width: 84%;
+  margin: 2% auto;
+}
+
+.contact-info .contact-circle {
+  position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+  border: 3px solid rgba(57, 59, 96, 1);
+  border-radius: 50%;
   margin: auto;
-  display: block;
-  width: 25%;
 }
 
-.under-construction p {
-  color: rgba(82, 84, 121, 1);
-  margin-left: 10%;
+.contact-info .contact-circle .fas {
+  position: absolute;
+  font-size: 8vmax;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.under-construction p a {
-  color: rgba(82, 84, 121, 1);
+.contact-info .contact-txt {
+  font-size: 1.8vmax;
+  font-weight: bold;
+  margin: 2% auto;
 }
+
+.contact-info > div {
+  width: 33.33%;
+  text-align: center;
+}
+
+.contact-bank {
+  width: 84%;
+  margin: 2% auto;
+}
+
+.contact-bank > div {
+  margin-left: 5%;
+}
+
+.contact-bank .contact-bank-txt1 {
+  font-size: 1.5vmax;
+  font-weight: bold;
+}
+
+.contact-bank .contact-bank-txt2 {
+  font-style: italic;
+}
+
+.contact-us {
+  width: 84%;
+  margin: 2% auto;
+}
+
+.contact-us > p {
+  font-size: 1.5vmax;
+  font-weight: bold;
+}
+
+.contact-us .contact-form-info [type=text] {
+  color: rgba(57, 59, 96, 1);
+  width: 90%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.contact-us .contact-form-info [type=text]::placeholder {
+  color: rgba(195, 195, 206, 1);
+}
+
+
+.contact-us .contact-form-info p {
+  font-style: italic;
+}
+
+.contact-us .contact-form-message {
+  text-align: right;
+}
+
+.contact-us .contact-form-message [type=text] {
+  color: rgba(57, 59, 96, 1);
+  width: 90%;
+  padding-bottom: 20%;
+  padding-left: 1%;
+  margin-top: 1%;
+}
+
+.contact-us .contact-form-message [type=text]::placeholder {
+  color: rgba(195, 195, 206, 1);
+  vertical-align: top;
+}
+
+.contact-next {
+  text-align: right;
+  margin: 1% auto 5%;
+}
+
+.contact-next [type="button"] {
+  padding: 1%;
+  border-width: 0;
+  color: #ffffff;
+  background: rgba(238, 81, 81, 1);
+}
+/* ================================= */
+/* END OF STYLE FOR PAGE CONTACT */
+/* ================================= */
 
 
 /* ================================= */
-/* END STYLE FOR PAGE CART */
+/* STYLE FOR PAGE DELIVERY */
+/* ================================= */
+.delivery-wrap {
+  width: 84%;
+  margin: 2% auto;
+}
+
+.delivery-wrap .delivery-img {
+  margin-bottom: 2%;
+}
+/* ================================= */
+/* END OF STYLE FOR PAGE DELIVERY */
+/* ================================= */
+
+
+/* ================================= */
+/* STYLE FOR PAGE WARRANTY */
+/* ================================= */
+.warranty-wrap {
+  width: 84%;
+  margin: 2% auto;
+}
+
+.warranty-wrap .warranty-img {
+  margin-bottom: 2%;
+}
+/* ================================= */
+/* END OF STYLE FOR PAGE WARRANTY */
 /* ================================= */
