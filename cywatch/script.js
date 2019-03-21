@@ -86,9 +86,9 @@ $(".modal-img-s").click(function() {
 $(document).scroll(function(e) {
   var scrollTop = $(document).scrollTop();
   if (scrollTop > 600) {
-    $(".back2top").animate({ right: "20px", bottom: "110px", opacity: "1" }, 20);
+    $(".back2top").animate({ right: "20px", bottom: "50px", opacity: "1" }, 20);
   } else {
-    $(".back2top").animate({ right: "20px", bottom: "100px", opacity: "0", cursor: "none" }, 20);
+    $(".back2top").animate({ right: "20px", bottom: "40px", opacity: "0", cursor: "none" }, 20);
   }
 });
 

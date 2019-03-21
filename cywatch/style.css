@@ -146,7 +146,7 @@ a:hover {
 
 .wrap-slider .slick-arrow {
   position: absolute;
-  font-size: 80px;
+  font-size: 9vh;
   color: #9395a9;
   z-index: 1;
   cursor: pointer;
@@ -155,7 +155,7 @@ a:hover {
 }
 
 .slick-dots {
-  bottom: 5%;
+  display: none;
 }
 
 .slick-dots li.slick-active button:before {
@@ -182,7 +182,16 @@ header {
 }
 
 .navbar {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-toggler-icon span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 28%;
+  background: rgba(57, 59, 96, 1);
 }
 
 .navbar .fas {
@@ -198,28 +207,49 @@ header {
 .navbar-brand {
   text-align: center;
   margin-right: 0;
-}
-
-.search {
-  width: 5%;
-  padding: 22px 0;
-  text-align: center;
+  width: 50%;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 32px;
 }
 
 .cart {
-  width: 5%;
-  text-align: center;
-  margin: 1%;
+  margin-right: 6%;
 }
 
-.navbar-brand {
-  font-family: "Oswald", Arial, sans-serif;
-  font-size: 32px;
+.navbar-collapse {
+  background: #ffffff;
+  border-top: 1px solid #c3c3ce;
+  border-bottom: 1px solid #c3c3ce;
+  margin-top: 1%;
+}
+
+.dropdown-menu {
+  border-radius: 0 !important;
+}
+
+.dropdown-menu-wrap1 {
+  display: none;
+}
+
+.dropdown-menu-wrap2 {
+  margin: auto;
+  width: 95%;
+}
+
+.dropdown-menu-wrap2 p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.dropdown-menu-wrap2 a {
+  color: #393b60;
+  margin-left: 1rem;
 }
 
 .nav-link,
 .dropdown-item {
   font-size: 18px;
+  padding-left: 3% !important;
   transition: all 0.2s ease;
 }
 
@@ -234,8 +264,8 @@ aside {
 }
 
 .promo1-box {
-  width: 36%;
-  height: 50%;
+  width: 50%;
+  height: 70%;
   top: 90%;
   left: 5%;
   transform: translate(-5%, -90%);
@@ -243,15 +273,15 @@ aside {
 
 .promo2-box {
   width: 100%;
-  height: 50%;
-  top: 50%;
+  height: 70%;
+  top: 35%;
   left: 10%;
 }
 
 .promo3-box {
-  width: 80%;
-  height: 50%;
-  top: 50%;
+  width: 90%;
+  height: 60%;
+  top: 40%;
   left: 5%;
 }
 
@@ -264,45 +294,46 @@ aside {
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
   right: 0;
-  font-size: 6.6vw;
+  font-size: 9vw;
 }
 
 .promotion1 .promo-txt2 {
   font-family: "Dancing Script", Arial, sans-serif;
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  top: 52%;
+  top: 40%;
   right: 0;
-  font-size: 3.5vw;
+  font-size: 6vw;
 }
 
 .promotion1 .promo-txt3 {
   bottom: 0;
   right: 0;
   padding: 0.2% 3%;
-  font-size: 2vw;
+  font-size: 4vw;
   color: #ffffff;
   background-color: #393b60;
+  margin-bottom: 0;
 }
 
 .promotion2 .promo-txt1 {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  font-size: 5.6vw;
+  font-size: 8vw;
 }
 
 .promotion2 .promo-txt2 {
   font-family: Jura, Arial, sans-serif;
   color: #c3c3ce;
   top: 35%;
-  font-size: 3.5vw;
+  font-size: 5vw;
 }
 
 .promotion2 .promo-txt3 {
-  top: 70%;
+  top: 66%;
   padding: 0.2% 1%;
-  font-size: 2vw;
+  font-size: 4vw;
   color: #ffffff;
   background-color: #393b60;
 }
@@ -311,7 +342,7 @@ aside {
   font-family: "Oswald", Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  font-size: 5.6vw;
+  font-size: 8vw;
 }
 
 .promotion3 .promo-txt2 {
@@ -319,7 +350,7 @@ aside {
   color: #ffffff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
   top: 34%;
-  font-size: 3.5vw;
+  font-size: 5vw;
   font-style: italic;
 }
 
@@ -327,7 +358,7 @@ aside {
   top: 65%;
   left: 30%;
   padding: 0.2% 1%;
-  font-size: 2.2vw;
+  font-size: 4vw;
   color: #ffffff;
   background-color: #393b60;
   transform: skew(-13deg);
@@ -337,17 +368,28 @@ aside {
 /* ===== STYLE FOR SECTION ===== */
 section {
   margin: auto;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 /* ===== END OF STYLE FOR SECTION ===== */
 
 /* ===== STYLE FOR COLLECTIONS ===== */
-.row {
-  margin: auto 5%;
+.collection {
+  width: 90%;
+  margin: auto;
 }
 
 .collection a {
   color: rgba(195, 195, 206, 1);
+}
+
+.collection > div {
+  width: 33%;
+  padding-bottom: 27%;
+}
+
+.collection-txt p {
+  font-size: 3vw;
+  text-align: center;
 }
 
 .collection-item:hover .collection-img {
@@ -374,7 +416,7 @@ section {
 .collection-txt {
   background: rgba(82, 84, 121, 0.8);
   width: 100%;
-  height: 25%;
+  height: 33%;
   bottom: 0;
   line-height: 1.2;
   display: flex;
@@ -402,7 +444,7 @@ section {
 
 .modal-img {
   margin: auto;
-  width: 20%;
+  width: 24%;
 }
 
 .modal-info {
@@ -411,21 +453,21 @@ section {
 }
 
 .modal-info h4 a {
-  font-size: 1.6vw;
+  font-size: 3vw;
   color: #393b60;
 }
 
 .modal-price {
-  font-size: 1.5vw;
+  font-size: 3.5vw;
 }
 
 .modal-qty {
-  font-size: 1.8vw;
+  font-size: 2.8vw;
 }
 /* ===== END OF STYLE FOR MODAL ===== */
 
 /* ===== STYLE FOR WRAP 1 ===== */
-h1 {
+h3 {
   font-family: Coiny, Arial, sans-serif;
 }
 
@@ -438,8 +480,7 @@ h1 {
 }
 
 .wrap1 {
-  margin: auto 8%;
-  margin-top: 80px;
+  margin: 8%;
 }
 
 .wrap-item {
@@ -479,7 +520,7 @@ h1 {
 }
 
 .detail {
-  opacity: 0;
+  /* opacity: 0; */
   width: 66%;
   height: 10%;
   top: 45%;
@@ -489,7 +530,7 @@ h1 {
 }
 
 .add-to-cart {
-  opacity: 0;
+  /* opacity: 0; */
   width: 66%;
   height: 10%;
   top: 58%;
@@ -500,10 +541,23 @@ h1 {
 
 .detail p,
 .add-to-cart p {
+  font-size: 2.2vw;
   width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.wrap-slider .price {
+  font-size: 2.6vw;
+}
+
+.wrap-slider .old-price {
+  font-size: 2vw;
+}
+
+.wrap-slider .product-name {
+  font-size: 2.6vw;
 }
 
 .detail p a {
@@ -539,43 +593,39 @@ h1 {
 
 /* ===== STYLE FOR WRAP 2 ===== */
 .wrap2 {
-  margin: auto 8%;
+  margin: auto 6%;
   margin-top: 30px;
 }
 /* ===== END OF STYLE FOR WRAP 2 ===== */
 
 /* ===== STYLE FOR WRAP 3 ===== */
 .wrap3 {
-  margin: auto 8%;
+  margin: auto 6%;
   margin-top: 60px;
 }
 /* ===== END OF STYLE FOR WRAP 3 ===== */
 
 /* ===== STYLE FOR WRAP 4 ===== */
 .wrap4 {
-  margin: auto 8%;
+  margin: auto 6%;
   margin-top: 30px;
 }
 /* ===== END OF STYLE FOR WRAP 4 ===== */
 
 /* ===== STYLE FOR ADVERTISEMENT ===== */
 .advert {
-  padding-bottom: 30%;
-  margin-top: 50px;
-  overflow: hidden;
-}
-
-.advert .ad-img {
-  width: 100%;
-}
-
-.advert .ad-img img {
-  transform: translateY(-25%);
+  background-image: url("images/Sport Watches/Fitbit Ionic GPS Smart Watch/bg.jpg"); 
+  height: 300px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .advert .ad-box {
-  width: 30%;
-  height: 50%;
+  width: 50%;
+  height: 40%;
   left: 17%;
   top: 50%;
   transform: translate(-17%, -50%);
@@ -585,38 +635,34 @@ h1 {
 .advert .ad-txt1 {
   text-align: center;
   margin-top: 5%;
-  font-size: 3.5vw;
+  font-size: 6vw;
 }
 
 .advert .ad-txt2 {
   text-align: center;
   margin-top: -5%;
-  font-size: 3vw;
+  font-size: 5vw;
 }
 
 .advert .ad-txt2 span {
-  font-size: 5vw;
+  font-size: 9vw;
 }
 /* ===== END OF STYLE FOR ADVERTISEMENT ===== */
 
 /* ===== STYLE FOR FOOTER ===== */
 footer {
-  margin-top: 50px;
   color: #ffffff;
   background-color: #393b60;
 }
 
 .wrap-footer {
-  margin: 2% auto;
+  margin: 3% auto;
+  padding-top: 3%;
   width: 80%;
 }
 
-.menu-footer {
-  width: 35%;
-  margin-top: 2%;
-}
-
 .menu-footer h4 a {
+  font-size: 8vw;
   font-family: Oswald, Arial, Helvetica, sans-serif;
   color: #9395a9;
 }
@@ -625,8 +671,13 @@ footer {
   color: #ffffff;
 }
 
+.menu-footer h4 {
+  width: 40%;
+}
+
 .menu-footer ul {
-  right: 30%;
+  width: 60%;
+  text-align: right;
   list-style-type: none;
 }
 
@@ -635,7 +686,7 @@ footer {
 }
 
 .address {
-  width: 40%;
+  /* width: 40%; */
   margin-top: 2%;
 }
 
@@ -646,12 +697,13 @@ footer {
 }
 
 .social {
-  width: 25%;
+  /* width: 25%; */
   margin-top: 2%;
   color: #c3c3ce;
 }
 
 .social .fab {
+  font-size: 7vw;
   margin-right: 5%;
 }
 
@@ -670,7 +722,7 @@ footer {
   font-size: 40px;
   transition: all 0.2s ease;
   right: 20px;
-  bottom: 100px;
+  bottom: 40px;
 }
 
 .back2top:hover {
