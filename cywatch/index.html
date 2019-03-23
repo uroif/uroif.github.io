@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
   <link rel="stylesheet" href="style.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand|Oswald|Coiny|Dancing+Script|Josefin+Sans|Pacifico|Jura" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand|Oswald|Coiny|Dancing+Script|Josefin+Sans|Pacifico|Jura|Saira" rel="stylesheet" />
   <title>CyWatch</title>
 </head>
 
   <body>
     <div class="_container">
       <header class="fixed-top">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-lg">
           
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -60,18 +60,27 @@
                     <div class="collection-list1">
                       <p>Bộ sưu tập</p>
                       <div class="collection-list-item">
-                        <div class="collection-list-item1">
-                          <a class="animate collection-list-item-img" href="list_of_products.html"><img src="images/Activity Trackers/Garmin vívofit 2 Activity Tracker/3r.jpg" alt=""></a>
-                          <a href="#">Activity Trackers</a>
-                        </div>
-                        <div class="collection-list-item2">
-                          <a class="animate collection-list-item-img" href="list_of_products.html"><img src="images/Sport Watches/Garmin vívoactive 3/3r.jpg" alt=""></a>
-                          <a href="#">Sport Watches</a>
-                        </div>
-                        <div class="collection-list-item3">
-                          <a class="animate collection-list-item-img" href="list_of_products.html"><img src="images/Smart Watches/Apple Watch Series 4/2r.jpg" alt=""></a>
-                          <a href="#">Smart Watches</a>
-                        </div>
+                        <a href="list_of_products.html">
+                            <div class="collection-list-item1">
+                              <img src="images/Activity Trackers/Garmin vívofit 2 Activity Tracker/3r.jpg" alt="">
+                              <p>Activity Trackers</p>
+                            </div>
+                        </a>
+
+                        <a href="list_of_products.html">
+                          <div class="collection-list-item2">
+                            <img src="images/Sport Watches/Garmin vívoactive 3/3r.jpg" alt="">
+                            <p>Sport Watches</p>
+                          </div>
+                        </a>
+
+                        <a href="list_of_products.html">
+                          <div class="collection-list-item3">
+                            <img src="images/Smart Watches/Apple Watch Series 4/2r.jpg" alt="">
+                            <p>Smart Watches</p>
+                          </div>
+                        </a>
+
                       </div>
                     </div>
 
@@ -214,7 +223,7 @@
                   <img class="border" src="images/Activity Trackers/Fitbit Blaze Smart Fitness Watch/3r.jpg" alt="" />
                 </div>
                 <div class="modal-info">
-                  <h4><a href="product_detail.html">Fitbit Blaze Smart Fitness Watch</a></h4>
+                  <p><a href="product_detail.html">Fitbit Blaze Smart Fitness Watch</a></p>
                   <div class="modal-price mt-2">Giá: <span>1.000.000<sup>đ</sup></span></div>
                   <div class="modal-qty mt-3">Số lượng: <span style="font-weight: bold;">1</span></div>
                 </div>
@@ -564,8 +573,8 @@
         <div class="advert wow fadeIn position-relative">
           <a href="promotion.html">
             <div class="position-absolute ad-box">
-              <p class="ad-txt1 text-white">SPRING SALE</p>
-              <P class="ad-txt2 color-C3C3CE">GIẢM ĐẾN <span class="text-white">50%</span></P>
+              <p class="ad-txt1 position-absolute text-white">SPRING SALE</p>
+              <P class="ad-txt2 position-absolute color-C3C3CE">GIẢM ĐẾN <span class="text-white">50%</span></P>
             </div>
           </a>
         </div>
@@ -907,7 +916,7 @@
       <footer class="wow fadeIn">
         <div class="wrap-footer">
           <div class="menu-footer d-flex">
-            <h4><a href="index.html">CY<span>WATCH</span></a></h4>
+            <p><a href="index.html">CY<span>WATCH</span></a></p>
             <ul>
               <li><a href="guarantee.html">Bảo hành</a></li>
               <li><a href="delivery.html">Giao hàng</a></li>
@@ -917,11 +926,11 @@
           <div class="address">
             <div class="location">
               <i class="fas fa-map-marker-alt"></i>
-              <p class="ml-1">Lorem Ipsum Dolorsit Amet, Lorem Ipsum</p>
+              <span class="ml-1">Lorem Ipsum Dolorsit Amet, Lorem Ipsum</span>
             </div>
             <div class="phone">
                 <i class="fas fa-mobile-alt"></i>
-                <p class="ml-1">0999 999 999</p>
+                <span class="ml-1">0999 999 999</span>
             </div>
           </div>
           <div class="social">

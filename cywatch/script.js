@@ -49,21 +49,21 @@ $(document).ready(function() {
     prevArrow: '<i class="fa fa-angle-left"></i>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
           slidesToShow: 3,
           infinite: true
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 576,
         settings: {
           slidesToShow: 2,
           dots: true
         }
       },
       {
-        breakpoint: 320,
+        breakpoint: 360,
         settings: {
           slidesToShow: 1,
           dots: true

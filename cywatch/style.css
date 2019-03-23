@@ -107,17 +107,17 @@ a:hover {
 /* ===== STYLE FOR SLICK SLIDER ===== */
 .promotion .slick-arrow {
   position: absolute;
-  font-size: 4.6vw;
-  color: #9395a9;
+  font-size: 9vw;
+  color: rgba(195, 195, 206, 0.8);
   z-index: 1;
   cursor: pointer;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.promotion .slick-arrow:hover {
+/* .promotion .slick-arrow:hover {
   color: #c3c3ce;
-}
+} */
 
 .fa-caret-left {
   left: 1%;
@@ -207,24 +207,27 @@ header {
 .navbar-brand {
   text-align: center;
   margin-right: 0;
-  width: 50%;
+  width: 60%;
   font-family: "Oswald", Arial, sans-serif;
   font-size: 32px;
 }
 
 .cart {
-  margin-right: 6%;
+  margin-right: 4%;
 }
 
 .navbar-collapse {
   background: #ffffff;
   border-top: 1px solid #c3c3ce;
   border-bottom: 1px solid #c3c3ce;
-  margin-top: 1%;
+  margin-top: 4px;
 }
 
 .dropdown-menu {
   border-radius: 0 !important;
+  background: rgba(195, 195, 206, 0.2);
+  border-right: initial;
+  border-left: initial;
 }
 
 .dropdown-menu-wrap1 {
@@ -242,7 +245,7 @@ header {
 }
 
 .dropdown-menu-wrap2 a {
-  color: #393b60;
+  color: rgba(57, 59, 96, 1);
   margin-left: 1rem;
 }
 
@@ -368,7 +371,7 @@ aside {
 /* ===== STYLE FOR SECTION ===== */
 section {
   margin: auto;
-  /* margin-top: 70px; */
+  margin-top: 5%;
 }
 /* ===== END OF STYLE FOR SECTION ===== */
 
@@ -389,6 +392,7 @@ section {
 
 .collection-txt p {
   font-size: 3vw;
+  font-family: Saira, Arial, sans-serif;
   text-align: center;
 }
 
@@ -452,23 +456,24 @@ section {
   width: 60%;
 }
 
-.modal-info h4 a {
-  font-size: 3vw;
+.modal-info p a {
+  font-size: 1rem;
   color: #393b60;
 }
 
 .modal-price {
-  font-size: 3.5vw;
+  font-size: 1.3rem;
 }
 
 .modal-qty {
-  font-size: 2.8vw;
+  font-size: 1.1rem;
 }
 /* ===== END OF STYLE FOR MODAL ===== */
 
 /* ===== STYLE FOR WRAP 1 ===== */
 h3 {
   font-family: Coiny, Arial, sans-serif;
+  font-size: 5vw;
 }
 
 .wrap-slider {
@@ -499,7 +504,7 @@ h3 {
   height: 30px;
   top: 10px;
   right: 20px;
-  background: #e71d36;
+  background: rgba(238, 81, 81, 0.8);
 }
 
 .promo-symbol p {
@@ -615,7 +620,7 @@ h3 {
 /* ===== STYLE FOR ADVERTISEMENT ===== */
 .advert {
   background-image: url("images/Sport Watches/Fitbit Ionic GPS Smart Watch/bg.jpg"); 
-  height: 300px; 
+  padding-bottom: 40%; 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -624,7 +629,7 @@ h3 {
 }
 
 .advert .ad-box {
-  width: 50%;
+  width: 40%;
   height: 40%;
   left: 17%;
   top: 50%;
@@ -634,18 +639,23 @@ h3 {
 
 .advert .ad-txt1 {
   text-align: center;
-  margin-top: 5%;
-  font-size: 6vw;
+  width: 100%;
+  font-size: 5vw;
+  top: 25%;
+  transform: translateY(-50%);
 }
 
 .advert .ad-txt2 {
   text-align: center;
-  margin-top: -5%;
-  font-size: 5vw;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 4vw;
+  bottom: 30%;
+  transform: translateY(40%);
 }
 
 .advert .ad-txt2 span {
-  font-size: 9vw;
+  font-size: 8vw;
 }
 /* ===== END OF STYLE FOR ADVERTISEMENT ===== */
 
@@ -661,17 +671,17 @@ footer {
   width: 80%;
 }
 
-.menu-footer h4 a {
+.menu-footer p a {
   font-size: 8vw;
   font-family: Oswald, Arial, Helvetica, sans-serif;
   color: #9395a9;
 }
 
-.menu-footer h4 span {
+.menu-footer p span {
   color: #ffffff;
 }
 
-.menu-footer h4 {
+.menu-footer p {
   width: 40%;
 }
 
@@ -686,19 +696,12 @@ footer {
 }
 
 .address {
-  /* width: 40%; */
   margin-top: 2%;
-}
-
-.address i,
-.address p {
-  display: inline-block;
   color: #c3c3ce;
 }
 
 .social {
-  /* width: 25%; */
-  margin-top: 2%;
+  margin-top: 5%;
   color: #c3c3ce;
 }
 
@@ -759,114 +762,99 @@ footer {
 /* ===== END OF STYLE FOR SUPPORT ===== */
 
 
-/* Medium devices (480px to 991px) */
-@media (min-width: 480px) {
-  .navbar {
-    z-index: 1;
-  }
-
-  .navbar-toggler-icon span {
-    display: block;
-    width: 100%;
-    height: 4px;
-    margin-bottom: 28%;
-    background: rgba(57, 59, 96, 1);
-  }
-
+/* Medium devices (576px to 991px) */
+@media (min-width: 576px) {
   .navbar-brand {
-    width: 75%;
+    width: 70%;
   }
 
-  .navbar-collapse {
-    background: #ffffff;
-    margin-top: -1%;
-  }
-
-  .dropdown-menu {
-    border-radius: 0 !important;
-  }
-
-  .dropdown-menu-wrap1 {
-    display: none;
-  }
-
-  .dropdown-menu-wrap2 {
-    margin: auto;
-    width: 95%;
-  }
-
-  .dropdown-menu-wrap2 p {
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-
-  .dropdown-menu-wrap2 a {
-    color: #393b60;
-    margin-left: 1rem;
-  }
-
-  .collection-list2 {
-    margin-top: 0.5rem;
+  .cart {
+    margin-right: 3%;
   }
 
   .promotion .slick-slide img {
     transform: scale(1.3);
   }
 
-  .collection > .row > div {
-    padding-bottom: 80%;
-    margin-bottom: 3%;
-  }
-
-  .collection-txt p {
-    font-size: 6.4vw;
-    text-align: center;
+  h3 {
+    font-size: 3.6vw !important;
   }
 
   .detail p,
   .add-to-cart p {
-    font-size: 2.2vw;
+    font-size: 1.6vw;
   }
 
   .wrap-slider .price {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
 
   .wrap-slider .old-price {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
   .wrap-slider .product-name {
-    font-size: 2.4vw;
+    font-size: 1.8vw;
+  }
+
+  .advert .ad-box {
+    width: 40%;
+    height: 40%;
+  }
+
+  .advert .ad-txt1 {
+    font-size: 4.4vw;
+  }
+  
+  .advert .ad-txt2 {
+    font-size: 3vw;
+  }
+  
+  .advert .ad-txt2 span {
+    font-size: 7vw;
   }
 
   .wrap-footer {
-    display: block;
-    font-size: 2.2vw;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .menu-footer {
-    padding-bottom: 10%;
+    width: 50%;
+    order: 1;
   }
 
-  .menu-footer h4 {
-    position: absolute;
-    font-size: 4.4vw;
+  .menu-footer p {
+    margin-top: -1.1vw;
   }
 
-  .menu-footer ul {
-    position: absolute;
-  }
-
-  .wrap-footer > div {
-    width: 100%;
-    padding-top: 2%;
-  }
-
-  .social {
-    margin-top: -2% !important;
-    text-align: center;
+  .menu-footer p a {
     font-size: 5vw;
+  }
+  
+  .menu-footer ul {
+    width: 50%;
+  }
+  
+  .address {
+    order: 3;
+    width: 100%;
+    margin-top: 2%;
+  }
+  
+  .social {
+    order: 2;
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .social .social-icons {
+    text-align: right;
+  }
+  
+  .social .fab {
+    font-size: 4vw;
+    margin-right: 5%;
   }
 
   .filter-bar span {
@@ -882,18 +870,37 @@ footer {
 
 /* Large devices (992px and up) */
 @media (min-width: 992px) {
+  .navbar-nav {
+    width: 100%;
+  }
+
   .navbar-brand {
     width: 16%;
   }
+
+  .nav-link {
+    padding-left: 0 !important;
+  }
+
+  .nav-item {
+    margin-left: 1.2%;
+  }
+
   .navbar-collapse {
     order: 2;
+    border: none;
+    margin-top: 0;
   }
+
   .search {
     order: 3;
+    width: 4%;
   }
+
   .cart {
     order: 4;
   }
+
   .dropdown-menu-wrap2 {
     display: none;
   }
@@ -905,7 +912,10 @@ footer {
   }
 
   .dropdown-menu-wrap1 a {
-    color: #393b60;
+    color: rgba(57, 59, 96, 1);
+    width: 25%;
+    margin-right: 3%;
+    text-align: center;
   }
 
   .dropdown-menu-wrap1 p {
@@ -920,6 +930,7 @@ footer {
     border: none;
     border-top: 1px solid #c3c3ce;
     border-radius: 0;
+    background: #ffffff;
     box-shadow: 0px 5px 15px -7px rgba(0, 0, 0, 0.5);
   }
 
@@ -928,7 +939,7 @@ footer {
   }
 
   .collection-list1 {
-    margin: 0 auto auto;
+    margin: 0 auto auto 5%;
   }
 
   .collection-list-item {
@@ -940,19 +951,21 @@ footer {
     display: inline-block;
     margin-right: 3%;
   }
-
-  .collection-list-item-img {
-    border: 1px solid #c3c3ce;
-  }
-
-  .collection-list-item-img:hover {
-    border: 1px solid rgba(57, 59, 96, 1);
-  }
-
+  
   .collection-list-item > div > a {
     display: block;
     font-size: 14px;
     text-align: center;
+  }
+
+  .collection-list-item p {
+    font-weight: normal;
+  }
+  
+  .collection-list-item a:hover div {
+    background: rgba(195, 195, 206, 0.8);
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
   }
 
   .collection > .row > div {
@@ -960,8 +973,37 @@ footer {
   }
 
   .collection-txt p {
-    font-size: 2vw;
+    font-size: 2.6vw;
     text-align: center;
+  }
+
+  .promo1-box {
+    height: 50%;
+  }
+
+  .promo2-box {
+    height: 50%;
+    top: 55%;
+  }
+
+  .promo-txt1 {
+    font-size: 7vw !important;
+  }
+  
+  .promo-txt2 {
+    font-size: 4vw !important;
+  }
+
+  .promo-txt3 {
+    font-size: 2vw !important;
+  }
+
+  .promotion .slick-arrow {
+    font-size: 5vw;
+  }
+
+  .detail, .add-to-cart {
+    opacity: 0;
   }
 
   .detail p,
@@ -981,29 +1023,72 @@ footer {
     font-size: 1.2vw;
   }
 
+  .advert .ad-box {
+    width: 40%;
+    height: 40%;
+  }
+
+  .advert .ad-txt1 {
+    font-size: 4.4vw;
+  }
+  
+  .advert .ad-txt2 {
+    font-size: 3vw;
+  }
+  
+  .advert .ad-txt2 span {
+    font-size: 7vw;
+  }
+  
   .wrap-footer {
     display: flex;
     font-size: 1.2vw;
   }
 
   .menu-footer {
-    position: relative;
+    width: 35%;
+    order: 1;
   }
 
-  .menu-footer h4,
-  .menu-footer ul {
-    position: absolute;
-  }
-
-  .menu-footer h4 {
-    font-size: 2.4vw;
-  }
-
-  .social {
+  .menu-footer p {
+    width: 60%;
     font-size: 2vw;
+    margin-top: -0.8vw;
+  }
+
+  .menu-footer p a {
+    font-size: 3.3vw;
+  }
+  
+  .menu-footer ul {
+    width: 30%;
+    font-size: 1.5vw;
+    text-align: left;
+  }
+  
+  .address {
+    order: 2;
+    width: 40%;
+    margin-top: 0;
+    font-size: 1.5vw;
+  }
+  
+  .social {
+    order: 3;
+    width: 25%;
+    margin-top: 0;
+  }
+
+  .social .social-icons {
     text-align: right;
   }
+  
+  .social .fab {
+    font-size: 2.4vw;
+    margin-right: 5%;
+  }
 
+/* Style for page list_of_products */
   .wrap-info-pd {
     display: flex;
   }
@@ -1037,7 +1122,7 @@ footer {
 /* ================================= */
 .breadcrumb-lop {
   color: rgba(195, 195, 206, 1);
-  margin-top: 15px;
+  margin-top: 2%;
   margin-left: 8%;
 }
 
@@ -1045,44 +1130,18 @@ footer {
   color: rgba(195, 195, 206, 1);
 }
 
-.wrap-lop {
+.lop-wrap {
   width: 84%;
   margin: 1% auto auto;
 }
 
-.left-menu {
-  width: 22%;
-  font-size: 1.1vw;
+.lop-filter ul li {
+  display: inline-block;
+  margin-left: 2%;
 }
 
-.left-menu div {
-  padding: 5%;
-  border: 1px solid rgba(195, 195, 206, 0.4);
-}
-
-.left-menu p {
-  font-weight: bold;
-  margin-bottom: 0.3rem;
-}
-
-.right-wrap-lop {
-  width: 78%;
-}
-
-.right-wrap-lop .filter-bar div {
-  width: 90%;
-  margin: 0 auto 2% auto;
-  padding: 1%;
-  text-align: right;
-  background: rgba(195, 195, 206, 0.4);
-}
-
-.right-wrap-lop .filter-bar span {
-  margin: 0 1%;
-}
-
-.right-wrap-lop .filter-bar a {
-  color: rgba(57, 59, 96, 1);
+.lop-filter .dropdown-menu {
+  background: #ffffff;
 }
 
 .right-wrap-lop .wrap-item {
