@@ -1101,121 +1101,94 @@ a.btn:focus {
   font-size: 1.4vw;
 }
 
-.cart-t {
+.cart-table th {
+  font-size: 2vw;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(82, 84, 121, 1);
   text-align: center;
-  line-height: 70px;
-  background: rgba(57, 59, 96, 1);
-  color: #ffffff;
+  padding: 3% 0;
 }
 
-.cart-checkbox {
+.cart-table th:nth-child(5) span:nth-child(2) {
+  display: none;
+}
+
+.cart-table td:nth-child(1) {
   width: 5%;
 }
 
-.cart-checkbox div {
-  text-align: center;
-  height: 70px;
-  line-height: 70px;
-}
-
-.cart-product {
-  width: 44%;
-}
-
-.cart-product div {
-  height: 70px;
-  line-height: 70px;
-}
-
-.cart-product img {
-  width: 70px;
-}
-
-.cart-price {
-  width: 20%;
-}
-
-.cart-price div {
-  height: 70px;
-  line-height: 70px;
-}
-
-.cart-price-unit {
-  text-align: right;
-}
-
-.cart-price-unit span {
-  color: rgba(195, 195, 206, 1);
-  text-decoration: line-through;
-}
-
-.cart-qty {
-  width: 13%;
-}
-
-.cart-qty div {
-  height: 70px;
+.cart-table td:nth-child(1) {
   text-align: center;
 }
 
-.cart-qty .cart-t {
-  margin-bottom: 20px;
-}
-
-.cart-qty [type=number] {
-  width: 40%;
-  padding-left: 5%;
-}
-
-.cart-amount {
+.cart-table td:nth-child(2) {
   width: 10%;
-  text-align: right;
 }
 
-.cart-amount div {
-  height: 70px;
-  line-height: 70px;
+.cart-table td:nth-child(3) {
+  width: 25%;
+  font-size: 2vw;
 }
 
-.cart-remove {
-  width: 8%;
-  text-align: right;
+.cart-table td:nth-child(4) {
+  font-size: 2vw;
 }
 
-.cart-remove div {
-  height: 70px;
+.cart-table td:nth-child(4) span {
+  text-decoration: line-through;
+  color: rgba(147, 149, 169, 1);
+}
+
+.cart-table td:nth-child(6) {
+  font-size: 2vw;
+}
+
+.cart-table td:nth-child(7) {
   text-align: center;
-  line-height: 70px;
 }
 
-.cart-remove div a {
+.cart-table td:nth-child(7) a {
   color: rgba(238, 81, 81, 1);
+  font-size: 2vw;
 }
 
-.cart-sum {
+.cart-table tr:nth-child(4) {
+  font-size: 2vw;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(82, 84, 121, 1);
+}
+
+.cart-table tr:nth-child(4) td {
+  padding: 3% 0;
+}
+
+.cart-sum-box {
   color: #ffffff;
-  background: rgba(57, 59, 96, 1);
-  height: 70px;
-  line-height: 70px;
+  background: rgba(82, 84, 121, 1);
+  padding: 2% 0;
 }
 
 .cart-sum-box1 {
-  width: 64%;
+  width: 60%;;
 }
 
 .cart-sum-box2 {
-  width: 36%;
+  position: relative;
+  width: 40%;
 }
 
 .cart-sum-type {
   margin-left: 2%;
 }
 
-.cart-sum-input input {
-  width: 15%;
-  height: 40px;
+.cart-sum-input {
   margin-left: 2%;
-  line-height: initial;
+}
+
+.cart-sum-input input {
+  width: 20%;
+  padding: 2% 0;
 }
 
 .cart-sum-input [type="button"] {
@@ -1225,13 +1198,17 @@ a.btn:focus {
 }
 
 .cart-sum-total {
-  margin-right: 3%;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
 }
 
 .cart-sum-number {
   font-size: 3vw;
-  line-height: 0px;
-  margin-right: 5%;
+  right: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .cart-next {
@@ -1240,7 +1217,8 @@ a.btn:focus {
 }
 
 .cart-next [type="button"] {
-  padding: 1%;
+  font-size: 1.2rem;
+  padding: 3%;
   border-width: 0;
   color: #ffffff;
   background: rgba(238, 81, 81, 1);
@@ -1254,9 +1232,17 @@ a.btn:focus {
 /* ================================= */
 /* STYLE FOR PAGE ORDER */
 /* ================================= */
+.order-page .advert {
+  margin-top: 70px;
+}
+
+.order-page .breadcrumb-lop {
+  margin-top: 3%;
+}
+
 .order-step2 {
   display: inline-block;
-  width: 200px;
+  width: 150px;
   height: 80px;
   position: relative;
   background: rgba(57, 59, 96, 1);
@@ -1321,7 +1307,7 @@ a.btn:focus {
 
 .order-info [type="text"] {
   display: block;
-  width: 420px;
+  width: 320px;
   padding: 0.3% 1%;
   margin: 1% 5%;
 }
@@ -1352,6 +1338,10 @@ a.btn:focus {
 
 .order-wrap .order-button {
   text-align: right;
+}
+
+.order-button input {
+  font-size: 1.2rem;
 }
 
 .order-back {
@@ -1388,10 +1378,17 @@ a.btn:focus {
 /* ================================= */
 
 
-
 /* ================================= */
 /* STYLE FOR PAGE ORDER SUCCESS */
 /* ================================= */
+.order-success-page .advert {
+  margin-top: 70px;
+}
+
+.order-success-page .breadcrumb-lop {
+  margin-top: 3%;
+}
+
 .order-success-wrap {
   width: 84%;
   margin: 2% auto;
@@ -1857,7 +1854,14 @@ a.btn:focus {
   .lop-products .product-name {
     font-size: 2.6vw;
   }
+  
+  .cart-step1, .cart-step2 {
+    width: 200px;
+  }
 
+  .order-step1, .order-step2 {
+    width: 200px;
+  }
 }
 /* End Small devices (576px and up) */
 
@@ -2200,6 +2204,18 @@ a.btn:focus {
 
   .contact-us .contact-form-info p {
     font-size: 1rem;
+  }
+
+  .cart-table th:nth-child(5) span:nth-child(1) {
+    display: none;
+  }
+
+  .cart-table th:nth-child(5) span:nth-child(2) {
+    display: block;
+  }
+
+  .cart-table td:nth-child(2) {
+    width: 100px;
   }
 
 }
