@@ -525,15 +525,15 @@ h3 {
 }
 
 .wrap-slider .price {
-  font-size: 2.6vw;
+  font-size: 3.6vw;
 }
 
 .wrap-slider .old-price {
-  font-size: 2vw;
+  font-size: 2.4vw;
 }
 
 .wrap-slider .product-name {
-  font-size: 2.6vw;
+  font-size: 3vw;
 }
 
 .wrap-slider .info {
@@ -893,6 +893,14 @@ a.btn:focus {
 /* ================================= */
 /* STYLE FOR PAGE PRODUCT DETAIL */
 /* ================================= */
+.product-detail .advert {
+  margin-top: 70px;
+}
+
+.product-detail .breadcrumb-lop {
+  margin-top: 3%;
+}
+
 .wrap-info-pd {
   width: 84%;
   margin: 15px auto auto;
@@ -916,6 +924,16 @@ a.btn:focus {
   font-family: Quicksand, Arial, sans-serif;
   font-weight: bold;
   color: rgba(57, 59, 96, 1);
+}
+
+.price-pd .new-price-pd{
+  font-size: 1.8rem;
+}
+
+.price-pd .old-price-pd{
+  font-size: 1rem;
+  color: rgba(147, 149, 169, 1);
+  text-decoration: line-through;
 }
 
 .price-pd > div {
@@ -1012,7 +1030,7 @@ a.btn:focus {
 
 .cart-step1 {
   display: inline-block;
-  width: 150px;
+  width: 120px;
   height: 80px;
   position: relative;
   background: rgba(57, 59, 96, 1);
@@ -1055,7 +1073,7 @@ a.btn:focus {
 
 .cart-step2 {
   display: inline-block;
-  width: 150px;
+  width: 120px;
   height: 80px;
   position: relative;
   background: rgba(195, 195, 206, 1);
@@ -1242,7 +1260,7 @@ a.btn:focus {
 
 .order-step2 {
   display: inline-block;
-  width: 150px;
+  width: 120px;
   height: 80px;
   position: relative;
   background: rgba(57, 59, 96, 1);
@@ -1307,9 +1325,13 @@ a.btn:focus {
 
 .order-info [type="text"] {
   display: block;
-  width: 320px;
+  width: 280px;
   padding: 0.3% 1%;
   margin: 1% 5%;
+}
+
+.order-info .order-note {
+  padding-bottom: 15%;
 }
 
 .order-info form p {
@@ -1640,6 +1662,7 @@ a.btn:focus {
   width: 98%;
   margin: 1%;
   padding: 1%;
+  font-size: 3vw;
 }
 
 .contact-us .contact-form-info [type=text]::placeholder {
@@ -1656,6 +1679,7 @@ a.btn:focus {
   padding-bottom: 20%;
   padding-left: 1%;
   margin-top: 1%;
+  font-size: 3vw;
 }
 
 .contact-us .contact-form-message [type=text]::placeholder {
@@ -1669,7 +1693,8 @@ a.btn:focus {
 }
 
 .contact-next [type="button"] {
-  padding: 1%;
+  font-size: 4vw;
+  padding: 3%;
   border-width: 0;
   color: #ffffff;
   background: rgba(238, 81, 81, 1);
@@ -1677,6 +1702,23 @@ a.btn:focus {
 /* ================================= */
 /* END OF STYLE FOR PAGE CONTACT */
 /* ================================= */
+
+
+
+/* ================================= */
+/* STYLE FOR PAGE MESSAGE SEND SUCCESS */
+/* ================================= */
+.message-sent-page .advert {
+  margin-top: 70px;
+}
+
+.message-sent-page .breadcrumb-lop {
+  margin-top: 3%;
+}
+/* ================================= */
+/* END OF STYLE FOR PAGE MESSAGE SEND SUCCESS */
+/* ================================= */
+
 
 
 /* ================================= */
@@ -1861,6 +1903,24 @@ a.btn:focus {
 
   .order-step1, .order-step2 {
     width: 200px;
+  }
+
+  .cart-next [type="button"] {
+    font-size: 1.2rem;
+    padding: 10px 2%;
+  }
+
+  .contact-us .contact-form-info [type=text] {
+    font-size: 1.2rem;
+  }
+
+  .contact-us .contact-form-message [type=text] {
+    font-size: 1.2rem;
+  }
+
+  .contact-next [type="button"] {
+    font-size: 1.2rem;
+    padding: 10px 2%;
   }
 }
 /* End Small devices (576px and up) */
