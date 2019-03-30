@@ -1145,12 +1145,14 @@ a.btn:focus {
 }
 
 .cart-table td:nth-child(3) {
-  width: 25%;
+  min-width: 25%;
   font-size: 2vw;
 }
 
 .cart-table td:nth-child(4) {
+  width: 10%;
   font-size: 2vw;
+  text-align: right;
 }
 
 .cart-table td:nth-child(4) span {
@@ -1158,8 +1160,13 @@ a.btn:focus {
   color: rgba(147, 149, 169, 1);
 }
 
+.cart-table td:nth-child(5) {
+  text-align: center;
+}
+
 .cart-table td:nth-child(6) {
   font-size: 2vw;
+  text-align: center;
 }
 
 .cart-table td:nth-child(7) {
@@ -1960,6 +1967,10 @@ a.btn:focus {
   .lop-products .product-name {
     font-size: 1.8vw;
   }
+
+  .cart-table th, .cart-table td {
+    font-size: 1.2rem !important;
+  }
 }
 
 /* Large devices (992px and up) */
@@ -2266,6 +2277,10 @@ a.btn:focus {
     font-size: 1rem;
   }
 
+  .cart-table table {
+    width: 100%;
+  }
+
   .cart-table th:nth-child(5) span:nth-child(1) {
     display: none;
   }
@@ -2274,8 +2289,17 @@ a.btn:focus {
     display: block;
   }
 
+  
   .cart-table td:nth-child(2) {
     width: 100px;
+  }
+  
+  .cart-table td:nth-child(3) {
+    width: 33%;
+  }
+
+  .cart-table td:nth-child(4) {
+    width: 200px;
   }
 
 }
