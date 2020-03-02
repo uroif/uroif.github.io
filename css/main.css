@@ -723,7 +723,7 @@ svg {
     left: 0;
 }
 .slider .slide .slide__overlay-path {
-    fill: #7beec7;
+    fill: #2196f3;
 }
 .slider .slide:nth-child(2) {
     left: 100%;
