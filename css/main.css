@@ -3147,19 +3147,16 @@ a img.aligncenter {
 
 /* Tags for Skills */
 .skill-tags {
-    font-family: 'azedolight';
-    background: #2196f3;
-    padding: 8px;
+    background: #000000;
+    color: #FFFFFF;
+    padding: 4px 8px 4px 8px;
     font-weight: 100;
     margin-left: 10px;
     /* line-height: 80px; */
 }
-
-.skill-tags:hover {
-    background: #3A3939;
-    color: #FFFFFF;
-    padding: 8px;
-    font-weight: 100;
-    margin-left: 10px;
-    /* line-height: 80px; */
+.hvr-sweep-to-right:hover {
+    color: #000000;
+}
+.hvr-sweep-to-right::before {
+    background: #FFFFFF;
 }
