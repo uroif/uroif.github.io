@@ -1785,7 +1785,7 @@ ul.client-thumb-2 li a img:hover{
     -o-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: #86eecb;
+    background: #2196f3;
     cursor: pointer;
     border: none;
     width: 48px;
@@ -1989,7 +1989,7 @@ ul.client-thumb-2 li a img:hover{
     z-index: 4;
 }
 .img .overlay-thumb:hover {
-    background-color: rgba(123, 238, 199, .9);
+    background-color: rgba(33, 150, 243, .9);
 }
 
 .img .overlay-thumb.bg-white:hover{
@@ -3158,5 +3158,5 @@ a img.aligncenter {
     color: #000000;
 }
 .hvr-sweep-to-right::before {
-    background: #FFFFFF;
+    background: #DDDDDD;
 }
