@@ -831,17 +831,17 @@ svg {
 }
 .slide__text-heading {
     font-size: 48px;
-    font-family: 'azedobold';
-    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    /* text-transform: uppercase; */
     font-weight: 800;
-    dispay: block;
+    display: block;
     width: 100%;
     padding: 2px;
     position: relative;
     letter-spacing: 4.5pt;
 }
 span.border-text {
-    font-family: 'azedolight';
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     color: #fff;
     border: 2px solid #fff;

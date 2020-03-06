@@ -436,7 +436,7 @@ var bar4 = new ProgressBar.Line(progressbar4, {
     svgStyle: {width: '100%', height: '100%'}
 });
 
-bar1.animate(0.5);  // Number from 0.0 to 1.0
+bar1.animate(0.8);  // Number from 0.0 to 1.0
 bar2.animate(0.9);  // Number from 0.0 to 1.0
-bar3.animate(0.6);  // Number from 0.0 to 1.0
+bar3.animate(0.7);  // Number from 0.0 to 1.0
 bar4.animate(1.0);  // Number from 0.0 to 1.0
