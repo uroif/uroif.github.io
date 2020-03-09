@@ -846,8 +846,9 @@ span.border-text {
     color: #fff;
     border: 2px solid #fff;
     padding: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* Keep text align */
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 .slide__text p {
     font-size: 24px;
