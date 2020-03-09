@@ -159,7 +159,7 @@ function historySlider() {
         historyimages.owlCarousel({
             singleItem: true,
             pagination: false,
-            autoPlay: 2000,
+            autoPlay: 5000,
             slideSpeed: 300
         });
     }
@@ -437,6 +437,6 @@ var bar4 = new ProgressBar.Line(progressbar4, {
 });
 
 bar1.animate(0.8);  // Number from 0.0 to 1.0
-bar2.animate(0.9);  // Number from 0.0 to 1.0
-bar3.animate(0.7);  // Number from 0.0 to 1.0
-bar4.animate(1.0);  // Number from 0.0 to 1.0
+bar2.animate(0.8);  // Number from 0.0 to 1.0
+bar3.animate(0.9);  // Number from 0.0 to 1.0
+bar4.animate(0.9);  // Number from 0.0 to 1.0

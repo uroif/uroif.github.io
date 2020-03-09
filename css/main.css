@@ -3147,12 +3147,12 @@ a img.aligncenter {
 }
 
 /* Tags for Skills */
-.skill-tags {
+.custom-tags {
     background: #000000;
     color: #FFFFFF;
     padding: 4px 8px 4px 8px;
     font-weight: 100;
-    margin-left: 10px;
+    margin: 4px 4px 4px 0;
     /* line-height: 80px; */
 }
 .hvr-sweep-to-right:hover {
