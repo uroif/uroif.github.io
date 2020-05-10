@@ -831,23 +831,24 @@ svg {
 }
 .slide__text-heading {
     font-size: 48px;
-    font-family: 'azedobold';
-    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    /* text-transform: uppercase; */
     font-weight: 800;
-    dispay: block;
+    display: block;
     width: 100%;
     padding: 2px;
     position: relative;
     letter-spacing: 4.5pt;
 }
 span.border-text {
-    font-family: 'azedolight';
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     color: #fff;
     border: 2px solid #fff;
     padding: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* Keep text align */
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 .slide__text p {
     font-size: 24px;
@@ -1785,7 +1786,7 @@ ul.client-thumb-2 li a img:hover{
     -o-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: #86eecb;
+    background: #2196f3;
     cursor: pointer;
     border: none;
     width: 48px;
@@ -1989,7 +1990,7 @@ ul.client-thumb-2 li a img:hover{
     z-index: 4;
 }
 .img .overlay-thumb:hover {
-    background-color: rgba(123, 238, 199, .9);
+    background-color: rgba(33, 150, 243, .9);
 }
 
 .img .overlay-thumb.bg-white:hover{
@@ -3129,7 +3130,7 @@ a img.aligncenter {
 
 /* Loading Progress Bar */
 #progressbar1 {
-    width: 200px;
+    width: 100%;
     height: 12px;
 }
 #progressbar2 {
@@ -3146,17 +3147,17 @@ a img.aligncenter {
 }
 
 /* Tags for Skills */
-.skill-tags {
+.custom-tags {
     background: #000000;
     color: #FFFFFF;
     padding: 4px 8px 4px 8px;
     font-weight: 100;
-    margin-left: 10px;
+    margin: 4px 4px 4px 0;
     /* line-height: 80px; */
 }
 .hvr-sweep-to-right:hover {
     color: #000000;
 }
 .hvr-sweep-to-right::before {
-    background: #FFFFFF;
+    background: #DDDDDD;
 }
