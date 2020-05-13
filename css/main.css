@@ -209,6 +209,7 @@ ul {
 }
 ul li {
     list-style-type: inherit;
+    padding-bottom: 12px;
 }
 ul.list {
     display: block;
