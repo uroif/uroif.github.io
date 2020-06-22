@@ -660,6 +660,7 @@ svg {
     border: 1px solid #111111;
     cursor: pointer;
     border-radius: 50%;
+    padding-bottom: 8px;
 }
 .slider-pagi__elem:before {
     content: "";
