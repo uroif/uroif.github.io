@@ -1613,7 +1613,7 @@ ul.sub-menu li a {
 .about-studio {
     position: relative;
     width: 100%;
-    min-height: 300px;
+    min-height: 360px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -1622,7 +1622,7 @@ ul.sub-menu li a {
     min-height: 260px;
     margin-left: 5px;
     margin-right: 5px;
-    padding: 40px;
+    padding: 20px 40px 20px 40px;
 }
 .our-studio-content h1,
 .our-studio-content p {
