@@ -271,9 +271,11 @@
 	}
 
 	.slide__bg{
-		background-size: contain;
+		/* background-size: contain; */
+		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: 0 100px;
+		/* background-position: 0 100px; */
+		background-position: bottom;
 	}
 
 	.slide__text {
@@ -301,7 +303,7 @@
 	    display: none;
 	}
 	.slide .slide__text {
-	    background-color: #7beec7;
+	    background-color: #dddddd;
 	}
 
 }
