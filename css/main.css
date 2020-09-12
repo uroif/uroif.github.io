@@ -708,7 +708,6 @@ svg {
     opacity: 0.8;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    padding-top: 10%;
 }
 .slide__bg {
     position: absolute;

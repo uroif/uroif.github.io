@@ -214,7 +214,10 @@
 	.our-studio-content{
 		padding:15px; 
 	}
-
+	.slide.active .slide__overlay,
+	.slide.active .slide__text {
+		padding-top: 10%;
+	}
 }
 
 /* 2. Small devices (tablets, 767px and Down) */
