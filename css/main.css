@@ -3,11 +3,23 @@ ul {
     padding-inline-start: 20px;
 }
 
+/* Style for navigation on mobile */
 @media only screen and (max-width: 768px) {
     .resume-wrap ul {
         padding-inline-start: 0px;
     }
   }
+
+.ftco-navbar-light .container {
+    margin: 0.3rem auto;
+}
+
+@media (max-width: 991.98px) {
+    .ftco-navbar-light .navbar-nav {
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+}
 
 /* Style for home  */
 .mouse-icon {
