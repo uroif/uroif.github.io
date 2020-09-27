@@ -1,226 +1,566 @@
-    <!doctype html>
-    <html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Trung's Portfolio</title>
-        <meta name="description" content="">
-        <meta name="msapplication-tap-highlight" content="yes" />
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+<head>
+	<title>Trung's Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Google Web Font -->
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-        <!--  Bootstrap 3-->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 
-        <!-- OWL Carousel -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-        <!--  Slider -->
-        <link rel="stylesheet" href="css/jquery.kenburnsy.css">
+	<link rel="stylesheet" href="css/aos.css">
 
-        <!-- Animate -->
-        <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
 
-        <!-- Web Icons Font -->
-        <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
-        <link rel="stylesheet" href="css/iconmoon.css">
-        <link rel="stylesheet" href="css/et-line.css">
-        <link rel="stylesheet" href="css/ionicons.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
 
-        <!-- Magnific PopUp -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-
-        <!-- Tabs -->
-        <link rel="stylesheet" type="text/css" href="css/tabs.css" />
-        <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
-
-        <!-- Loader Style -->
-        <link rel="stylesheet" href="css/loader-1.css">
-
-        <!-- Costum Styles -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/responsive.css">
-
-        <!-- Favicon -->
-        <link rel="icon" type="image/ico" href="favicon.ico">
-
-        <!-- Modernizer & Respond js -->
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
-        <!-- Full Height -->
-        <style>
-            html,
-            body {
-                height: 100%;
-                overflow: hidden;
-            }
-        </style>
-
-    </head>
-
-    <body>
-
-        <!-- Preloader -->
-        <div class="cover"></div>
-
-        <div class="header has-slider">
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="Logo">
-                    </a>
-                </div>
-
-                <!-- Menu Hamburger (Default) -->
-                <button class="main-menu-indicator" id="open-button">
-                    <span class="line"></span>
-                </button>
-
-                <div class="menu-wrap" style="background-image: url(img/nav_bg.jpg)">
-                    <div class="menu-content">
-                        <div class="navigation">
-                            <span class="pe-7s-close close-menu" id="close-button"></span>
-                            <div class="search-wrap js-ui-search">
-                                <input class="js-ui-text" type="text" placeholder="You Can't Search Here">
-                                <span class="eks js-ui-close"></span>
-                            </div>
-                        </div>
-                        <nav class="menu">
-                            <div class="menu-list">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li class="menu-item-has-children"><a href="#">Resume</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="resume-timeline.html">Experience</a></li>
-                                            <li><a href="resume-skills.html">Skills</a></li>
-                                        </ul>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </nav>
-
-                        <div class="hidden-xs">
-                            <div class="menu-social-media">
-                                <ul>
-                                    <li><a href="skype:uroif@live.com"><i class="iconmoon-skype"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/duytrung17"><i class="iconmoon-linkedin2"></i></a></li>
-                                    <li><a href="https://www.facebook.com/uroif"><i class="iconmoon-facebook"></i></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="menu-information">
-                                <ul>
-                                    <li><span>M:</span> 0975 752 408</li>
-                                    <li><span>E:</span> duytrung17@gmail.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Menu Hamburger (Default) -->
-            </div>
-        </div>
-
-        <div class="slider-container">
-            <div class="slider-control left inactive"></div>
-            <div class="slider-control right"></div>
-            <ul class="slider-pagi"></ul>
-            <div class="slider">
-
-                <div class="slide slide-0 active">
-                    <div class="slide__bg" style="background-image: url('img/full-slider/image_1.jpg');"></div>
-                    <div class="slide__content">
-                        <svg class="slide__overlay" viewBox="0 0 1 1" preserveAspectRatio="xMaxYMax slice">
-                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                        </svg>
-                        <div class="slide__text">
-                            <h1 class="slide__text-heading">
-                                Hi,<br>
-                                I'm Trung.<br><br>
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide slide-1">
-                    <div class="slide__bg" style="background-image: url('img/full-slider/image_2.jpg');"></div>
-                    <div class="slide__content">
-                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                        </svg>
-                        <div class="slide__text">
-                            <h2 class="slide__text-heading">
-                                I'm a
-                            </h2>
-                            <h2 class="slide__text-heading">
-                                PO/PM.
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide slide-2">
-                    <div class="slide__bg" style="background-image: url('img/full-slider/image_3.jpg');"></div>
-                    <div class="slide__content">
-                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                        </svg>
-                        <div class="slide__text">
-                            <h2>
-                                <span class="border-text">INNOVATION</span><br><br>
-                            </h2>
-                            <h2 class="slide__text-heading">
-                                is my PASSION
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide slide-3">
-                    <div class="slide__bg" style="background-image: url('img/full-slider/image_4.jpg');"></div>
-                    <div class="slide__content">
-                        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                        </svg>
-                        <div class="slide__text">
-                            <h2>
-                                <span class="border-text">WILLINGNESS</span><br><br>
-                            </h2>
-                            <h2 class="slide__text-heading">
-                                to face new CHALLENGES
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
-        <script data-pace-options='{ "ajax": false }' src="js/vendor/pace.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/vendor/classie.js"></script>
-        <script src="js/vendor/isotope.pkgd.min.js"></script>
-        <script src="js/vendor/jquery.velocity.min.js"></script>
-        <script src="js/vendor/jquery.kenburnsy.min.js"></script>
-        <script src="js/vendor/textslide.js"></script>
-        <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-        <script src="js/vendor/tabs.js"></script>
-        <script src="js/ef-slider.js"></script>
-        <script src="js/vendor/owl.carousel.min.js"></script>
-        <script src="js/vendor/jquery.magnific-popup.min.js"></script>
-        <script src="js/vendor/jquery.social-buttons.min.js"></script>
-        <script src="js/vendor/wow.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/ajax.js"></script>
-    </body>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<!-- <a class="navbar-brand" href="index.html"><span>R</span>onaldo</a> -->
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
 
-    </html>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="hero-wrap js-fullheight">
+		<!-- <div class="overlay"></div> -->
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+					<div class="text text-center">
+						<span class="subheading">Hi! I am</span>
+						<h1>Trung</h1>
+						<h2>I'm a
+							<span class="txt-rotate" data-period="2000"
+								data-rotate='[ "Project Manager", "Business Analyst", "Product Owner" ]'></span>
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mouse">
+			<a href="#about-section" class="mouse-icon">
+				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+			</a>
+		</div>
+	</section>
+
+	<section id="about-section" class="ftco-about img ftco-section ftco-no-pt ftco-no-pb">
+		<div class="container">
+			<div class="row d-flex no-gutters">
+				<div class="col-md-6 col-lg-6 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/about.jpg);">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<p>Dream big, learn more, never give up, and nothing is impossible.</p>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Name</span> <span>Trung, Nghiem Duy</span></li>
+								<li class="d-flex"><span>Address</span> <span>Linh Dam, Hoang Liet, Hoang Mai,
+										Hanoi</span></li>
+								<li class="d-flex"><span>Phone</span> <span>0975 752 408</span></li>
+								<li class="d-flex"><span>Email</span> <span>duytrung17@gmail.com</span></li>
+							</ul>
+							<!-- <div> -->
+								<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+									<li class="ftco-animate fadeInUp ftco-animated"><a href="https://www.linkedin.com/in/duytrung17" target="_blank"><span class="icon-linkedin"></span></a></li>
+									<li class="ftco-animate fadeInUp ftco-animated"><a href="https://www.facebook.com/uroif" target="_blank"><span class="icon-facebook"></span></a></li>
+									<li class="ftco-animate fadeInUp ftco-animated"><a href="skype:uroif@live.com" target="_blank"><span class="icon-skype"></span></a>
+									</li>
+								</ul>
+							<!-- </div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<nav id="navi">
+						<ul>
+							<li><a href="#page-1">Experience</a></li>
+							<li><a href="#page-2">Education</a></li>
+							<li><a href="#page-3">Skills</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-9">
+					<div id="page-1" class="page one">
+						<h2 class="heading">Experience</h2>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">Mar ’19 - Present</span>
+								<h2>Vinsoftware</h2>
+								<span class="position">Product Owner | Project Manager</span>
+								<ul>
+									<li>Collect, elicit requirements from stakeholders; Forecast, analyze, consult,
+										propose
+										solutions and functions.</li>
+									<li>Prepare general plan and define the budget of project;</li>
+									<li>Make business requirements documents, project evaluation documents;</li>
+									<li>Draw business flows, create wireframes of system and design database.</li>
+									<li>Create checklist, detail Gantt chart timeline along with sprints.</li>
+									<li>Define SOW and break down into Epics, Features, User Stories, Tasks, collaborate
+										with
+										development team to manage in sprints in Agile method - Scrum framework
+										projects.</li>
+									<li>Create US notes, including description, flow diagrams, acceptance criterias,
+										wireframes, etc.</li>
+									<li>Program in HTML, CSS, JavaScript, Bootstrap library.</li>
+									<li>Write test scenarios and cases, then test the systems.</li>
+									<li>Hold meetings with stakeholders, manage CRs;</li>
+									<li>Supervise and organize team meetings periodically to evaluate the project
+										progress,
+										resolve issues and propose solutions.</li>
+									<li>Create user manuals, presentations, make videos to instruct users. Organize UAT
+										and
+										training sessions.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">Aug ‘18 - Feb ‘19</span>
+								<h2>TechMaster Vietnam</h2>
+								<span class="position">Back-end Developer</span>
+								<ul>
+									<li>Programmed in Golang, postgreSQL database in project code123 that implemented
+										micro-services architecture, Agile method - Scrum framework.</li>
+									<li>Proficiency working in HTML5, CSS3, JavaScript, JQuery, Bootstrap, basic
+										knowledge of
+										Nuxt.js, Vue.js.</li>
+									<li>Good understanding of UI/UX design. </li>
+									<li>Knowledge of Data Structures and Algorithms, database design.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">Oct ‘16 - Jul ‘18</span>
+								<h2>IDVN Lawyers</h2>
+								<span class="position">Data/Trade Analyst</span>
+								<ul>
+									<li>Summarized and analyzed data independently/with a team and foreign specialists
+										in
+										international trade lawsuits, such as anti-circumvention, antidumping and
+										countervailing duty.</li>
+									<li>Analyzed data and evaluated in the lawsuits and disputes involving banks and
+										enterprises.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">Jul ‘08 - Sep ‘16</span>
+								<h2>State Audit Office</h2>
+								<span class="position">Auditor</span>
+								<ul>
+									<li>Examined accounting records, audited financial statements, total budget
+										revenues/
+										expenditures at financial departments, tax departments, customs departments,
+										state
+										treasury.</li>
+									<li>Summarized documents, data to create audit minutes, audit report. Led a team to
+										survey, collect documents, make plans and audit.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">Feb ‘07 - Dec ‘07</span>
+								<h2>Agribank</h2>
+								<span class="position">Accountant</span>
+								<ul>
+									<li>Performed transactions with customers.</li>
+									<li>Proficient in using Excel functions and VBA to summarize data.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div id="page-2" class="page two">
+						<h2 class="heading">Education</h2>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">Jan ‘07</span>
+								<h2>CCNA</h2>
+								<span class="position">iPMac Networking Academy | Hanoi</span>
+								<p>Score 961/1000</p>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">’02 - ‘06</span>
+								<h2>Bachelor's Degree</h2>
+								<span class="position">Banking Academy | Hanoi</span>
+								<p>Finance and Banking</p>
+							</div>
+						</div>
+					</div>
+
+					<div id="page-3" class="page three">
+						<h2 class="heading">Skills</h2>
+						<h3 class="">English</h3>
+						<div class="row">
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>Listening</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>Reading</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+											aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>Speaking</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>Writing</h3>
+									<div class="progress">
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
+											aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="">Technical Skills</h3>
+						<div class="row">
+							<div class="col-md-4 text-center d-flex ftco-animate">
+								<a href="#" class="services-1 shadow">
+									<span class="icon">
+										<i class="flaticon-ideas"></i>
+									</span>
+									<div class="desc">
+										<h3 class="mb-5">Graphics</h3>
+										<p>Photoshop</p>
+										<p>Balsamiq</p>
+										<p>Figma</p>
+										<p>InVision</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4 text-center d-flex ftco-animate">
+								<a href="#" class="services-1 shadow">
+									<span class="icon">
+										<i class="flaticon-innovation"></i>
+									</span>
+									<div class="desc">
+										<h3 class="mb-5">Design</h3>
+										<p>Visio</p>
+										<p>Lucidchart</p>
+										<p>Mindmap</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4 text-center d-flex ftco-animate">
+								<a href="#" class="services-1 shadow">
+									<span class="icon">
+										<i class="flaticon-analysis"></i>
+									</span>
+									<div class="desc">
+										<h3 class="mb-5">Plan</h3>
+										<p>Jira</p>
+										<p>Teams</p>
+										<p>Excel</p>
+										<p>Project</p>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-md-4 text-center d-flex ftco-animate">
+								<a href="#" class="services-1 shadow">
+									<span class="icon">
+										<i class="flaticon-web-design"></i>
+									</span>
+									<div class="desc">
+										<h3 class="mb-5">Document and Present</h3>
+										<p>Word</p>
+										<p>PowerPoint</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4 text-center d-flex ftco-animate">
+								<a href="#" class="services-1 shadow">
+									<span class="icon">
+										<i class="flaticon-flasks"></i>
+									</span>
+									<div class="desc">
+										<h3 class="mb-5">Program</h3>
+										<p>Git</p>
+										<p>Visual Studio Code</p>
+										<p>Visual Studio</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4 text-center d-flex ftco-animate">
+								<a href="#" class="services-1 shadow">
+									<span class="icon">
+										<i class="flaticon-ux-design"></i>
+									</span>
+									<div class="desc">
+										<h3 class="mb-5">Database</h3>
+										<p>MySQL Workbench</p>
+										<p>Microsoft SQL Server</p>
+										<p>DBeaver</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<h3 class="">Soft Skills</h3>
+						<ul>
+							<li>Manage multiple projects at once.</li>
+							<li>Lead and motivate team to progress projects, resolve conflicts and boost team spirit.
+							</li>
+							<li>Deal with clients on an appropriate schedule and SOW.</li>
+							<li>Control risk and time management.</li>
+							<li>Communication and problem-solving.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container-fluid px-md-0">
+			<div class="row no-gutters justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-1.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Vinschool Mobile App</a></h3>
+							<span>Project Manager/Product Owner</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-2.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Charitable Donation Management System</a></h3>
+							<span>Project Manager/Product Owner</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-3.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Bulletin Board of Saba Training Information</a></h3>
+							<span>Product Owner/Business Analyst</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-4.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Human Resource Portal</a></h3>
+							<span>Business Analyst/Coordinator</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-5.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Internal E-commerce</a></h3>
+							<span>Business Analyst</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-6.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Vinsmart Support Website</a></h3>
+							<span>Business Analyst</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-1">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-3">
+						<h2 class="ftco-heading-2">About</h2>
+						<p>Dream big, learn more, never give up, and nothing is impossible.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/duytrung17" target="_blank"><span
+										class="icon-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.facebook.com/uroif" target="_blank"><span
+										class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="skype:uroif@live.com" target="_blank"><span class="icon-skype"></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-3 ml-md-3">
+						<h2 class="ftco-heading-2">Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+							<li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a></li>
+							<li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-3">
+						<h2 class="ftco-heading-2">Contact</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><a href="https://www.google.com/maps/@20.9660657,105.8274346,17z" target="_blank"><span class="icon icon-map-marker"></span><span class="text">Linh Dam, Hoang Liet,
+										Hoang Mai, Hanoi</span></a></li>
+								<li><a href="tel:0975752408"><span class="icon icon-phone"></span><span
+											class="text">0975 752 408</span></a></li>
+								<li><a href="mailto:duytrung17@gmail.com"><span class="icon icon-envelope"></span><span
+											class="text">duytrung17@gmail.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;<script>
+							document.write(new Date().getFullYear());
+						</script> All rights reserved | This template is made with <i class="icon-heart color-danger"
+							aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
