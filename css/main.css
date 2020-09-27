@@ -10,6 +10,10 @@ ul {
   }
 
 /* Style for home  */
+.mouse-icon {
+    cursor: initial;
+}
+
 .mouse-icon:after {
     background: none;
 }
