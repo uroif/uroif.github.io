@@ -23,7 +23,7 @@ ul {
 
 /* Style for home  */
 .mouse-icon {
-    cursor: initial;
+    cursor: pointer;
 }
 
 .mouse-icon:after {
